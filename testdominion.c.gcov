@@ -1,0 +1,965 @@
+        -:    0:Source:testdominion.c
+        -:    0:Graph:testdominion.gcno
+        -:    0:Data:testdominion.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#define _CRT_SECURE_NO_DEPRECATE
+        -:    2:#include "dominion.h"
+        -:    3:#include "dominion_helpers.h"
+        -:    4:#include "testdominion.h"
+        -:    5:#include <string.h>
+        -:    6:#include <stdio.h>
+        -:    7:#include <assert.h>
+        -:    8:#include <stdlib.h>
+        -:    9:#include <time.h>
+        -:   10:#include "rngs.h"
+        -:   11:
+        -:   12:
+        -:   13:#define DEBUG 0
+        -:   14:#define NOISY_TEST 1
+        -:   15:
+        -:   16:int random_number(int min_num, int max_num);
+        -:   17:void checkCard(int* randomCard, int* deckHasCard, int* deckCount, int k[]);
+        -:   18:void getRandomDeck(int k[]);
+        -:   19:char* getCardName(int* card);
+        -:   20:void resetCardState(struct cardState* cards);
+        -:   21:int checkDeck(int k[], int* myCard);
+        -:   22:void getDeckContents(struct cardState* cards, struct gameState* game, int* money);
+        -:   23:void performBuys(struct cardState* cards, struct gameState* game, int* money, int* playerTurn, FILE *fp);
+        -:   24:void performActions(struct cardState* cards, struct gameState* game, int* money, int* playerTurn, FILE *fp);
+        -:   25:void printGame(struct gameState *game, FILE *fp);
+        -:   26:
+        -:   27:
+        -:   28:
+        1:   29:int main(int argc, char const *argv[])
+        -:   30:{
+        -:   31:	//initialize gamestart variables
+        -:   32:  int i, l, q;
+        -:   33:	int money;
+        -:   34:
+        -:   35:	struct gameState game;
+        -:   36:    struct cardState cards;
+        -:   37:	int k[10];
+        -:   38:	int gameNum;
+        -:   39:	int playerTurn;
+        -:   40:	 
+        -:   41:	//Use file io to write gameResults.out
+        -:   42:	FILE *fp;
+        1:   43:	fp = fopen("gameResults.out", "w");
+        1:   44:	gameNum = 0;
+        1:   45:  srand(time(NULL)); //seed random generator
+        -:   46:
+        -:   47:
+        -:   48:	//randomize the number of players (2-4) and the starting cards with the random seed
+        3:   49:	for (q = 0; q < random_number(0, 5); q ++){ //Loops number of games a random number of times < 5
+        -:   50:    
+        -:   51:    //randomizer functions for cards chosen for game and initializer
+        2:   52:    printf("Getting Random Cards for game [%d]\n", gameNum);
+        2:   53:    getRandomDeck(k);
+        2:   54:    printf("Initializing game [%d]\n", gameNum);
+        2:   55:		initializeGame(random_number(2,4), k, random_number(1, 9), &game);
+        -:   56:
+        -:   57:    //Number of player randomly chosen written to console
+        2:   58:    printf("[%d] players randomly assigned\n", game.numPlayers);
+        2:   59:    fprintf(fp, "Game %d has %d players.\n", gameNum, game.numPlayers);
+        -:   60:    //Cards chosen randomly written to console
+        2:   61:    printf("Cards Randomly Chosen[");
+        2:   62:    fprintf(fp, "Using Cards: ");
+       22:   63:    for (l = 0; l < 10; l++){
+       20:   64:      printf("%s, ", getCardName(&k[l]));
+       20:   65:      fprintf(fp, "%s ", getCardName(&k[l]));
+        -:   66:    }
+        2:   67:    printf("]\n");
+        -:   68:		//Code to play dominion contained within this block.
+        2:   69:		printf("Starting game [%d]\n", gameNum);
+        2:   70:    fprintf(fp,"Begin game %d\n\n", gameNum);
+        -:   71:
+        -:   72:		//initialize game starting values
+        2:   73:		money = 0;
+        2:   74:    resetCardState(&cards);
+        -:   75:    
+        -:   76:
+        -:   77:		//The loop that the main game runs under
+      185:   78:		while (!isGameOver(&game)){
+        -:   79:			//reset turn dependant variables
+      181:   80:      resetCardState(&cards);
+        -:   81:      
+        -:   82:      //Play Dominion 
+      181:   83:      playerTurn = whoseTurn(&game);
+      181:   84:      printGame(&game, fp);
+      181:   85:      fprintf(fp,"Player %d turn.\n", playerTurn +1);
+        -:   86:      
+        -:   87:      //Play any action cards the player has
+      181:   88:      fprintf(fp, "Beginning Player %d Action Phase\n", playerTurn + 1);
+      181:   89:      performActions(&cards, &game, &money, &playerTurn, fp);
+      181:   90:      fprintf(fp, "End Player %d Actions\n", playerTurn + 1);
+        -:   91:
+        -:   92:      /*
+        -:   93:      //Count up money and use cards
+        -:   94:      money = 0;
+        -:   95:      j = 0;
+        -:   96:      while(j < numHandCards(&game)){
+        -:   97:        if (handCard(j, &game) == copper){
+        -:   98:          playCard(j, -1, -1, -1, &game);
+        -:   99:          money++;
+        -:  100:        }
+        -:  101:        else if(handCard(j, &game) == silver){
+        -:  102:          playCard(j, -1, -1, -1, &game);
+        -:  103:          money = money + 2;
+        -:  104:        }
+        -:  105:        else if(handCard(j, &game) == gold){
+        -:  106:          playCard(j, -1, -1, -1, &game);
+        -:  107:          money = money + 3;
+        -:  108:        }
+        -:  109:        j++;
+        -:  110:      }
+        -:  111:      */
+        -:  112:
+      181:  113:      fprintf(fp, "Player %d has %d money.\n", playerTurn +1, game.coins);
+        -:  114:      // Buys Phase
+      181:  115:      fprintf(fp, "Entering player %d Buy Phase.\n", playerTurn + 1);
+      181:  116:      performBuys(&cards, &game, &money, &playerTurn, fp);
+      181:  117:      fprintf(fp, "End Player %d Buys.\n", playerTurn +1);
+        -:  118:
+      181:  119:      printf("Player[%d]: end turn.\n", playerTurn +1);
+      181:  120:      fprintf(fp, "End Player %d turn.\n\n", playerTurn +1);
+        -:  121:      //printf("Player[%d]: end turn. Money[$%d], Actions[%d], Buys[%d]\n", playerTurn + 1, money, game.numActions, game.numBuys);
+      181:  122:      endTurn(&game); 
+        -:  123:  			
+        -:  124:    }
+        -:  125:
+        -:  126:      // Print Game Score  
+        2:  127:      printf ("Finished game [%d].\n", gameNum);
+        -:  128:
+        7:  129:      for (i = 0; i < game.numPlayers; i++){
+        5:  130:        printf ("Player [%d]: Score [%d]\n", (i + 1), scoreFor(i, &game));
+        5:  131:        fprintf(fp, "Player [%d]: Score [%d]\n", (i + 1), scoreFor(i, &game));
+        -:  132:      }
+        2:  133:      printGame(&game, fp);
+        2:  134:      printf("\n\n\n\n");
+        2:  135:      fprintf(fp, "\n\n\n\n");
+        2:  136:      gameNum = gameNum + 1;
+        -:  137:	} 
+        -:  138:
+        1:  139:  fclose(fp);
+        1:  140:	return 0;
+        -:  141:}
+        -:  142:
+        -:  143://Helper functions
+        -:  144:
+      181:  145:void performBuys(struct cardState* cards, struct gameState* game, int* money, int* playerTurn, FILE *fp){
+        -:  146:    
+        -:  147:  int randNum;
+        -:  148:  int buyTest;
+        -:  149:  int iteratorBreak;
+      181:  150:  *money = game->coins;
+      181:  151:  buyTest = 1;
+      181:  152:  iteratorBreak = 0;
+        -:  153:
+      696:  154:  while (game->numBuys){
+      341:  155:	  if (game->coins == 0) break;
+        -:  156:  //if money is greater than 8, always purchase a province.
+      340:  157:  if (*money >= 8){
+       14:  158:    buyTest = buyCard(province, game);
+       14:  159:    if (buyTest == 0){
+       14:  160:		*money = game->coins;
+       14:  161:      printf("\tPlayer[%d]: province purchased. Money[$%d]\n", *playerTurn + 1, *money);
+       14:  162:      fprintf(fp, "\tPurchased province. Money after purchase: [%d]", *money);
+       14:  163:      buyTest = 1;
+        -:  164:    }
+        -:  165:  }
+        -:  166: 
+        -:  167:  //Gold and Adventurer both cost 6
+      340:  168:  if (*money >= 6){
+       31:  169:    randNum = random_number(1, 2);
+       31:  170:    if ((randNum == 1) && (game->supplyCount[adventurer] > 0)){
+       10:  171:      buyTest = buyCard(adventurer, game);
+       20:  172:      if (buyTest == 0){
+       10:  173:		*money = game->coins;
+       10:  174:		printf("Player[%d]: Adventurer purchased.\n", *playerTurn +1);
+       10:  175:        fprintf(fp, "\tAdventurer purchased. Money after purchase: [%d]\n", *money);
+       10:  176:        buyTest = 1;
+        -:  177:      }
+        -:  178:	}
+        -:  179:    else {
+       21:  180:		buyTest = buyCard(gold, game);
+       21:  181:		if (buyTest == 0){
+       21:  182:			*money = game->coins;
+       21:  183:			printf("Player[%d]: Gold card purchased.\n", *playerTurn +1);
+       21:  184:			fprintf(fp, "\tGold Card purchased. Money after purchase: [%d]\n", *money);
+       21:  185:			buyTest = 1;
+        -:  186:		}
+        -:  187:	}
+        -:  188:   }
+        -:  189:  
+        -:  190:  
+        -:  191:  // There are 6 cards that cost 5 gold (Minion, Mine, Duchy, Council Room, Tribute, Outpost)
+      340:  192:  if (*money == 5){
+       24:  193:    randNum = random_number(1, 6);
+       24:  194:    if((randNum == 1) && (game->supplyCount[duchy]) > 0){
+    #####:  195:        buyTest = buyCard(duchy, game);
+    #####:  196:		*money = game->coins;
+    #####:  197:        printf("Player[%d]: Duchy card purchased.\n", *playerTurn +1);
+    #####:  198:        fprintf(fp, "\tDuchy purchased. Money after purchase: [%d]\n", *money);
+    #####:  199:        buyTest = 1;
+        -:  200:    }
+       24:  201:    else if((randNum == 2) && (game->supplyCount[minion]) > 0){
+        4:  202:      buyTest = buyCard(minion, game);
+        4:  203:	  *money = game->coins;
+        4:  204:      printf("Player[%d]: Minion card purchased.\n", *playerTurn +1);
+        4:  205:      fprintf(fp, "\tMinion purchased. Money after purchase: [%d]\n", *money);
+        4:  206:      buyTest = 1;
+        -:  207:    }
+       20:  208:    else if((randNum == 3) && (game->supplyCount[council_room]) > 0){
+        5:  209:      buyTest = buyCard(council_room, game);
+        5:  210:	  *money = game->coins;
+        5:  211:      printf("Player[%d]: Council Room card purchased.\n", *playerTurn +1);
+        5:  212:      fprintf(fp, "\tCouncil Room purchased. Money after purchase: [%d]\n", *money);
+        5:  213:      buyTest = 1;
+        -:  214:    }
+       15:  215:    else if((randNum == 4) && (game->supplyCount[tribute]) > 0){
+        1:  216:      buyTest = buyCard(tribute, game);
+        1:  217:	  *money = game->coins;
+        1:  218:      printf("Player[%d]: Tribute card purchased.\n", *playerTurn +1);
+        1:  219:      fprintf(fp, "\tTribute purchased. Money after purchase: [%d]\n", *money);
+        1:  220:      buyTest = 1;
+        -:  221:    }
+       14:  222:    else if((randNum == 5) && (game->supplyCount[mine]) > 0){
+        5:  223:      buyTest = buyCard(mine, game);
+        5:  224:	  *money = game->coins;
+        5:  225:      printf("Player[%d]: Mine card purchased.\n", *playerTurn +1);
+        5:  226:      fprintf(fp, "\tMine purchased. Money after purchase: [%d]\n", *money);
+        5:  227:      buyTest = 1;
+        -:  228:    }
+        9:  229:    else if((randNum == 6) && (game->supplyCount[council_room]) > 0){
+        6:  230:      buyTest = buyCard(outpost, game);
+        6:  231:	  *money = game->coins;
+        6:  232:      printf("Player[%d]: Outpost card purchased.\n", *playerTurn +1);
+        6:  233:      fprintf(fp, "\tOutpost purchased. Money after purchase: [%d]\n", *money);
+        6:  234:      buyTest = 1;
+        -:  235:    }
+        -:  236:    else {
+        -:  237:      //No card purchased.
+        -:  238:    }
+        -:  239:  }
+        -:  240:
+        -:  241:  // There are nine cards that cost 4 coins
+        -:  242:  // (Feast, Gardens, Remodel, Smithy, Baron, Cutpurse, Salvager, Sea Hag, Treasure Map)
+      340:  243:  if (*money == 4) {
+       61:  244:        randNum = random_number(1, 9);
+       61:  245:    if((randNum == 1) && (game->supplyCount[feast]) > 0){
+    #####:  246:        buyTest = buyCard(feast, game);
+    #####:  247:		*money = game->coins;
+    #####:  248:        printf("Player[%d]: Feast card purchased.\n", *playerTurn +1);
+    #####:  249:        fprintf(fp, "\tFeast purchased. Money after purchase: [%d]\n", *money);
+    #####:  250:        buyTest = 1;
+        -:  251:    }
+       61:  252:    else if((randNum == 2) && (game->supplyCount[gardens]) > 0){
+        2:  253:      buyTest = buyCard(gardens, game);
+        2:  254:	  *money = game->coins;
+        2:  255:      printf("Player[%d]: Gardens card purchased.\n", *playerTurn +1);
+        2:  256:      fprintf(fp, "\tGardens purchased. Money after purchase: [%d]\n", *money);
+        2:  257:      buyTest = 1;
+        -:  258:    }
+       59:  259:    else if((randNum == 3) && (game->supplyCount[remodel]) > 0){
+    #####:  260:      buyTest = buyCard(remodel, game);
+    #####:  261:	  *money = game->coins;
+    #####:  262:      printf("Player[%d]: Remodel card purchased.\n", *playerTurn +1);
+    #####:  263:      fprintf(fp, "\tRemodel purchased. Money after purchase: [%d]\n", *money);
+    #####:  264:      buyTest = 1;
+        -:  265:    }
+       59:  266:    else if((randNum == 4) && (game->supplyCount[smithy]) > 0){
+        4:  267:      buyTest = buyCard(smithy, game);
+        4:  268:	  *money = game->coins;
+        4:  269:      printf("Player[%d]: Smithy card purchased.\n", *playerTurn +1);
+        4:  270:      fprintf(fp, "\tSmithy purchased. Money after purchase: [%d]\n", *money);
+        4:  271:      buyTest = 1;
+        -:  272:    }
+       55:  273:    else if((randNum == 5) && (game->supplyCount[baron]) > 0){
+        8:  274:      buyTest = buyCard(baron, game);
+        8:  275:	  *money = game->coins;
+        8:  276:      printf("Player[%d]: Baron card purchased.\n", *playerTurn +1);
+        8:  277:      fprintf(fp, "\tBaron purchased. Money after purchase: [%d]\n", *money);
+        8:  278:      buyTest = 1;
+        -:  279:    }
+       47:  280:    else if((randNum == 6) && (game->supplyCount[cutpurse]) > 0){
+        6:  281:      buyTest = buyCard(cutpurse, game);
+        6:  282:	  *money = game->coins;
+        6:  283:      printf("Player[%d]: Cutpurse card purchased.\n", *playerTurn +1);
+        6:  284:      fprintf(fp, "\tCutpurse purchased. Money after purchase: [%d]\n", *money);
+        6:  285:      buyTest = 1;
+        -:  286:    }
+       41:  287:    else if((randNum == 7) && (game->supplyCount[salvager]) > 0){
+        3:  288:      buyTest = buyCard(salvager, game);
+        3:  289:	  *money = game->coins;
+        3:  290:      printf("Player[%d]: Salvager card purchased.\n", *playerTurn +1);
+        3:  291:      fprintf(fp, "\tSalvager purchased. Money after purchase: [%d]\n", *money);
+        3:  292:      buyTest = 1;
+        -:  293:    }
+       38:  294:    else if((randNum == 8) && (game->supplyCount[sea_hag]) > 0){
+        7:  295:      buyTest = buyCard(sea_hag, game);
+        7:  296:	  *money = game->coins;
+        7:  297:      printf("Player[%d]: Sea Hag card purchased.\n", *playerTurn +1);
+        7:  298:      fprintf(fp, "\tSea Hag purchased. Money after purchase: [%d]\n", *money);
+        7:  299:      buyTest = 1;
+        -:  300:    }
+       31:  301:    else if((randNum == 9) && (game->supplyCount[treasure_map]) > 0){
+        4:  302:      buyTest = buyCard(treasure_map, game);
+        4:  303:	  *money = game->coins;
+        4:  304:      printf("Player[%d]: Treasure Map card purchased.\n", *playerTurn +1);
+        4:  305:      fprintf(fp, "\tTreasure Map purchased. Money after purchase: [%d]\n", *money);
+        4:  306:      buyTest = 1;
+        -:  307:    }
+        -:  308:    else {
+        -:  309:      //No purchase at this level
+        -:  310:    }
+        -:  311:  }
+        -:  312:
+        -:  313:
+        -:  314:  //There are 5 cards that cost 3 gold
+        -:  315:  //(Silver, Village, Great Hall, Steward, Ambassador)
+      340:  316:  if (*money == 3) {
+      110:  317:    randNum = random_number(1, 5);
+      110:  318:    if((randNum == 1) && (game->supplyCount[silver]) > 0){
+       23:  319:        buyTest = buyCard(silver, game);
+       23:  320:		*money = game->coins;
+       23:  321:        printf("Player[%d]: Silver card purchased.\n", *playerTurn +1);
+       23:  322:        fprintf(fp, "\tSilver purchased. Money after purchase: [%d]\n", *money);
+       23:  323:        buyTest = 1;
+        -:  324:    }
+       87:  325:    else if((randNum == 2) && (game->supplyCount[village]) > 0){
+        8:  326:      buyTest = buyCard(village, game);
+        8:  327:	  *money = game->coins;
+        8:  328:      printf("Player[%d]: Village card purchased.\n", *playerTurn +1);
+        8:  329:      fprintf(fp, "\tVillage purchased. Money after purchase: [%d]\n", *money);
+        8:  330:      buyTest = 1;
+        -:  331:    }
+       79:  332:    else if((randNum == 3) && (game->supplyCount[great_hall]) > 0){
+    #####:  333:      buyTest = buyCard(great_hall, game);
+    #####:  334:	  *money = game->coins;
+    #####:  335:      printf("Player[%d]: Great Hall card purchased.\n", *playerTurn +1);
+    #####:  336:      fprintf(fp, "\tGreat Hall purchased. Money after purchase: [%d]\n", *money);
+    #####:  337:      buyTest = 1;
+        -:  338:    }
+       79:  339:    else if((randNum == 4) && (game->supplyCount[steward]) > 0){
+       10:  340:      buyTest = buyCard(steward, game);
+       10:  341:	  *money = game->coins;
+       10:  342:      printf("Player[%d]: Steward card purchased.\n", *playerTurn +1);
+       10:  343:      fprintf(fp, "\tSteward purchased. Money after purchase: [%d]\n", *money);
+       10:  344:      buyTest = 1;
+        -:  345:    }    
+       69:  346:    else if((randNum == 5) && (game->supplyCount[ambassador]) > 0){
+    #####:  347:      buyTest = buyCard(ambassador, game);
+    #####:  348:	  *money = game->coins;
+    #####:  349:      printf("Player[%d]: Ambassador card purchased.\n", *playerTurn +1);
+    #####:  350:      fprintf(fp, "\tAmbassador purchased. Money after purchase: [%d]\n", *money);
+    #####:  351:      buyTest = 1;
+        -:  352:    }
+        -:  353:    else {
+        -:  354:      // No purchases at this level
+        -:  355:    }
+        -:  356:  }
+        -:  357:
+        -:  358:  //There are 2 cards that cost 3 gold
+        -:  359:  //(Embargo, Estate)
+      340:  360:  if (*money == 2) {
+       89:  361:    randNum = random_number(1, 2);
+       89:  362:    if((randNum == 1) && (game->supplyCount[embargo]) > 0){
+       10:  363:        buyTest = buyCard(embargo, game);
+       10:  364:		*money = game->coins;
+       10:  365:        printf("Player[%d]: Embargo card purchased.\n", *playerTurn +1);
+       10:  366:        fprintf(fp, "\tEmbargo purchased. Money after purchase: [%d]\n", *money);
+       10:  367:        buyTest = 1;
+        -:  368:    }
+       79:  369:    else if((randNum == 2) && (game->supplyCount[estate]) > 0){
+       11:  370:      buyTest = buyCard(estate, game);
+       11:  371:	  *money = game->coins;
+       11:  372:      printf("Player[%d]: Estate card purchased.\n", *playerTurn +1);
+       11:  373:      fprintf(fp, "\tEstate purchased. Money after purchase: [%d]\n", *money);
+       11:  374:      buyTest = 1;
+        -:  375:    }
+        -:  376:    else {
+        -:  377:      //No purchases at this level
+        -:  378:    }
+        -:  379:  }
+        -:  380:
+        -:  381:  //If money is 1 or 0, but the player still has buys...  
+      340:  382:  if (*money < 2){
+      173:  383:    buyTest = buyCard(copper, game);
+      173:  384:    if (buyTest == 0){
+       13:  385:		*money = game->coins;
+       13:  386:      printf("Player[%d]: Copper card purchased.\n", *playerTurn +1);
+       13:  387:      fprintf(fp, "\tCopper purchased. Money after purchase: [%d]\n", *money);
+        -:  388:    }
+        -:  389:  }
+        -:  390:
+      340:  391:  if (iteratorBreak > 10) return; //Break out of endless loops
+      334:  392:  iteratorBreak++;
+        -:  393:
+        -:  394: }
+        -:  395:}
+        -:  396:
+        -:  397:
+      181:  398:void performActions(struct cardState* cards, struct gameState* game, int* money, int* playerTurn, FILE *fp){
+        -:  399:  //look at every card in the current players deck and up their money
+        -:  400:  //set any action card in hand equal to an integer value  indicating 
+        -:  401:  //the position of the card in the current hand
+        -:  402:  int actionTest;
+      181:  403:  getDeckContents(cards, game, money);
+      181:  404:  actionTest = 1;
+        -:  405:  //Currently, I only implement the cards that don't require choices. This may change.
+      402:  406:  while (game->numActions){
+        -:  407:	
+        -:  408:  //Smithy Card
+        -:  409:  //If the player has the smithy then play it... always
+      189:  410:  if (cards->smithyPos != -1){
+        3:  411:	  if (playCard(cards->smithyPos, -1, -1, -1, game) != -1){
+        -:  412:		// -1 Action, +3 Cards
+        3:  413:		fprintf(fp, "\tSmithy Played\n");
+        3:  414:		actionTest = 0;
+        -:  415:		//Look at the deck again
+        3:  416:		cards->smithyPos = -1;
+        3:  417:		getDeckContents(cards, game, money);
+        -:  418:	} 
+        -:  419:	else {
+    #####:  420:		fprintf(fp, "\tError: playCard(Smithy) returned -1.\n");
+    #####:  421:		printf("\tError: playCard(Smithy) returned -1.\n");
+    #####:  422:		return;
+        -:  423:	}
+        -:  424:  } // End Smithy
+        -:  425:
+        -:  426:  //Adventurer Card
+      189:  427:  if (cards->adventurerPos != -1){
+       23:  428:    printf("Player[%d]: Adventurer played from position %d\n", *playerTurn + 1, cards->adventurerPos);
+       23:  429:	if (playCard(cards->adventurerPos, -1, -1, -1, game) != -1){
+        -:  430:		// -1 Action, +3 Cards
+       23:  431:		fprintf(fp, "\tAdventurer Played\n");
+       23:  432:		actionTest = 0;
+        -:  433:		//Look at the deck again
+       23:  434:		cards->adventurerPos = -1;
+       23:  435:		getDeckContents(cards, game, money);
+        -:  436:	} 
+        -:  437:	else {
+    #####:  438:		fprintf(fp, "\tError: playCard(Adventurer) returned -1.\n");
+    #####:  439:		printf("\tError: playCard(Adventurer) returned -1.\n");
+    #####:  440:		return;
+        -:  441:	}
+        -:  442:  } // End Adventurer
+        -:  443:
+        -:  444:  //End Council Room
+      189:  445:  if (cards->council_roomPos != -1){
+        6:  446:    printf("Player[%d]: Council Room played from position %d\n", *playerTurn + 1, cards->council_roomPos);
+        6:  447:	if (playCard(cards->council_roomPos, -1, -1, -1, game) != -1){
+        -:  448:		// -1 Action, +3 Cards
+    #####:  449:		fprintf(fp, "\tCouncil Room Played\n");
+    #####:  450:		actionTest = 0;
+        -:  451:		//Look at the deck again
+    #####:  452:		cards->council_roomPos = -1;
+    #####:  453:		getDeckContents(cards, game, money);
+        -:  454:	} 
+        -:  455:	else {
+        6:  456:		fprintf(fp, "\tError: playCard(Council Room) returned -1.\n");
+        6:  457:		printf("\tError: playCard(Council Room) returned -1.\n");
+        6:  458:		return;
+        -:  459:	}
+        -:  460:  } // End Council Room
+        -:  461:
+        -:  462:  //Village Card
+      183:  463:  if (cards->villagePos != -1){
+        8:  464:    printf("Player[%d]: Village played from position %d\n", *playerTurn + 1, cards->villagePos);
+        8:  465:	if (playCard(cards->villagePos, -1, -1, -1, game) != -1){
+        -:  466:		// -1 Action, +3 Cards
+        8:  467:		fprintf(fp, "\tVillage Played\n");
+        8:  468:		actionTest = 0;
+        -:  469:		//Look at the deck again
+        8:  470:		cards->villagePos = -1;
+        8:  471:		getDeckContents(cards, game, money);
+        -:  472:	} 
+        -:  473:	else {
+    #####:  474:		fprintf(fp, "\tError: playCard(Village) returned -1.\n");
+    #####:  475:		printf("\tError: playCard(Village) returned -1.\n");
+    #####:  476:		return;
+        -:  477:	}
+        -:  478:  } // End Village 
+        -:  479:
+        -:  480:  //Great Hall
+      183:  481:  if (cards->great_hallPos != -1){
+    #####:  482:    printf("Player[%d]: Great Hall played from position %d\n", *playerTurn + 1, cards->great_hallPos);
+    #####:  483:	if (playCard(cards->great_hallPos, -1, -1, -1, game) != -1){
+        -:  484:		// -1 Action, +3 Cards
+    #####:  485:		fprintf(fp, "\tGreat Hall Played\n");
+    #####:  486:		actionTest = 0;
+        -:  487:		//Look at the deck again
+    #####:  488:		cards->great_hallPos = -1;
+    #####:  489:		getDeckContents(cards, game, money);
+        -:  490:	} 
+        -:  491:	else {
+    #####:  492:		fprintf(fp, "\tError: playCard(Great Hall) returned -1.\n");
+    #####:  493:		printf("\tError: playCard(Great Hall) returned -1.\n");
+    #####:  494:		return;
+        -:  495:	}
+        -:  496:  } // End Great Hall
+        -:  497:
+        -:  498:    //Tribute
+      183:  499:  if (cards->tributePos != -1){
+    #####:  500:    printf("Player[%d]: Tribute played from position %d\n", *playerTurn + 1, cards->tributePos);
+    #####:  501:	if (playCard(cards->tributePos, -1, -1, -1, game) != -1){
+        -:  502:		// -1 Action, +3 Cards
+    #####:  503:		fprintf(fp, "\tTribute Played\n");
+    #####:  504:		actionTest = 0;
+        -:  505:		//Look at the deck again
+    #####:  506:		cards->tributePos = -1;
+    #####:  507:		getDeckContents(cards, game, money);
+        -:  508:	} 
+        -:  509:	else {
+    #####:  510:		fprintf(fp, "\tError: playCard(Tribute) returned -1.\n");
+    #####:  511:		printf("\tError: playCard(Tribute) returned -1.\n");
+    #####:  512:		return;
+        -:  513:	}
+        -:  514:  } // End Tribute
+        -:  515:
+        -:  516:    //Cut Purse
+      183:  517:  if (cards->cutpursePos != -1){
+        4:  518:    printf("Player[%d]: Cutpurse played from position %d\n", *playerTurn + 1, cards->cutpursePos);
+        4:  519:    if (playCard(cards->cutpursePos, -1, -1, -1, game) != -1){
+        -:  520:		// -1 Action, +3 Cards
+        4:  521:		fprintf(fp, "\tCutpurse Played\n");
+        4:  522:		actionTest = 0;
+        -:  523:		//Look at the deck again
+        4:  524:		cards->cutpursePos = -1;
+        4:  525:		getDeckContents(cards, game, money);
+        -:  526:	} 
+        -:  527:	else {
+    #####:  528:		fprintf(fp, "\tError: playCard(Cutpurse) returned -1.\n");
+    #####:  529:		printf("\tError: playCard(Cutpurse) returned -1.\n");
+    #####:  530:		return;
+        -:  531:	}
+        -:  532:  } // End Cutpurse
+        -:  533:
+        -:  534:    //Village Card
+      183:  535:  if (cards->outpostPos != -1){
+       10:  536:    printf("Player[%d]: Outpost played from position %d\n", *playerTurn + 1, cards->outpostPos);
+       10:  537:    if (playCard(cards->outpostPos, -1, -1, -1, game) != -1){
+        -:  538:		// -1 Action, +3 Cards
+        3:  539:		fprintf(fp, "\tOutpost Played\n");
+        3:  540:		actionTest = 0;
+        -:  541:		//Look at the deck again
+        3:  542:		cards->outpostPos = -1;
+        3:  543:		getDeckContents(cards, game, money);
+        -:  544:	} 
+        -:  545:	else {
+        7:  546:		fprintf(fp, "\tError: playCard(Outpost) returned -1.\n");
+        7:  547:		printf("\tError: playCard(Outpost) returned -1.\n");
+        7:  548:		return;
+        -:  549:	}
+        -:  550:  } // End Outpost
+        -:  551:
+        -:  552:    //Sea Hag
+      176:  553:  if (cards->sea_hagPos != -1){
+       21:  554:    printf("Player[%d]: Sea Hag played from position %d\n", *playerTurn + 1, cards->sea_hagPos);
+       21:  555:    if (playCard(cards->sea_hagPos, -1, -1, -1, game) != -1){
+        -:  556:		// -1 Action, +3 Cards
+       15:  557:		fprintf(fp, "\tSea Hag Played\n");
+       15:  558:		actionTest = 0;
+        -:  559:		//Look at the deck again
+       15:  560:		cards->sea_hagPos = -1;
+       15:  561:		getDeckContents(cards, game, money);
+        -:  562:	} 
+        -:  563:	else {
+        6:  564:		fprintf(fp, "\tError: playCard(Sea Hag) returned -1.\n");
+        6:  565:		printf("\tError: playCard(Sea Hag) returned -1.\n");
+        6:  566:		return;
+        -:  567:	}
+        -:  568:  } // End Sea Hag
+        -:  569:
+        -:  570:    //Treasure Map
+      170:  571:  if (cards->treasure_mapPos != -1){
+       16:  572:    printf("Player[%d]: Treasure Map played from position %d\n", *playerTurn + 1, cards->treasure_mapPos);
+       16:  573:	if (playCard(cards->treasure_mapPos, -1, -1, -1, game) != -1){
+        -:  574:		// -1 Action, +3 Cards
+        1:  575:		fprintf(fp, "\tTreasure Map Played\n");
+        1:  576:		actionTest = 0;
+        -:  577:		//Look at the deck again
+        1:  578:		cards->treasure_mapPos = -1;
+        1:  579:		getDeckContents(cards, game, money);
+        -:  580:	} 
+        -:  581:	else {
+       15:  582:		fprintf(fp, "\tError: playCard(Treasure Map) returned -1.\n");
+       15:  583:		printf("\tError: playCard(Treasure Map) returned -1.\n");
+       15:  584:		return;
+        -:  585:	}
+        -:  586:  } // End Treasure Map
+        -:  587:
+        -:  588:  //If no action is taken...
+      155:  589:  if (actionTest == 1){
+      108:  590:    printf("Player[%d] No Action taken this turn.\n", *playerTurn +1);
+      108:  591:    fprintf(fp, "\tPlayer %d No Action taken this turn.\n", *playerTurn +1);
+      108:  592:	return;
+        -:  593:  }
+       47:  594:  else if (actionTest <= 1){
+       47:  595:	  if (actionTest <= -1){
+        7:  596:		  fprintf(fp, "Player[%d] No More Action Cards to play this turn.\n", *playerTurn +1);
+        7:  597:		  printf("Player[%d] No More Cards to play this turn.\n", *playerTurn +1);
+        7:  598:		  return;
+        -:  599:	  }
+       40:  600:	  actionTest--;
+        -:  601:  }
+    #####:  602:  else if (actionTest == 0){
+    #####:  603:	  if (game->numActions > 10){
+    #####:  604:		printf("\t\tAbnormally High Actions for this turn [%d], examine last card played.\n", game->numActions);
+    #####:  605:		fprintf(fp, "\t\tAbnormally High Actions for this turn [%d], examine last card played.\n", game->numActions);
+    #####:  606:		return;
+        -:  607:	  }
+        -:  608:  }
+        -:  609: }
+        -:  610:}
+        -:  611:
+        -:  612:
+      360:  613:int random_number(int min_num, int max_num){
+      360:  614:    int result=0,low_num=0,hi_num=0;
+      360:  615:    if(min_num<max_num)
+        -:  616:    {
+      360:  617:        low_num=min_num;
+      360:  618:        hi_num=max_num+1; // this is done to include max_num in output.
+        -:  619:    }else{
+    #####:  620:        low_num=max_num+1;// this is done to include max_num in output.
+    #####:  621:        hi_num=min_num;
+        -:  622:    }
+        -:  623:    
+      360:  624:    result = (rand()%(hi_num-low_num))+low_num;
+      360:  625:    return result;
+        -:  626:}
+        -:  627:
+      238:  628:void getDeckContents(struct cardState* cards, struct gameState* game, int* money){
+        -:  629:    int i;
+      238:  630:    *money = 0;
+        -:  631:
+     1454:  632:    for (i = 0; i < numHandCards(game); i++){
+     1216:  633:      if (handCard(i, game) == copper)
+      373:  634:        *money = *money + 1;
+     1216:  635:      if (handCard(i, game) == silver)
+      192:  636:        *money = *money + 2;
+     1216:  637:      if (handCard(i, game) == gold)
+       58:  638:        *money = *money + 3;
+     1216:  639:      if (handCard(i, game) == smithy)
+        3:  640:        cards->smithyPos = i;
+     1216:  641:      if (handCard(i, game) == adventurer)
+       48:  642:        cards->adventurerPos = i;
+     1216:  643:      if (handCard(i, game) == council_room)
+        7:  644:        cards->council_roomPos = i;  
+     1216:  645:      if (handCard(i, game) == feast)
+    #####:  646:        cards->feastPos = i;   
+     1216:  647:      if (handCard(i, game) == gardens)
+       13:  648:        cards->gardensPos = i;   
+     1216:  649:      if (handCard(i, game) == mine)
+       30:  650:        cards->minePos = i;  
+     1216:  651:      if (handCard(i, game) == remodel)
+    #####:  652:        cards->remodelPos = i;
+     1216:  653:      if (handCard(i, game) == village)
+        9:  654:        cards->villagePos = i;  
+     1216:  655:      if (handCard(i, game) == baron)
+       15:  656:        cards->baronPos = i; 
+     1216:  657:      if (handCard(i, game) == great_hall)
+    #####:  658:        cards->great_hallPos = i; 
+     1216:  659:      if (handCard(i, game) == minion)
+        5:  660:        cards->minionPos = i;  
+     1216:  661:      if (handCard(i, game) == steward)
+       49:  662:        cards->stewardPos = i; 
+     1216:  663:      if (handCard(i, game) == tribute)
+    #####:  664:        cards->tributePos = i; 
+     1216:  665:      if (handCard(i, game) == ambassador)
+    #####:  666:        cards->ambassadorPos = i; 
+     1216:  667:      if (handCard(i, game) == cutpurse)
+        5:  668:        cards->cutpursePos = i; 
+     1216:  669:      if (handCard(i, game) == embargo)
+       37:  670:        cards->embargoPos = i; 
+     1216:  671:      if (handCard(i, game) == outpost)
+       20:  672:        cards->outpostPos = i; 
+     1216:  673:      if (handCard(i, game) == salvager)
+        7:  674:        cards->salvagerPos = i; 
+     1216:  675:      if (handCard(i, game) == sea_hag)
+       68:  676:        cards->sea_hagPos = i;
+     1216:  677:      if (handCard(i, game) == treasure_map)
+       19:  678:        cards->treasure_mapPos = i;  
+        -:  679:    }
+      238:  680:}
+        -:  681:
+        -:  682://Returns 1 if card is in current deck, 0 if it is not.
+    #####:  683:int checkDeck(int k[], int* myCard){
+        -:  684:  int i;
+    #####:  685:  for (i = 0; i < 10; i++){
+    #####:  686:    if (k[i] == *myCard){
+    #####:  687:      return 1;
+        -:  688:    }
+        -:  689:  }
+    #####:  690:  return 0;
+        -:  691:}
+        -:  692:
+     9739:  693:char* getCardName(int* card){
+     9739:  694:  int cardNumber = *card;
+     9739:  695:  switch( cardNumber ) 
+        -:  696:    {
+        -:  697:    case curse:
+    #####:  698:      return "Curse";
+        -:  699:    case estate:
+     1647:  700:      return "Estate";
+        -:  701:    case duchy:
+    #####:  702:      return "Duchy";
+        -:  703:    case province:
+      350:  704:      return "Province";
+        -:  705:    case copper:
+     2820:  706:      return "Copper";
+        -:  707:    case silver:
+     1371:  708:      return "Silver";
+        -:  709:    case gold:
+      528:  710:      return "Gold";
+        -:  711:    case adventurer:
+      286:  712:      return "Adventurer";
+        -:  713:    case council_room:
+       78:  714:      return "Council Room";
+        -:  715:    case feast:
+    #####:  716:      return "Feast";
+        -:  717:    case gardens:
+      133:  718:      return "Gardens";
+        -:  719:    case mine:
+      217:  720:      return "Mine";
+        -:  721:    case remodel:
+    #####:  722:      return "Remodel";
+        -:  723:    case smithy:
+       24:  724:      return "Smithy";
+        -:  725:    case village:
+       80:  726:      return "Village";
+        -:  727:    case baron:
+      253:  728:      return "Baron";
+        -:  729:    case great_hall:
+    #####:  730:      return "Great Hall";
+        -:  731:    case minion:
+       82:  732:      return "Minion";
+        -:  733:    case steward:
+      452:  734:      return "Steward";
+        -:  735:    case tribute:
+       10:  736:      return "Tribute";
+        -:  737:    case ambassador:
+    #####:  738:      return "Ambassador";
+        -:  739:    case cutpurse:
+       52:  740:      return "Cutpurse";
+        -:  741:    case embargo: 
+      412:  742:      return "Embargo";
+        -:  743:    case outpost:
+      140:  744:      return "Outpost";
+        -:  745:    case salvager:
+       62:  746:      return "Salvager";
+        -:  747:    case sea_hag:
+      547:  748:      return "Sea Hag";
+        -:  749:    case treasure_map:
+      195:  750:      return "Treasure Map";
+        -:  751:    default:
+    #####:  752:      return 0;
+        -:  753:    }
+        -:  754:}
+        -:  755:
+       38:  756:void checkCard(int* randomCard, int* deckHasCard, int* deckCount, int k[]){
+        -:  757:
+        -:  758:  int y;
+      418:  759:  for(y = 0; y < 10; y++){        
+      380:  760:    if (k[y] == *randomCard)
+       18:  761:        *deckHasCard = 1;
+        -:  762:  }
+       38:  763:  if (*deckHasCard == 1)
+       18:  764:    return;
+        -:  765:  else {
+       20:  766:    k[*deckCount] = *randomCard;
+       20:  767:      *deckCount = *deckCount + 1;
+       20:  768:      return;
+        -:  769:  }
+        -:  770:}
+        -:  771:
+      183:  772:void resetCardState(struct cardState* cards){
+      183:  773:    cards->smithyPos = -1;
+      183:  774:    cards->adventurerPos = -1;
+      183:  775:    cards->embargoPos = -1;
+      183:  776:    cards->villagePos = -1;
+      183:  777:    cards->great_hallPos = -1;
+      183:  778:    cards->stewardPos = -1;
+      183:  779:    cards->ambassadorPos = -1;
+      183:  780:    cards->feastPos = -1;
+      183:  781:    cards->gardensPos = -1;
+      183:  782:    cards->remodelPos = -1;
+      183:  783:    cards->baronPos = -1;
+      183:  784:    cards->cutpursePos = -1;
+      183:  785:    cards->salvagerPos = -1;
+      183:  786:    cards->sea_hagPos = -1;
+      183:  787:    cards->treasure_mapPos = -1;
+      183:  788:    cards->council_roomPos = -1;
+      183:  789:    cards->minePos = -1;
+      183:  790:    cards->minionPos = -1;
+      183:  791:    cards->tributePos = -1;
+      183:  792:    cards->outpostPos = -1;
+        -:  793:
+      183:  794:    cards->numSmithies = 0;
+      183:  795:    cards->numAdventurers = 0;
+      183:  796:    cards->numEmbargo = 0;
+      183:  797:    cards->numVillage = 0;
+      183:  798:    cards->numGreat_Hall = 0;
+      183:  799:    cards->numSteward = 0;
+      183:  800:    cards->numAmbassador = 0;
+      183:  801:    cards->numFeast = 0;
+      183:  802:    cards->numGarden = 0;
+      183:  803:    cards->numRemodel = 0;
+      183:  804:    cards->numBaron = 0;
+      183:  805:    cards->numCutpurse = 0;
+      183:  806:    cards->numSalvager = 0;
+      183:  807:    cards->numSea_Hag = 0;
+      183:  808:    cards->numTreasure_Map = 0;
+      183:  809:    cards->numCouncil_Room = 0;
+      183:  810:    cards->numMine = 0;
+      183:  811:    cards->numMinion = 0; 
+      183:  812:    cards->numTribute = 0; 
+      183:  813:    cards->numOutpost = 0; 
+      183:  814:}
+        -:  815:
+      183:  816:void printGame(struct gameState *game, FILE *fp){
+        -:  817:  int i, j;
+        -:  818:  int gameHand;
+        -:  819:  int gameDeck;
+        -:  820:  int gameDiscard;
+      183:  821:  fprintf(fp,"\n\n\t****Printing Game State****\n");
+      652:  822:  for (i = 0; i < game->numPlayers; i++){
+      469:  823:    fprintf(fp, "\tPlayer %d Hand: [", i + 1);
+     1384:  824:    for (j = 0; j < game->handCount[i]; j++){
+      915:  825:		gameHand = game->hand[i][j];
+      915:  826:      fprintf(fp, " %s", getCardName(&gameHand));
+        -:  827:    }
+      469:  828:    fprintf(fp, "]\n");
+      469:  829:    fprintf(fp, "\t\tDeck: [");
+     4358:  830:    for (j = 0; j < game->deckCount[i]; j++){
+     3889:  831:		gameDeck = game->deck[i][j];
+     3889:  832:      fprintf(fp, " %s", getCardName(&gameDeck));
+        -:  833:    }
+      469:  834:    fprintf(fp, "]\n");
+      469:  835:    fprintf(fp, "\t\tDiscard: [");
+     5364:  836:    for (j = 0; j < game->discardCount[i]; j++){
+     4895:  837:		gameDiscard = game->discard[i][j];
+     4895:  838:		fprintf(fp, " %s", getCardName(&gameDiscard));
+        -:  839:    }
+      469:  840:    fprintf(fp, "]\n\n");
+        -:  841:  }
+      183:  842:  fprintf(fp, "\t***************************\n\n");
+      183:  843:}
+        -:  844:
+        2:  845:void getRandomDeck(int k[]){
+        -:  846:  int randomCard;
+        -:  847:  int deckHasCard;
+        -:  848:  int deckCount;
+        -:  849:
+        2:  850:  deckCount = 0;
+        -:  851:  //draw 10 random cards
+       42:  852:  while(deckCount < 10){
+       38:  853:    deckHasCard = 0;
+       38:  854:    randomCard = random_number(7, 26);
+       38:  855:    switch(randomCard)
+        -:  856:    {
+        -:  857:      case 7:
+        2:  858:        randomCard = adventurer;
+        2:  859:        checkCard(&randomCard, &deckHasCard, &deckCount, k);
+        2:  860:      break;
+        -:  861:
+        -:  862:      case 8:
+        2:  863:        randomCard = council_room;
+        2:  864:        checkCard(&randomCard, &deckHasCard, &deckCount, k);
+        2:  865:      break;
+        -:  866:
+        -:  867:      case 9:
+    #####:  868:        randomCard = feast;
+    #####:  869:          checkCard(&randomCard, &deckHasCard, &deckCount, k);
+    #####:  870:      break;
+        -:  871:
+        -:  872:      case 10:
+        1:  873:        randomCard = gardens;
+        1:  874:          checkCard(&randomCard, &deckHasCard, &deckCount, k);
+        1:  875:      break;
+        -:  876:
+        -:  877:      case 11:
+        6:  878:          checkCard(&randomCard, &deckHasCard, &deckCount, k);
+        6:  879:      break;
+        -:  880:
+        -:  881:      case 12:
+    #####:  882:        randomCard = remodel;
+    #####:  883:          checkCard(&randomCard, &deckHasCard, &deckCount, k);
+    #####:  884:      break;
+        -:  885:
+        -:  886:      case 13:
+        2:  887:        randomCard = smithy;
+        2:  888:         checkCard(&randomCard, &deckHasCard, &deckCount, k);
+        2:  889:      break;
+        -:  890:
+        -:  891:      case 14:
+        5:  892:        randomCard = village;
+        5:  893:          checkCard(&randomCard, &deckHasCard, &deckCount, k);
+        5:  894:      break;
+        -:  895:
+        -:  896:      case 15:
+        3:  897:        randomCard = baron;
+        3:  898:          checkCard(&randomCard, &deckHasCard, &deckCount, k);
+        3:  899:      break;
+        -:  900:
+        -:  901:      case 16:
+    #####:  902:        randomCard = great_hall;
+    #####:  903:         checkCard(&randomCard, &deckHasCard, &deckCount, k);
+    #####:  904:      break;
+        -:  905:
+        -:  906:      case 17:
+        1:  907:        randomCard = minion;
+        1:  908:          checkCard(&randomCard, &deckHasCard, &deckCount, k);
+        1:  909:      break;
+        -:  910:
+        -:  911:      case 18:
+        3:  912:        randomCard = steward;
+        3:  913:          checkCard(&randomCard, &deckHasCard, &deckCount, k);
+        3:  914:      break;
+        -:  915:
+        -:  916:      case 19:
+        1:  917:        randomCard = tribute;
+        1:  918:          checkCard(&randomCard, &deckHasCard, &deckCount, k);
+        1:  919:      break;
+        -:  920:
+        -:  921:      case 20:
+    #####:  922:        randomCard = ambassador;
+    #####:  923:          checkCard(&randomCard, &deckHasCard, &deckCount, k);
+    #####:  924:      break;
+        -:  925:
+        -:  926:      case 21:
+        2:  927:        randomCard = cutpurse;
+        2:  928:          checkCard(&randomCard, &deckHasCard, &deckCount, k);
+        2:  929:      break;
+        -:  930:
+        -:  931:      case 22:
+        1:  932:        randomCard = embargo;
+        1:  933:         checkCard(&randomCard, &deckHasCard, &deckCount, k);
+        1:  934:      break;
+        -:  935:
+        -:  936:      case 23:
+        4:  937:        randomCard = outpost;
+        4:  938:          checkCard(&randomCard, &deckHasCard, &deckCount, k);
+        4:  939:      break;
+        -:  940:
+        -:  941:      case 24:
+        1:  942:        randomCard = salvager;
+        1:  943:          checkCard(&randomCard, &deckHasCard, &deckCount, k);
+        1:  944:      break;
+        -:  945:
+        -:  946:      case 25:
+        1:  947:        randomCard = sea_hag;
+        1:  948:          checkCard(&randomCard, &deckHasCard, &deckCount, k);
+        1:  949:      break;
+        -:  950:
+        -:  951:      case 26:
+        3:  952:        randomCard = treasure_map;
+        3:  953:         checkCard(&randomCard, &deckHasCard, &deckCount, k);
+        3:  954:      break;
+        -:  955:
+        -:  956:      default:
+    #####:  957:        break;
+        -:  958:    }
+        -:  959:  }
+        2:  960:}

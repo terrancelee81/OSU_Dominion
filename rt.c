@@ -3,6 +3,8 @@
 #include <stdlib.h> 
 
 int main(int argc, char** argv) {
+	int c;
+	int done;
   if (argc < 3) {
     printf ("Not enough inputs:  seed target\n");
   }
@@ -10,8 +12,8 @@ int main(int argc, char** argv) {
   SelectStream(1);
   PutSeed((long)atoi(argv[1]));
   
-  int done = 0;
-  int c = 1000000000;
+  done = 0;
+  c = 1000000000;
   
   while (!done) {
     c = floor(Random() * 1000000000);

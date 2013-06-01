@@ -3,16 +3,18 @@
 #include <string.h>
 #include <stdio.h>
 #include <assert.h>
+#include <stdlib.h>
+#include <math.h>
 #include "rngs.h"
 
 #define DEBUG 0
 #define NOISY_TEST 1
 
-int checkDrawCard(int p, struct gameState *post) {
+void checkDrawCard(int p, struct gameState *post) {
   struct gameState pre;
+  int r;
   memcpy (&pre, post, sizeof(struct gameState));
 
-  int r;
   //  printf ("drawCard PRE: p %d HC %d DeC %d DiC %d\n",
   //	  p, pre.handCount[p], pre.deckCount[p], pre.discardCount[p]);
     
@@ -68,7 +70,7 @@ int main () {
 
   printf ("ALL TESTS OK\n");
 
-  exit(0);
+  exit(0); //Why is this here?
 
   printf ("SIMPLE FIXED TESTS.\n");
   for (p = 0; p < 2; p++) {

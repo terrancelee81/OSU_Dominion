@@ -4,21 +4,30 @@
 #include <stdlib.h>
 
 int main (int argc, char** argv) {
+	int money;
+	int smithyPos;
+	int adventurerPos;
+	int i;
+	int numSmithies;
+	int numAdventurers;
+
   struct gameState G;
   int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, 
            sea_hag, tribute, smithy};
   
   printf ("Starting game.\n");
   
-  initializeGame(2, k, atoi(argv[1]), &G);
-  
-  int money = 0;
-  int smithyPos = -1;
-  int adventurerPos = -1;
-  int i=0;
+  if(argc > 1)
+	initializeGame(2, k, atoi(argv[1]), &G);
+  else {  printf("BAD!!"); exit(-1); }
 
-  int numSmithies = 0;
-  int numAdventurers = 0;
+  money = 0;
+  smithyPos = -1;
+  adventurerPos = -1;
+  i=0;
+
+  numSmithies = 0;
+  numAdventurers = 0;
 
   while (!isGameOver(&G)) {
     money = 0;

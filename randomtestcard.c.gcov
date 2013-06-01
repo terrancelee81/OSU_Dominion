@@ -1,0 +1,77 @@
+        -:    0:Source:randomtestcard.c
+        -:    0:Graph:randomtestcard.gcno
+        -:    0:Data:randomtestcard.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include "dominion.h"
+        -:    2:#include "dominion_helpers.h"
+        -:    3:#include <string.h>
+        -:    4:#include <stdio.h>
+        -:    5:#include <assert.h>
+        -:    6:#include <stdlib.h>
+        -:    7:#include <time.h>
+        -:    8:#include "rngs.h"
+        -:    9:
+        -:   10:
+        -:   11:
+        -:   12:#define DEBUG 0
+        -:   13:#define NOISY_TEST 1
+        -:   14:
+        -:   15:int smithyCard(struct gameState *state, int *currentPlayer, int *handPos);
+        -:   16:
+   600181:   17:int random_number(int min_num, int max_num){
+   600181:   18:    int result=0,low_num=0,hi_num=0;
+   600181:   19:    if(min_num<max_num)
+        -:   20:    {
+   600181:   21:        low_num=min_num;
+   600181:   22:        hi_num=max_num+1; // this is done to include max_num in output.
+        -:   23:    }else{
+    #####:   24:        low_num=max_num+1;// this is done to include max_num in output.
+    #####:   25:        hi_num=min_num;
+        -:   26:    }
+   600181:   27:    srand(time(NULL));
+   600181:   28:    result = (rand()%(hi_num-low_num))+low_num;
+   600181:   29:    return result;
+        -:   30:}
+        -:   31:
+        1:   32:int main(int argc, char const *argv[]){
+        -:   33:	
+        -:   34:	struct gameState game;
+        -:   35:
+        -:   36:	int i, j;
+        1:   37:	int k[10] = {adventurer, gardens, embargo, village, minion, mine, cutpurse, sea_hag, tribute, smithy};
+        -:   38:	int myCard;
+        -:   39:
+        -:   40:	//smithycard specific variables
+        -:   41:	int currentplayer;
+        1:   42:	int handPos = -1;
+        -:   43:	int cardsInHand;
+        -:   44:
+        -:   45:
+        -:   46:
+       61:   47:	for (i = 0; i < random_number(0, 100); i ++){ //Loops a random number of times <100
+       60:   48:		initializeGame(random_number(2,4), k, random_number(1, 9), &game); //initializes a game with a random seed
+        -:   49:															//between 1-9
+        -:   50:
+   600060:   51:		for (j = 0; j < 10000; j++){ // run 10000 times with random variables in this game state
+   600000:   52:			currentplayer = game.whoseTurn;
+        -:   53:
+   600000:   54:			cardsInHand = game.handCount[currentplayer];
+        -:   55:
+   600000:   56:			if(myCard = smithyCard(&game, &currentplayer, &handPos) != 0)
+    #####:   57:				printf("Error: smithyCard returned something other than 0. Random Game[%d] iteration[%d]\n", i, j);
+   600000:   58:			if (cardsInHand <= game.handCount[currentplayer])
+        -:   59:				//printf("Error: player did not pick up enough cards. Random Game[%d] iteration[%d]\n", i, j);
+        -:   60:			
+       61:   61:			game.outpostPlayed = 0;
+   600000:   62:  			game.phase = 0;
+   600000:   63:			game.numActions = 1;
+   600000:   64:			game.numBuys = 1;
+   600000:   65:			game.playedCardCount = 0;
+   600000:   66:			game.whoseTurn = random_number(2, game.numPlayers);
+   600000:   67:			game.handCount[game.whoseTurn] = 0;
+        -:   68:		}
+        -:   69:	}
+        -:   70:
+        1:   71:	return 0;
+        -:   72:}

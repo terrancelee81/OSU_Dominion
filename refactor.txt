@@ -1,0 +1,63 @@
+Nicklas Knudson
+Refactor Notes
+
+1.	04/13/2013:	Went through cardEffect() line by line and corrected code formatting to be more readable.
+
+2.	04/15/2013:	Refactored 5 "cards" out of cardEffect() and into their own separate fucnctions using pass by reference where applicable. Getting an error that prevents me from compiling. According to the compiler, I have removed or misplaced a "}" somewhere.
+
+3.	04/15/2013:	I have been unable to find the misplaced "}" anywhere and the error will still not allow me to compile.
+
+4.	04/14/2013:	In order to find the missing "}" I began refactoring the rest of cardEffect()'s switch statement. Upon completion, the error dissapeared; however, a new error appeard in the compile() function. After tracing that error down, I was finally able to compile the code with the command: "make -f Makefile all". It should be noted the I am developing on a Windows computer running Cygwin.
+
+5.	04/15/2013:	I have introduced an intentional logic error into ambassadorCard(). I have switched the lines: 
+
+			int choice1_ambassador = *choice1;
+			int choice2_ambassador = *choice2;" 
+
+			to:
+
+			int choice1_ambassador = *choice2;
+			int choice2_ambassador = *choice1;
+
+				I have introduced an intentional logic error into stewardCard(). I have changed the position of the passed parameters from:
+
+				else if ( card == steward)
+    				return stewardCard(state, &currentPlayer, &handPos, &choice1, &choice2, &choice3);
+
+    			to:
+
+    			else if ( card == steward)
+    				return stewardCard(state, &handPos, &currentPlayer, &choice1, &choice2, &choice3);
+
+    		These small changes should result in no compiler errors, but will cause the program to run incorrectly.
+
+
+   6. 	04/22/13: testCardDraw.c: I have added the line #include <stdlib.h> to allow the use of exit(0) on line 72. ALso commented a "why is this here" tag.
+
+   7.	04/22/13: testCardDraw.c" Also added #include <math.h> to get rid of warnings flagged during compile of 'floor()' method.
+
+   **** ----- Assignment 3 ----- ****
+
+   1.	04/21/13: 	Assignment moved back to April 29.
+
+   2. 	04/25/13:	I have had a very difficult time discovering how to create unit tests in C. My only experience with any sort of unit tests were in JUnit (Java). 
+
+   3.	04/26/13:	I rewatched all week 3 videos and after reviewing a post on Piazza, I have also watched the videos on week 4. There is some helpful information in the week 4 videos on the actual "How-to" of C unit tests.
+
+   4. 	04/27/13:	I have attempted to create a unit test (unittest1.c) using some of the techniques used in the week 4 videos and reverse-engineering some of the unit tests provided in the project. Currently I am having some issues implementing my unittest1.c which tests the getCost() function as the compiler still will not compile my code. Tomorrow is my birthday and I'm commited to several events so I will not be able to work on this tomorrow.
+
+   5.	04/29/13:	I have finally traced down the compiler error to to fact that getCost() function was not declared in the dominion.h header file. This was a time intensive fix.
+
+   6.	04/30/13:	I'm now late on the project, but have decided to attempt to complete it anyways as it is good practice and I may be awarded points for trying. I have implemented 3 more unittests today that test kingdomCards(), numHandCards(), and whoseTurn() functions respectively. I had a difficult time working with the struct and was consistently getting a compiler error about having multiple declarations in my function. Google was no help, but I was able to pull the unit tests into Visual Studio and the error message that it gave me was much more specific and immediately helped meidentify the problem.
+
+   6.	05/01/13:	Today I found the video on Piazza the the professor posted regarding cgov - It seems helpful, but I haven't even gotten to that part of the assignment yet. 
+
+   7.	05/01/13:	Attempting to use cardEffect to test refactored cards and discovered that initializeGame() will return with -1 and no error message if players are less than 2. This fact combined with rngs.c declaration that the game may only have a random seed beteen 1-9 means that there is a very finite number of gamestates that require testing. Added a MIN_PLAYERS definition to the dominion.h header file.
+
+   8.	05/01/13:	Have successfully implemented a unit test on outpostCard(), but am having considerable difficulty with salvagerCard(). The variables state->numBuys and state->coins are somehow being changed from within discardCard(). This is frustrating. I will move on to another car function for now as I feel like I'm hitting a wall.
+
+   9.	05/01/13:	
+
+
+
+   

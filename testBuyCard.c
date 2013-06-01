@@ -10,9 +10,10 @@
 
 int checkDrawCard(int p, struct gameState *post) {
   struct gameState pre;
+  int r;
   memcpy (&pre, post, sizeof(struct gameState));
 
-  int r;
+  
   //  printf ("drawCard PRE: p %d HC %d DeC %d DiC %d\n",
   //	  p, pre.handCount[p], pre.deckCount[p], pre.discardCount[p]);
     

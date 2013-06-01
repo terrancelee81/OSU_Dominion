@@ -1,0 +1,10 @@
+Exception: STATUS_ACCESS_VIOLATION at eip=004014BF
+eax=0000002E ebx=0000002F ecx=03DF2015 edx=0000000D esi=000A8B3C edi=611A1E9B
+ebp=0028AC48 esp=0028AC20 program=C:\Users\Nicklas\Desktop\projects\svn_repository\cs362s2013\knudsonn\dominion-base\randomstring\randomstring.exe, pid 7972, thread main
+cs=0023 ds=002B es=002B fs=0053 gs=002B ss=002B
+Stack trace:
+Frame     Function  Args
+0028AC48  004014BF  (0000002F, 00000000, 0028ACE8, 6100763A)
+0028AC58  0040119C  (00000001, 0028AC80, 80010100, 6127826A)
+0028ACE8  6100763A  (00000000, 0028CD68, 61006C50, 00000000)
+End of stack trace

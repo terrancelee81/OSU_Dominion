@@ -5,6 +5,7 @@
 #define MAX_DECK 500
 
 #define MAX_PLAYERS 4
+#define MIN_PLAYERS 2
 
 #define DEBUG 0
 
@@ -25,29 +26,35 @@ enum CARD
 
    adventurer,
    /* If no/only 1 treasure found, stop when full deck seen */
-   council_room,
-   feast, /* choice1 is supply # of card gained) */
-   gardens,
-   mine, /* choice1 is hand# of money to trash, choice2 is supply# of
+   council_room, //+4 Cards, +1 Buy (Each other player draws a card)
+   feast, //trash this card, gain a card costing up to 5 coins
+   gardens, //worth 1 victory point for every 10 cards in deck
+   mine, //trash a treasure card, gain a treasure card up to 3 cards more 
+   /* choice1 is hand# of money to trash, choice2 is supply# of
 	    money to put in hand */
-   remodel, /* choice1 is hand# of card to remodel, choice2 is supply# */
+   remodel,//trash a card from your hand, gain a card costing up to 2 coins more 
+   /* choice1 is hand# of card to remodel, choice2 is supply# */
    smithy,
-   village,
+   village, //+1 cards, +2 Actions
 
-   baron, /* choice1: boolean for discard of estate */
+   baron, //+1 Buy, may discard estate, if yes then +4 money, else gain an estate 
+   /* choice1: boolean for discard of estate */
    /* Discard is always of first (lowest index) estate */
-   great_hall,
+   great_hall, //+1 card, +1 Action, +1 Victory Point
    minion, /* choice1:  1 = +2 coin, 2 = redraw */
    steward, /* choice1: 1 = +2 card, 2 = +2 coin, 3 = trash 2 (choice2,3) */
-   tribute,
+   tribute, // player -1 (to the left) discards top 2 cards. If action card +2 Actions
+            // if treasure card +2 treasure, if Victory point card + 2 Victory Points
 
    ambassador, /* choice1 = hand#, choice2 = number to return to supply */
-   cutpurse,
-   embargo, /* choice1 = supply# */
-   outpost,
-   salvager, /* choice1 = hand# to trash */
-   sea_hag,
-   treasure_map
+   cutpurse, // +2 money, discards a copper card
+   embargo, //+2 coins, trash this card. Put an Embargo token on top of a supply pile. When a player buys a card, he gains a curse card per embargo
+   /* choice1 = supply# */
+   outpost, // Next turn = only draw 3 cards, instantly take another turn after this one. Can not take more than 2 consecutive turns. 
+   salvager, //+1 Buy, trash a card from your hand. + money equal to cost of trashed card
+   /* choice1 = hand# to trash */
+   sea_hag, //Each other player discard the top card of his deck, then gains a curse card putting it on top of his deck
+   treasure_map //trash this and another treasure map card from your hand. If 2 treaure map cards are trashed, then +4 gold cards to your deck
   };
 
 struct gameState {
@@ -125,5 +132,18 @@ int scoreFor(int player, struct gameState *state);
 int getWinners(int players[MAX_PLAYERS], struct gameState *state);
 /* Set array position of each player who won (remember ties!) to
    1, others to 0 */
+
+int getCost(int cardNumber);
+/* Get the cost of a card */
+
+int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState *state, int handPos, int *bonus);
+/*Direct the play to the appropriate card */
+
+int adventurerCard(int *drawntreasure, struct gameState *state, int *cardDrawn, int *currentPlayer, int *temphand, int *z);
+/*AdventurerCard :Reveal cards from your deck until you reveal 2 Treasure cards. 
+        Put those Treasure cards in your hand and discard the other revealed cards. */
+
+int smithyCard(struct gameState *state, int *currentPlayer, int *handPos);
+/* Smith: +3 Cards */
 
 #endif

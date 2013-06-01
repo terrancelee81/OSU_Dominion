@@ -31,7 +31,7 @@
  * Latest Revision : 09-22-98
  * ------------------------------------------------------------------------- 
  */
-
+#pragma warning(disable: 4996)
 #include <stdio.h>
 #include <time.h>
 #include "rngs.h"

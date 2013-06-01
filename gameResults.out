@@ -1,0 +1,4625 @@
+Game 0 has 2 players.
+Using Cards: Cutpurse Embargo Outpost Treasure Map Mine Gardens Baron Village Tribute Steward Begin game 0
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Copper Copper Copper Copper Estate]
+		Deck: [ Estate Estate Copper Copper Copper]
+		Discard: []
+
+	Player 2 Hand: []
+		Deck: [ Estate Copper Copper Copper Copper Copper Copper Copper Estate Estate]
+		Discard: []
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Player 1 No Action taken this turn.
+End Player 1 Actions
+Player 1 has 4 money.
+Entering player 1 Buy Phase.
+	Cutpurse purchased. Money after purchase: [0]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Estate Estate Copper Copper Copper]
+		Discard: [ Cutpurse Copper Copper Copper Copper Estate]
+
+	Player 2 Hand: [ Estate Estate Copper Copper Copper]
+		Deck: [ Estate Copper Copper Copper Copper]
+		Discard: []
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Player 2 No Action taken this turn.
+End Player 2 Actions
+Player 2 has 3 money.
+Entering player 2 Buy Phase.
+	Steward purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Copper Copper Copper Estate Estate]
+		Deck: []
+		Discard: [ Cutpurse Copper Copper Copper Copper Estate]
+
+	Player 2 Hand: []
+		Deck: [ Estate Copper Copper Copper Copper]
+		Discard: [ Steward Estate Estate Copper Copper Copper]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Player 1 No Action taken this turn.
+End Player 1 Actions
+Player 1 has 3 money.
+Entering player 1 Buy Phase.
+	Village purchased. Money after purchase: [0]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: []
+		Discard: [ Cutpurse Copper Copper Copper Copper Estate Village Copper Copper Copper Estate Estate]
+
+	Player 2 Hand: [ Copper Copper Copper Copper Estate]
+		Deck: []
+		Discard: [ Steward Estate Estate Copper Copper Copper]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Player 2 No Action taken this turn.
+End Player 2 Actions
+Player 2 has 4 money.
+Entering player 2 Buy Phase.
+	Treasure Map purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Estate Copper Estate Copper Copper]
+		Deck: [ Copper Copper Village Copper Cutpurse Copper Estate]
+		Discard: []
+
+	Player 2 Hand: []
+		Deck: []
+		Discard: [ Steward Estate Estate Copper Copper Copper Treasure Map Copper Copper Copper Copper Estate]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Player 1 No Action taken this turn.
+End Player 1 Actions
+Player 1 has 3 money.
+Entering player 1 Buy Phase.
+	Village purchased. Money after purchase: [0]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Copper Copper Village Copper Cutpurse Copper Estate]
+		Discard: [ Village Estate Copper Estate Copper Copper]
+
+	Player 2 Hand: [ Estate Treasure Map Estate Copper Estate]
+		Deck: [ Copper Copper Copper Steward Copper Copper Copper]
+		Discard: []
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Error: playCard(Treasure Map) returned -1.
+End Player 2 Actions
+Player 2 has 1 money.
+Entering player 2 Buy Phase.
+	Copper purchased. Money after purchase: [1]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Estate Copper Cutpurse Copper Village]
+		Deck: [ Copper Copper]
+		Discard: [ Village Estate Copper Estate Copper Copper]
+
+	Player 2 Hand: []
+		Deck: [ Copper Copper Copper Steward Copper Copper Copper]
+		Discard: [ Copper Estate Treasure Map Estate Copper Estate]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Village Played
+	Cutpurse Played
+Player[1] No More Action Cards to play this turn.
+End Player 1 Actions
+Player 1 has 3 money.
+Entering player 1 Buy Phase.
+	Steward purchased. Money after purchase: [0]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Copper]
+		Discard: [ Village Estate Copper Estate Copper Copper Steward Estate Copper Copper Copper]
+
+	Player 2 Hand: [ Copper Copper Copper Steward Copper]
+		Deck: [ Copper Copper]
+		Discard: [ Copper Estate Treasure Map Estate Copper Estate]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Player 2 No Action taken this turn.
+End Player 2 Actions
+Player 2 has 4 money.
+Entering player 2 Buy Phase.
+	Baron purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Copper Copper Steward Copper Copper]
+		Deck: [ Copper Copper Estate Estate Copper Village Estate]
+		Discard: []
+
+	Player 2 Hand: []
+		Deck: [ Copper Copper]
+		Discard: [ Copper Estate Treasure Map Estate Copper Estate Baron Copper Copper Copper Steward Copper]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Player 1 No Action taken this turn.
+End Player 1 Actions
+Player 1 has 4 money.
+Entering player 1 Buy Phase.
+	Treasure Map purchased. Money after purchase: [0]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Copper Copper Estate Estate Copper Village Estate]
+		Discard: [ Treasure Map Copper Copper Steward Copper Copper]
+
+	Player 2 Hand: [ Copper Copper Baron Estate Copper]
+		Deck: [ Copper Copper Copper Treasure Map Steward Copper Estate Copper Estate]
+		Discard: []
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Player 2 No Action taken this turn.
+End Player 2 Actions
+Player 2 has 3 money.
+Entering player 2 Buy Phase.
+	Steward purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Estate Village Copper Estate Estate]
+		Deck: [ Copper Copper]
+		Discard: [ Treasure Map Copper Copper Steward Copper Copper]
+
+	Player 2 Hand: []
+		Deck: [ Copper Copper Copper Treasure Map Steward Copper Estate Copper Estate]
+		Discard: [ Steward Copper Copper Baron Estate Copper]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Village Played
+Player[1] No More Action Cards to play this turn.
+End Player 1 Actions
+Player 1 has 2 money.
+Entering player 1 Buy Phase.
+	Embargo purchased. Money after purchase: [0]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Copper]
+		Discard: [ Treasure Map Copper Copper Steward Copper Copper Embargo Estate Copper Copper Estate Estate]
+
+	Player 2 Hand: [ Estate Copper Estate Copper Steward]
+		Deck: [ Copper Copper Copper Treasure Map]
+		Discard: [ Steward Copper Copper Baron Estate Copper]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Player 2 No Action taken this turn.
+End Player 2 Actions
+Player 2 has 2 money.
+Entering player 2 Buy Phase.
+	Embargo purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Copper Copper Copper Treasure Map Copper]
+		Deck: [ Estate Copper Estate Copper Copper Steward Embargo Estate]
+		Discard: []
+
+	Player 2 Hand: []
+		Deck: [ Copper Copper Copper Treasure Map]
+		Discard: [ Steward Copper Copper Baron Estate Copper Embargo Estate Copper Estate Copper Steward]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Error: playCard(Treasure Map) returned -1.
+End Player 1 Actions
+Player 1 has 4 money.
+Entering player 1 Buy Phase.
+	Gardens purchased. Money after purchase: [0]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Estate Copper Estate Copper Copper Steward Embargo Estate]
+		Discard: [ Gardens Copper Copper Copper Treasure Map Copper]
+
+	Player 2 Hand: [ Treasure Map Copper Copper Copper Steward]
+		Deck: [ Estate Embargo Steward Estate Baron Copper Copper Copper Copper Estate Copper]
+		Discard: []
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Error: playCard(Treasure Map) returned -1.
+End Player 2 Actions
+Player 2 has 3 money.
+Entering player 2 Buy Phase.
+	Silver purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Estate Embargo Steward Copper Copper]
+		Deck: [ Estate Copper Estate]
+		Discard: [ Gardens Copper Copper Copper Treasure Map Copper]
+
+	Player 2 Hand: []
+		Deck: [ Estate Embargo Steward Estate Baron Copper Copper Copper Copper Estate Copper]
+		Discard: [ Silver Treasure Map Copper Copper Copper Steward]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Player 1 No Action taken this turn.
+End Player 1 Actions
+Player 1 has 2 money.
+Entering player 1 Buy Phase.
+	Embargo purchased. Money after purchase: [0]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Estate Copper Estate]
+		Discard: [ Gardens Copper Copper Copper Treasure Map Copper Embargo Estate Embargo Steward Copper Copper]
+
+	Player 2 Hand: [ Copper Estate Copper Copper Copper]
+		Deck: [ Estate Embargo Steward Estate Baron Copper]
+		Discard: [ Silver Treasure Map Copper Copper Copper Steward]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Player 2 No Action taken this turn.
+End Player 2 Actions
+Player 2 has 4 money.
+Entering player 2 Buy Phase.
+	Gardens purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Estate Copper Estate Treasure Map Copper]
+		Deck: [ Gardens Embargo Copper Copper Copper Copper Estate Embargo Steward Copper]
+		Discard: []
+
+	Player 2 Hand: []
+		Deck: [ Estate Embargo Steward Estate Baron Copper]
+		Discard: [ Silver Treasure Map Copper Copper Copper Steward Gardens Copper Estate Copper Copper Copper]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Error: playCard(Treasure Map) returned -1.
+End Player 1 Actions
+Player 1 has 2 money.
+Entering player 1 Buy Phase.
+	Estate purchased. Money after purchase: [0]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Gardens Embargo Copper Copper Copper Copper Estate Embargo Steward Copper]
+		Discard: [ Estate Estate Copper Estate Treasure Map Copper]
+
+	Player 2 Hand: [ Copper Baron Estate Steward Embargo]
+		Deck: [ Estate]
+		Discard: [ Silver Treasure Map Copper Copper Copper Steward Gardens Copper Estate Copper Copper Copper]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Player 2 No Action taken this turn.
+End Player 2 Actions
+Player 2 has 1 money.
+Entering player 2 Buy Phase.
+	Copper purchased. Money after purchase: [1]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Copper Steward Embargo Estate Copper]
+		Deck: [ Gardens Embargo Copper Copper Copper]
+		Discard: [ Estate Estate Copper Estate Treasure Map Copper]
+
+	Player 2 Hand: []
+		Deck: [ Estate]
+		Discard: [ Silver Treasure Map Copper Copper Copper Steward Gardens Copper Estate Copper Copper Copper Copper Copper Baron Estate Steward Embargo]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Player 1 No Action taken this turn.
+End Player 1 Actions
+Player 1 has 2 money.
+Entering player 1 Buy Phase.
+	Estate purchased. Money after purchase: [0]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Gardens Embargo Copper Copper Copper]
+		Discard: [ Estate Estate Copper Estate Treasure Map Copper Estate Copper Steward Embargo Estate Copper]
+
+	Player 2 Hand: [ Estate Silver Embargo Copper Steward]
+		Deck: [ Treasure Map Copper Estate Copper Baron Copper Copper Estate Copper Copper Gardens Copper Steward Copper]
+		Discard: []
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Player 2 No Action taken this turn.
+End Player 2 Actions
+Player 2 has 3 money.
+Entering player 2 Buy Phase.
+	Silver purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Copper Copper Copper Embargo Gardens]
+		Deck: []
+		Discard: [ Estate Estate Copper Estate Treasure Map Copper Estate Copper Steward Embargo Estate Copper]
+
+	Player 2 Hand: []
+		Deck: [ Treasure Map Copper Estate Copper Baron Copper Copper Estate Copper Copper Gardens Copper Steward Copper]
+		Discard: [ Silver Estate Silver Embargo Copper Steward]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Player 1 No Action taken this turn.
+End Player 1 Actions
+Player 1 has 3 money.
+Entering player 1 Buy Phase.
+	Village purchased. Money after purchase: [0]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: []
+		Discard: [ Estate Estate Copper Estate Treasure Map Copper Estate Copper Steward Embargo Estate Copper Village Copper Copper Copper Embargo Gardens]
+
+	Player 2 Hand: [ Copper Steward Copper Gardens Copper]
+		Deck: [ Treasure Map Copper Estate Copper Baron Copper Copper Estate Copper]
+		Discard: [ Silver Estate Silver Embargo Copper Steward]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Player 2 No Action taken this turn.
+End Player 2 Actions
+Player 2 has 3 money.
+Entering player 2 Buy Phase.
+	Silver purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Estate Estate Copper Treasure Map Copper]
+		Deck: [ Estate Copper Steward Copper Embargo Copper Village Copper Estate Embargo Copper Gardens Estate]
+		Discard: []
+
+	Player 2 Hand: []
+		Deck: [ Treasure Map Copper Estate Copper Baron Copper Copper Estate Copper]
+		Discard: [ Silver Estate Silver Embargo Copper Steward Silver Copper Steward Copper Gardens Copper]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Error: playCard(Treasure Map) returned -1.
+End Player 1 Actions
+Player 1 has 2 money.
+Entering player 1 Buy Phase.
+	Embargo purchased. Money after purchase: [0]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Estate Copper Steward Copper Embargo Copper Village Copper Estate Embargo Copper Gardens Estate]
+		Discard: [ Embargo Estate Estate Copper Treasure Map Copper]
+
+	Player 2 Hand: [ Copper Estate Copper Copper Baron]
+		Deck: [ Treasure Map Copper Estate Copper]
+		Discard: [ Silver Estate Silver Embargo Copper Steward Silver Copper Steward Copper Gardens Copper]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Player 2 No Action taken this turn.
+End Player 2 Actions
+Player 2 has 3 money.
+Entering player 2 Buy Phase.
+	Village purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Estate Gardens Copper Embargo Estate]
+		Deck: [ Estate Copper Steward Copper Embargo Copper Village Copper]
+		Discard: [ Embargo Estate Estate Copper Treasure Map Copper]
+
+	Player 2 Hand: []
+		Deck: [ Treasure Map Copper Estate Copper]
+		Discard: [ Silver Estate Silver Embargo Copper Steward Silver Copper Steward Copper Gardens Copper Village Copper Estate Copper Copper Baron]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Player 1 No Action taken this turn.
+End Player 1 Actions
+Player 1 has 1 money.
+Entering player 1 Buy Phase.
+	Copper purchased. Money after purchase: [1]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Estate Copper Steward Copper Embargo Copper Village Copper]
+		Discard: [ Embargo Estate Estate Copper Treasure Map Copper Copper Estate Gardens Copper Embargo Estate]
+
+	Player 2 Hand: [ Copper Estate Copper Treasure Map Copper]
+		Deck: [ Baron Silver Estate Copper Silver Village Copper Silver Copper Steward Copper Embargo Copper Gardens Steward Estate Copper]
+		Discard: []
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Error: playCard(Treasure Map) returned -1.
+End Player 2 Actions
+Player 2 has 3 money.
+Entering player 2 Buy Phase.
+	Steward purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Copper Village Copper Embargo Copper]
+		Deck: [ Estate Copper Steward]
+		Discard: [ Embargo Estate Estate Copper Treasure Map Copper Copper Estate Gardens Copper Embargo Estate]
+
+	Player 2 Hand: []
+		Deck: [ Baron Silver Estate Copper Silver Village Copper Silver Copper Steward Copper Embargo Copper Gardens Steward Estate Copper]
+		Discard: [ Steward Copper Estate Copper Treasure Map Copper]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Village Played
+Player[1] No More Action Cards to play this turn.
+End Player 1 Actions
+Player 1 has 3 money.
+Entering player 1 Buy Phase.
+	Steward purchased. Money after purchase: [0]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Estate Copper]
+		Discard: [ Embargo Estate Estate Copper Treasure Map Copper Copper Estate Gardens Copper Embargo Estate Steward Copper Steward Copper Embargo Copper]
+
+	Player 2 Hand: [ Copper Estate Steward Gardens Copper]
+		Deck: [ Baron Silver Estate Copper Silver Village Copper Silver Copper Steward Copper Embargo]
+		Discard: [ Steward Copper Estate Copper Treasure Map Copper]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Player 2 No Action taken this turn.
+End Player 2 Actions
+Player 2 has 2 money.
+Entering player 2 Buy Phase.
+	Estate purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Copper Estate Copper Steward Embargo]
+		Deck: [ Copper Gardens Copper Embargo Estate Copper Embargo Copper Treasure Map Copper Estate Steward Estate Copper Estate]
+		Discard: []
+
+	Player 2 Hand: []
+		Deck: [ Baron Silver Estate Copper Silver Village Copper Silver Copper Steward Copper Embargo]
+		Discard: [ Steward Copper Estate Copper Treasure Map Copper Estate Copper Estate Steward Gardens Copper]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Player 1 No Action taken this turn.
+End Player 1 Actions
+Player 1 has 2 money.
+Entering player 1 Buy Phase.
+	Estate purchased. Money after purchase: [0]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Copper Gardens Copper Embargo Estate Copper Embargo Copper Treasure Map Copper Estate Steward Estate Copper Estate]
+		Discard: [ Estate Copper Estate Copper Steward Embargo]
+
+	Player 2 Hand: [ Embargo Copper Steward Copper Silver]
+		Deck: [ Baron Silver Estate Copper Silver Village Copper]
+		Discard: [ Steward Copper Estate Copper Treasure Map Copper Estate Copper Estate Steward Gardens Copper]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Player 2 No Action taken this turn.
+End Player 2 Actions
+Player 2 has 4 money.
+Entering player 2 Buy Phase.
+	Baron purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Estate Copper Estate Steward Estate]
+		Deck: [ Copper Gardens Copper Embargo Estate Copper Embargo Copper Treasure Map Copper]
+		Discard: [ Estate Copper Estate Copper Steward Embargo]
+
+	Player 2 Hand: []
+		Deck: [ Baron Silver Estate Copper Silver Village Copper]
+		Discard: [ Steward Copper Estate Copper Treasure Map Copper Estate Copper Estate Steward Gardens Copper Baron Embargo Copper Steward Copper Silver]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Player 1 No Action taken this turn.
+End Player 1 Actions
+Player 1 has 1 money.
+Entering player 1 Buy Phase.
+	Copper purchased. Money after purchase: [1]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Copper Gardens Copper Embargo Estate Copper Embargo Copper Treasure Map Copper]
+		Discard: [ Estate Copper Estate Copper Steward Embargo Copper Estate Copper Estate Steward Estate]
+
+	Player 2 Hand: [ Copper Village Silver Copper Estate]
+		Deck: [ Baron Silver]
+		Discard: [ Steward Copper Estate Copper Treasure Map Copper Estate Copper Estate Steward Gardens Copper Baron Embargo Copper Steward Copper Silver]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Village Played
+Player[2] No More Action Cards to play this turn.
+End Player 2 Actions
+Player 2 has 6 money.
+Entering player 2 Buy Phase.
+	Gold Card purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Copper Treasure Map Copper Embargo Copper]
+		Deck: [ Copper Gardens Copper Embargo Estate]
+		Discard: [ Estate Copper Estate Copper Steward Embargo Copper Estate Copper Estate Steward Estate]
+
+	Player 2 Hand: []
+		Deck: [ Baron]
+		Discard: [ Steward Copper Estate Copper Treasure Map Copper Estate Copper Estate Steward Gardens Copper Baron Embargo Copper Steward Copper Silver Gold Copper Silver Silver Copper Estate]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Error: playCard(Treasure Map) returned -1.
+End Player 1 Actions
+Player 1 has 3 money.
+Entering player 1 Buy Phase.
+	Steward purchased. Money after purchase: [0]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Copper Gardens Copper Embargo Estate]
+		Discard: [ Estate Copper Estate Copper Steward Embargo Copper Estate Copper Estate Steward Estate Steward Copper Treasure Map Copper Embargo Copper]
+
+	Player 2 Hand: [ Baron Silver Copper Copper Baron]
+		Deck: [ Copper Steward Copper Copper Copper Gardens Treasure Map Estate Gold Copper Embargo Estate Estate Steward Silver Steward Estate Copper Silver Copper]
+		Discard: []
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Player 2 No Action taken this turn.
+End Player 2 Actions
+Player 2 has 4 money.
+Entering player 2 Buy Phase.
+	Treasure Map purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Estate Embargo Copper Gardens Copper]
+		Deck: []
+		Discard: [ Estate Copper Estate Copper Steward Embargo Copper Estate Copper Estate Steward Estate Steward Copper Treasure Map Copper Embargo Copper]
+
+	Player 2 Hand: []
+		Deck: [ Copper Steward Copper Copper Copper Gardens Treasure Map Estate Gold Copper Embargo Estate Estate Steward Silver Steward Estate Copper Silver Copper]
+		Discard: [ Treasure Map Baron Silver Copper Copper Baron]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Player 1 No Action taken this turn.
+End Player 1 Actions
+Player 1 has 2 money.
+Entering player 1 Buy Phase.
+	Estate purchased. Money after purchase: [0]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: []
+		Discard: [ Estate Copper Estate Copper Steward Embargo Copper Estate Copper Estate Steward Estate Steward Copper Treasure Map Copper Embargo Copper Estate Estate Embargo Copper Gardens Copper]
+
+	Player 2 Hand: [ Copper Silver Copper Estate Steward]
+		Deck: [ Copper Steward Copper Copper Copper Gardens Treasure Map Estate Gold Copper Embargo Estate Estate Steward Silver]
+		Discard: [ Treasure Map Baron Silver Copper Copper Baron]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Player 2 No Action taken this turn.
+End Player 2 Actions
+Player 2 has 4 money.
+Entering player 2 Buy Phase.
+	Cutpurse purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Embargo Copper Estate Copper Gardens]
+		Deck: [ Copper Embargo Copper Treasure Map Steward Estate Embargo Copper Estate Copper Steward Copper Steward Copper Estate Estate Copper Estate Estate]
+		Discard: []
+
+	Player 2 Hand: []
+		Deck: [ Copper Steward Copper Copper Copper Gardens Treasure Map Estate Gold Copper Embargo Estate Estate Steward Silver]
+		Discard: [ Treasure Map Baron Silver Copper Copper Baron Cutpurse Copper Silver Copper Estate Steward]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Player 1 No Action taken this turn.
+End Player 1 Actions
+Player 1 has 2 money.
+Entering player 1 Buy Phase.
+	Estate purchased. Money after purchase: [0]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Copper Embargo Copper Treasure Map Steward Estate Embargo Copper Estate Copper Steward Copper Steward Copper Estate Estate Copper Estate Estate]
+		Discard: [ Estate Embargo Copper Estate Copper Gardens]
+
+	Player 2 Hand: [ Silver Steward Estate Estate Embargo]
+		Deck: [ Copper Steward Copper Copper Copper Gardens Treasure Map Estate Gold Copper]
+		Discard: [ Treasure Map Baron Silver Copper Copper Baron Cutpurse Copper Silver Copper Estate Steward]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Player 2 No Action taken this turn.
+End Player 2 Actions
+Player 2 has 2 money.
+Entering player 2 Buy Phase.
+	Estate purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Estate Estate Copper Estate Estate]
+		Deck: [ Copper Embargo Copper Treasure Map Steward Estate Embargo Copper Estate Copper Steward Copper Steward Copper]
+		Discard: [ Estate Embargo Copper Estate Copper Gardens]
+
+	Player 2 Hand: []
+		Deck: [ Copper Steward Copper Copper Copper Gardens Treasure Map Estate Gold Copper]
+		Discard: [ Treasure Map Baron Silver Copper Copper Baron Cutpurse Copper Silver Copper Estate Steward Estate Silver Steward Estate Estate Embargo]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Player 1 No Action taken this turn.
+End Player 1 Actions
+Player 1 has 1 money.
+Entering player 1 Buy Phase.
+	Copper purchased. Money after purchase: [1]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Copper Embargo Copper Treasure Map Steward Estate Embargo Copper Estate Copper Steward Copper Steward Copper]
+		Discard: [ Estate Embargo Copper Estate Copper Gardens Copper Estate Estate Copper Estate Estate]
+
+	Player 2 Hand: [ Copper Gold Estate Treasure Map Gardens]
+		Deck: [ Copper Steward Copper Copper Copper]
+		Discard: [ Treasure Map Baron Silver Copper Copper Baron Cutpurse Copper Silver Copper Estate Steward Estate Silver Steward Estate Estate Embargo]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Error: playCard(Treasure Map) returned -1.
+End Player 2 Actions
+Player 2 has 4 money.
+Entering player 2 Buy Phase.
+	Cutpurse purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Copper Steward Copper Steward Copper]
+		Deck: [ Copper Embargo Copper Treasure Map Steward Estate Embargo Copper Estate]
+		Discard: [ Estate Embargo Copper Estate Copper Gardens Copper Estate Estate Copper Estate Estate]
+
+	Player 2 Hand: []
+		Deck: [ Copper Steward Copper Copper Copper]
+		Discard: [ Treasure Map Baron Silver Copper Copper Baron Cutpurse Copper Silver Copper Estate Steward Estate Silver Steward Estate Estate Embargo Cutpurse Copper Gold Estate Treasure Map Gardens]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Player 1 No Action taken this turn.
+End Player 1 Actions
+Player 1 has 3 money.
+Entering player 1 Buy Phase.
+	Village purchased. Money after purchase: [0]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Copper Embargo Copper Treasure Map Steward Estate Embargo Copper Estate]
+		Discard: [ Estate Embargo Copper Estate Copper Gardens Copper Estate Estate Copper Estate Estate Village Copper Steward Copper Steward Copper]
+
+	Player 2 Hand: [ Copper Copper Copper Steward Copper]
+		Deck: []
+		Discard: [ Treasure Map Baron Silver Copper Copper Baron Cutpurse Copper Silver Copper Estate Steward Estate Silver Steward Estate Estate Embargo Cutpurse Copper Gold Estate Treasure Map Gardens]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Player 2 No Action taken this turn.
+End Player 2 Actions
+Player 2 has 4 money.
+Entering player 2 Buy Phase.
+	Cutpurse purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Estate Copper Embargo Estate Steward]
+		Deck: [ Copper Embargo Copper Treasure Map]
+		Discard: [ Estate Embargo Copper Estate Copper Gardens Copper Estate Estate Copper Estate Estate Village Copper Steward Copper Steward Copper]
+
+	Player 2 Hand: []
+		Deck: []
+		Discard: [ Treasure Map Baron Silver Copper Copper Baron Cutpurse Copper Silver Copper Estate Steward Estate Silver Steward Estate Estate Embargo Cutpurse Copper Gold Estate Treasure Map Gardens Cutpurse Copper Copper Copper Steward Copper]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Player 1 No Action taken this turn.
+End Player 1 Actions
+Player 1 has 1 money.
+Entering player 1 Buy Phase.
+	Copper purchased. Money after purchase: [1]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Copper Embargo Copper Treasure Map]
+		Discard: [ Estate Embargo Copper Estate Copper Gardens Copper Estate Estate Copper Estate Estate Village Copper Steward Copper Steward Copper Copper Estate Copper Embargo Estate Steward]
+
+	Player 2 Hand: [ Baron Baron Estate Estate Gold]
+		Deck: [ Copper Silver Copper Steward Gardens Cutpurse Estate Copper Estate Copper Steward Treasure Map Cutpurse Copper Estate Copper Silver Copper Copper Copper Treasure Map Silver Steward Embargo Cutpurse]
+		Discard: []
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Player 2 No Action taken this turn.
+End Player 2 Actions
+Player 2 has 3 money.
+Entering player 2 Buy Phase.
+	Village purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Treasure Map Copper Embargo Copper Copper]
+		Deck: [ Estate Estate Copper Copper Copper Estate Estate Copper Estate Village Copper Steward Steward Embargo Estate Estate Copper Embargo Copper Gardens Estate Steward Copper]
+		Discard: []
+
+	Player 2 Hand: []
+		Deck: [ Copper Silver Copper Steward Gardens Cutpurse Estate Copper Estate Copper Steward Treasure Map Cutpurse Copper Estate Copper Silver Copper Copper Copper Treasure Map Silver Steward Embargo Cutpurse]
+		Discard: [ Village Baron Baron Estate Estate Gold]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Error: playCard(Treasure Map) returned -1.
+End Player 1 Actions
+Player 1 has 3 money.
+Entering player 1 Buy Phase.
+	Silver purchased. Money after purchase: [0]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Estate Estate Copper Copper Copper Estate Estate Copper Estate Village Copper Steward Steward Embargo Estate Estate Copper Embargo Copper Gardens Estate Steward Copper]
+		Discard: [ Silver Treasure Map Copper Embargo Copper Copper]
+
+	Player 2 Hand: [ Cutpurse Embargo Steward Silver Treasure Map]
+		Deck: [ Copper Silver Copper Steward Gardens Cutpurse Estate Copper Estate Copper Steward Treasure Map Cutpurse Copper Estate Copper Silver Copper Copper Copper]
+		Discard: [ Village Baron Baron Estate Estate Gold]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Cutpurse Played
+	Error: playCard(Treasure Map) returned -1.
+End Player 2 Actions
+Player 2 has 2 money.
+Entering player 2 Buy Phase.
+	Embargo purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Copper Steward Estate Gardens Copper]
+		Deck: [ Estate Estate Copper Copper Copper Estate Estate Copper Estate Village Copper Steward Steward Embargo Estate Estate Copper Embargo]
+		Discard: [ Silver Treasure Map Copper Embargo Copper Copper]
+
+	Player 2 Hand: []
+		Deck: [ Copper Silver Copper Steward Gardens Cutpurse Estate Copper Estate Copper Steward Treasure Map Cutpurse Copper Estate Copper Silver Copper Copper Copper]
+		Discard: [ Village Baron Baron Estate Estate Gold Embargo Treasure Map Embargo Steward Silver]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Player 1 No Action taken this turn.
+End Player 1 Actions
+Player 1 has 2 money.
+Entering player 1 Buy Phase.
+	Embargo purchased. Money after purchase: [0]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Estate Estate Copper Copper Copper Estate Estate Copper Estate Village Copper Steward Steward Embargo Estate Estate Copper Embargo]
+		Discard: [ Silver Treasure Map Copper Embargo Copper Copper Embargo Copper Steward Estate Gardens Copper]
+
+	Player 2 Hand: [ Copper Copper Copper Silver Copper]
+		Deck: [ Copper Silver Copper Steward Gardens Cutpurse Estate Copper Estate Copper Steward Treasure Map Cutpurse Copper Estate]
+		Discard: [ Village Baron Baron Estate Estate Gold Embargo Treasure Map Embargo Steward Silver]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Player 2 No Action taken this turn.
+End Player 2 Actions
+Player 2 has 6 money.
+Entering player 2 Buy Phase.
+	Gold Card purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Embargo Copper Estate Estate Embargo]
+		Deck: [ Estate Estate Copper Copper Copper Estate Estate Copper Estate Village Copper Steward Steward]
+		Discard: [ Silver Treasure Map Copper Embargo Copper Copper Embargo Copper Steward Estate Gardens Copper]
+
+	Player 2 Hand: []
+		Deck: [ Copper Silver Copper Steward Gardens Cutpurse Estate Copper Estate Copper Steward Treasure Map Cutpurse Copper Estate]
+		Discard: [ Village Baron Baron Estate Estate Gold Embargo Treasure Map Embargo Steward Silver Gold Copper Copper Copper Silver Copper]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Player 1 No Action taken this turn.
+End Player 1 Actions
+Player 1 has 1 money.
+Entering player 1 Buy Phase.
+	Copper purchased. Money after purchase: [1]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Estate Estate Copper Copper Copper Estate Estate Copper Estate Village Copper Steward Steward]
+		Discard: [ Silver Treasure Map Copper Embargo Copper Copper Embargo Copper Steward Estate Gardens Copper Copper Embargo Copper Estate Estate Embargo]
+
+	Player 2 Hand: [ Estate Copper Cutpurse Treasure Map Steward]
+		Deck: [ Copper Silver Copper Steward Gardens Cutpurse Estate Copper Estate Copper]
+		Discard: [ Village Baron Baron Estate Estate Gold Embargo Treasure Map Embargo Steward Silver Gold Copper Copper Copper Silver Copper]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Cutpurse Played
+	Error: playCard(Treasure Map) returned -1.
+End Player 2 Actions
+Player 2 has 1 money.
+Entering player 2 Buy Phase.
+	Copper purchased. Money after purchase: [1]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Steward Steward Copper Village Estate]
+		Deck: [ Estate Estate Copper Copper Copper Estate Estate Copper]
+		Discard: [ Silver Treasure Map Copper Embargo Copper Copper Embargo Copper Steward Estate Gardens Copper Copper Embargo Copper Estate Estate Embargo]
+
+	Player 2 Hand: []
+		Deck: [ Copper Silver Copper Steward Gardens Cutpurse Estate Copper Estate Copper]
+		Discard: [ Village Baron Baron Estate Estate Gold Embargo Treasure Map Embargo Steward Silver Gold Copper Copper Copper Silver Copper Copper Estate Copper Steward Treasure Map]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Village Played
+Player[1] No More Action Cards to play this turn.
+End Player 1 Actions
+Player 1 has 2 money.
+Entering player 1 Buy Phase.
+	Estate purchased. Money after purchase: [0]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Estate Estate Copper Copper Copper Estate Estate]
+		Discard: [ Silver Treasure Map Copper Embargo Copper Copper Embargo Copper Steward Estate Gardens Copper Copper Embargo Copper Estate Estate Embargo Estate Steward Steward Copper Copper Estate]
+
+	Player 2 Hand: [ Copper Estate Copper Estate Cutpurse]
+		Deck: [ Copper Silver Copper Steward Gardens]
+		Discard: [ Village Baron Baron Estate Estate Gold Embargo Treasure Map Embargo Steward Silver Gold Copper Copper Copper Silver Copper Copper Estate Copper Steward Treasure Map]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Cutpurse Played
+End Player 2 Actions
+Player 2 has 2 money.
+Entering player 2 Buy Phase.
+	Embargo purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Estate Estate Copper Copper Copper]
+		Deck: [ Estate Estate]
+		Discard: [ Silver Treasure Map Copper Embargo Copper Copper Embargo Copper Steward Estate Gardens Copper Copper Embargo Copper Estate Estate Embargo Estate Steward Steward Copper Copper Estate]
+
+	Player 2 Hand: []
+		Deck: [ Copper Silver Copper Steward Gardens]
+		Discard: [ Village Baron Baron Estate Estate Gold Embargo Treasure Map Embargo Steward Silver Gold Copper Copper Copper Silver Copper Copper Estate Copper Steward Treasure Map Embargo Copper Estate Copper Estate]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Player 1 No Action taken this turn.
+End Player 1 Actions
+Player 1 has 3 money.
+Entering player 1 Buy Phase.
+	Steward purchased. Money after purchase: [0]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Estate Estate]
+		Discard: [ Silver Treasure Map Copper Embargo Copper Copper Embargo Copper Steward Estate Gardens Copper Copper Embargo Copper Estate Estate Embargo Estate Steward Steward Copper Copper Estate Steward Estate Estate Copper Copper Copper]
+
+	Player 2 Hand: [ Gardens Steward Copper Silver Copper]
+		Deck: []
+		Discard: [ Village Baron Baron Estate Estate Gold Embargo Treasure Map Embargo Steward Silver Gold Copper Copper Copper Silver Copper Copper Estate Copper Steward Treasure Map Embargo Copper Estate Copper Estate]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Player 2 No Action taken this turn.
+End Player 2 Actions
+Player 2 has 4 money.
+Entering player 2 Buy Phase.
+	Baron purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Estate Estate Estate Embargo Steward]
+		Deck: [ Copper Embargo Copper Copper Estate Treasure Map Embargo Silver Estate Copper Gardens Steward Embargo Copper Copper Steward Steward Estate Estate Copper Copper Copper Copper Estate Copper Copper Estate]
+		Discard: []
+
+	Player 2 Hand: []
+		Deck: []
+		Discard: [ Village Baron Baron Estate Estate Gold Embargo Treasure Map Embargo Steward Silver Gold Copper Copper Copper Silver Copper Copper Estate Copper Steward Treasure Map Embargo Copper Estate Copper Estate Baron Gardens Steward Copper Silver Copper]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Player 1 No Action taken this turn.
+End Player 1 Actions
+Player 1 has 0 money.
+Entering player 1 Buy Phase.
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Copper Embargo Copper Copper Estate Treasure Map Embargo Silver Estate Copper Gardens Steward Embargo Copper Copper Steward Steward Estate Estate Copper Copper Copper Copper Estate Copper Copper Estate]
+		Discard: [ Estate Estate Estate Embargo Steward]
+
+	Player 2 Hand: [ Copper Treasure Map Copper Estate Copper]
+		Deck: [ Baron Estate Estate Copper Baron Treasure Map Estate Silver Gold Copper Embargo Gold Copper Gardens Silver Copper Steward Copper Steward Silver Embargo Embargo Village Baron Copper Steward Estate Copper]
+		Discard: []
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Error: playCard(Treasure Map) returned -1.
+End Player 2 Actions
+Player 2 has 3 money.
+Entering player 2 Buy Phase.
+	Steward purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Estate Copper Copper Estate Copper]
+		Deck: [ Copper Embargo Copper Copper Estate Treasure Map Embargo Silver Estate Copper Gardens Steward Embargo Copper Copper Steward Steward Estate Estate Copper Copper Copper]
+		Discard: [ Estate Estate Estate Embargo Steward]
+
+	Player 2 Hand: []
+		Deck: [ Baron Estate Estate Copper Baron Treasure Map Estate Silver Gold Copper Embargo Gold Copper Gardens Silver Copper Steward Copper Steward Silver Embargo Embargo Village Baron Copper Steward Estate Copper]
+		Discard: [ Steward Copper Treasure Map Copper Estate Copper]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Player 1 No Action taken this turn.
+End Player 1 Actions
+Player 1 has 3 money.
+Entering player 1 Buy Phase.
+	Steward purchased. Money after purchase: [0]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Copper Embargo Copper Copper Estate Treasure Map Embargo Silver Estate Copper Gardens Steward Embargo Copper Copper Steward Steward Estate Estate Copper Copper Copper]
+		Discard: [ Estate Estate Estate Embargo Steward Steward Estate Copper Copper Estate Copper]
+
+	Player 2 Hand: [ Copper Estate Steward Copper Baron]
+		Deck: [ Baron Estate Estate Copper Baron Treasure Map Estate Silver Gold Copper Embargo Gold Copper Gardens Silver Copper Steward Copper Steward Silver Embargo Embargo Village]
+		Discard: [ Steward Copper Treasure Map Copper Estate Copper]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Player 2 No Action taken this turn.
+End Player 2 Actions
+Player 2 has 2 money.
+Entering player 2 Buy Phase.
+	Embargo purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Copper Copper Copper Estate Estate]
+		Deck: [ Copper Embargo Copper Copper Estate Treasure Map Embargo Silver Estate Copper Gardens Steward Embargo Copper Copper Steward Steward]
+		Discard: [ Estate Estate Estate Embargo Steward Steward Estate Copper Copper Estate Copper]
+
+	Player 2 Hand: []
+		Deck: [ Baron Estate Estate Copper Baron Treasure Map Estate Silver Gold Copper Embargo Gold Copper Gardens Silver Copper Steward Copper Steward Silver Embargo Embargo Village]
+		Discard: [ Steward Copper Treasure Map Copper Estate Copper Embargo Copper Estate Steward Copper Baron]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Player 1 No Action taken this turn.
+End Player 1 Actions
+Player 1 has 3 money.
+Entering player 1 Buy Phase.
+	Village purchased. Money after purchase: [0]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Copper Embargo Copper Copper Estate Treasure Map Embargo Silver Estate Copper Gardens Steward Embargo Copper Copper Steward Steward]
+		Discard: [ Estate Estate Estate Embargo Steward Steward Estate Copper Copper Estate Copper Village Copper Copper Copper Estate Estate]
+
+	Player 2 Hand: [ Village Embargo Embargo Silver Steward]
+		Deck: [ Baron Estate Estate Copper Baron Treasure Map Estate Silver Gold Copper Embargo Gold Copper Gardens Silver Copper Steward Copper]
+		Discard: [ Steward Copper Treasure Map Copper Estate Copper Embargo Copper Estate Steward Copper Baron]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Village Played
+Player[2] No More Action Cards to play this turn.
+End Player 2 Actions
+Player 2 has 3 money.
+Entering player 2 Buy Phase.
+	Silver purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Steward Steward Copper Copper Embargo]
+		Deck: [ Copper Embargo Copper Copper Estate Treasure Map Embargo Silver Estate Copper Gardens Steward]
+		Discard: [ Estate Estate Estate Embargo Steward Steward Estate Copper Copper Estate Copper Village Copper Copper Copper Estate Estate]
+
+	Player 2 Hand: []
+		Deck: [ Baron Estate Estate Copper Baron Treasure Map Estate Silver Gold Copper Embargo Gold Copper Gardens Silver Copper Steward]
+		Discard: [ Steward Copper Treasure Map Copper Estate Copper Embargo Copper Estate Steward Copper Baron Silver Copper Embargo Embargo Silver Steward]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Player 1 No Action taken this turn.
+End Player 1 Actions
+Player 1 has 2 money.
+Entering player 1 Buy Phase.
+	Embargo purchased. Money after purchase: [0]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Copper Embargo Copper Copper Estate Treasure Map Embargo Silver Estate Copper Gardens Steward]
+		Discard: [ Estate Estate Estate Embargo Steward Steward Estate Copper Copper Estate Copper Village Copper Copper Copper Estate Estate Embargo Steward Steward Copper Copper Embargo]
+
+	Player 2 Hand: [ Steward Copper Silver Gardens Copper]
+		Deck: [ Baron Estate Estate Copper Baron Treasure Map Estate Silver Gold Copper Embargo Gold]
+		Discard: [ Steward Copper Treasure Map Copper Estate Copper Embargo Copper Estate Steward Copper Baron Silver Copper Embargo Embargo Silver Steward]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Player 2 No Action taken this turn.
+End Player 2 Actions
+Player 2 has 4 money.
+Entering player 2 Buy Phase.
+	Baron purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Steward Gardens Copper Estate Silver]
+		Deck: [ Copper Embargo Copper Copper Estate Treasure Map Embargo]
+		Discard: [ Estate Estate Estate Embargo Steward Steward Estate Copper Copper Estate Copper Village Copper Copper Copper Estate Estate Embargo Steward Steward Copper Copper Embargo]
+
+	Player 2 Hand: []
+		Deck: [ Baron Estate Estate Copper Baron Treasure Map Estate Silver Gold Copper Embargo Gold]
+		Discard: [ Steward Copper Treasure Map Copper Estate Copper Embargo Copper Estate Steward Copper Baron Silver Copper Embargo Embargo Silver Steward Baron Steward Copper Silver Gardens Copper]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Player 1 No Action taken this turn.
+End Player 1 Actions
+Player 1 has 3 money.
+Entering player 1 Buy Phase.
+	Village purchased. Money after purchase: [0]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Copper Embargo Copper Copper Estate Treasure Map Embargo]
+		Discard: [ Estate Estate Estate Embargo Steward Steward Estate Copper Copper Estate Copper Village Copper Copper Copper Estate Estate Embargo Steward Steward Copper Copper Embargo Village Steward Gardens Copper Estate Silver]
+
+	Player 2 Hand: [ Gold Embargo Copper Gold Silver]
+		Deck: [ Baron Estate Estate Copper Baron Treasure Map Estate]
+		Discard: [ Steward Copper Treasure Map Copper Estate Copper Embargo Copper Estate Steward Copper Baron Silver Copper Embargo Embargo Silver Steward Baron Steward Copper Silver Gardens Copper]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Player 2 No Action taken this turn.
+End Player 2 Actions
+Player 2 has 9 money.
+Entering player 2 Buy Phase.
+	Purchased province. Money after purchase: [1]End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Embargo Treasure Map Estate Copper Copper]
+		Deck: [ Copper Embargo]
+		Discard: [ Estate Estate Estate Embargo Steward Steward Estate Copper Copper Estate Copper Village Copper Copper Copper Estate Estate Embargo Steward Steward Copper Copper Embargo Village Steward Gardens Copper Estate Silver]
+
+	Player 2 Hand: []
+		Deck: [ Baron Estate Estate Copper Baron Treasure Map Estate]
+		Discard: [ Steward Copper Treasure Map Copper Estate Copper Embargo Copper Estate Steward Copper Baron Silver Copper Embargo Embargo Silver Steward Baron Steward Copper Silver Gardens Copper Province Gold Embargo Copper Gold Silver]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Error: playCard(Treasure Map) returned -1.
+End Player 1 Actions
+Player 1 has 2 money.
+Entering player 1 Buy Phase.
+	Embargo purchased. Money after purchase: [0]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Copper Embargo]
+		Discard: [ Estate Estate Estate Embargo Steward Steward Estate Copper Copper Estate Copper Village Copper Copper Copper Estate Estate Embargo Steward Steward Copper Copper Embargo Village Steward Gardens Copper Estate Silver Embargo Embargo Treasure Map Estate Copper Copper]
+
+	Player 2 Hand: [ Estate Treasure Map Baron Copper Estate]
+		Deck: [ Baron Estate]
+		Discard: [ Steward Copper Treasure Map Copper Estate Copper Embargo Copper Estate Steward Copper Baron Silver Copper Embargo Embargo Silver Steward Baron Steward Copper Silver Gardens Copper Province Gold Embargo Copper Gold Silver]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Error: playCard(Treasure Map) returned -1.
+End Player 2 Actions
+Player 2 has 1 money.
+Entering player 2 Buy Phase.
+	Copper purchased. Money after purchase: [1]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Embargo Copper Embargo Estate Estate]
+		Deck: [ Copper Silver Estate Steward Estate Steward Copper Estate Estate Copper Embargo Copper Village Copper Village Steward Estate Embargo Copper Embargo Treasure Map Copper Copper Estate Copper Steward Estate Steward Copper Embargo Gardens Copper]
+		Discard: []
+
+	Player 2 Hand: []
+		Deck: [ Baron Estate]
+		Discard: [ Steward Copper Treasure Map Copper Estate Copper Embargo Copper Estate Steward Copper Baron Silver Copper Embargo Embargo Silver Steward Baron Steward Copper Silver Gardens Copper Province Gold Embargo Copper Gold Silver Copper Estate Treasure Map Baron Copper Estate]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Player 1 No Action taken this turn.
+End Player 1 Actions
+Player 1 has 1 money.
+Entering player 1 Buy Phase.
+	Copper purchased. Money after purchase: [1]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Copper Silver Estate Steward Estate Steward Copper Estate Estate Copper Embargo Copper Village Copper Village Steward Estate Embargo Copper Embargo Treasure Map Copper Copper Estate Copper Steward Estate Steward Copper Embargo Gardens Copper]
+		Discard: [ Copper Embargo Copper Embargo Estate Estate]
+
+	Player 2 Hand: [ Estate Baron Steward Embargo Copper]
+		Deck: [ Estate Estate Copper Copper Embargo Copper Baron Copper Baron Silver Baron Copper Gardens Treasure Map Treasure Map Copper Gold Estate Silver Copper Steward Province Copper Copper Copper Gold Embargo Embargo Estate Steward Silver Steward Silver]
+		Discard: []
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Player 2 No Action taken this turn.
+End Player 2 Actions
+Player 2 has 1 money.
+Entering player 2 Buy Phase.
+	Copper purchased. Money after purchase: [1]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Copper Gardens Embargo Copper Steward]
+		Deck: [ Copper Silver Estate Steward Estate Steward Copper Estate Estate Copper Embargo Copper Village Copper Village Steward Estate Embargo Copper Embargo Treasure Map Copper Copper Estate Copper Steward Estate]
+		Discard: [ Copper Embargo Copper Embargo Estate Estate]
+
+	Player 2 Hand: []
+		Deck: [ Estate Estate Copper Copper Embargo Copper Baron Copper Baron Silver Baron Copper Gardens Treasure Map Treasure Map Copper Gold Estate Silver Copper Steward Province Copper Copper Copper Gold Embargo Embargo Estate Steward Silver Steward Silver]
+		Discard: [ Copper Estate Baron Steward Embargo Copper]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Player 1 No Action taken this turn.
+End Player 1 Actions
+Player 1 has 2 money.
+Entering player 1 Buy Phase.
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Copper Silver Estate Steward Estate Steward Copper Estate Estate Copper Embargo Copper Village Copper Village Steward Estate Embargo Copper Embargo Treasure Map Copper Copper Estate Copper Steward Estate]
+		Discard: [ Copper Embargo Copper Embargo Estate Estate Copper Gardens Embargo Copper Steward]
+
+	Player 2 Hand: [ Silver Steward Silver Steward Estate]
+		Deck: [ Estate Estate Copper Copper Embargo Copper Baron Copper Baron Silver Baron Copper Gardens Treasure Map Treasure Map Copper Gold Estate Silver Copper Steward Province Copper Copper Copper Gold Embargo Embargo]
+		Discard: [ Copper Estate Baron Steward Embargo Copper]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Player 2 No Action taken this turn.
+End Player 2 Actions
+Player 2 has 4 money.
+Entering player 2 Buy Phase.
+	Cutpurse purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Estate Steward Copper Estate Copper]
+		Deck: [ Copper Silver Estate Steward Estate Steward Copper Estate Estate Copper Embargo Copper Village Copper Village Steward Estate Embargo Copper Embargo Treasure Map Copper]
+		Discard: [ Copper Embargo Copper Embargo Estate Estate Copper Gardens Embargo Copper Steward]
+
+	Player 2 Hand: []
+		Deck: [ Estate Estate Copper Copper Embargo Copper Baron Copper Baron Silver Baron Copper Gardens Treasure Map Treasure Map Copper Gold Estate Silver Copper Steward Province Copper Copper Copper Gold Embargo Embargo]
+		Discard: [ Copper Estate Baron Steward Embargo Copper Cutpurse Silver Steward Silver Steward Estate]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Player 1 No Action taken this turn.
+End Player 1 Actions
+Player 1 has 2 money.
+Entering player 1 Buy Phase.
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Copper Silver Estate Steward Estate Steward Copper Estate Estate Copper Embargo Copper Village Copper Village Steward Estate Embargo Copper Embargo Treasure Map Copper]
+		Discard: [ Copper Embargo Copper Embargo Estate Estate Copper Gardens Embargo Copper Steward Estate Steward Copper Estate Copper]
+
+	Player 2 Hand: [ Embargo Embargo Gold Copper Copper]
+		Deck: [ Estate Estate Copper Copper Embargo Copper Baron Copper Baron Silver Baron Copper Gardens Treasure Map Treasure Map Copper Gold Estate Silver Copper Steward Province Copper]
+		Discard: [ Copper Estate Baron Steward Embargo Copper Cutpurse Silver Steward Silver Steward Estate]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Player 2 No Action taken this turn.
+End Player 2 Actions
+Player 2 has 5 money.
+Entering player 2 Buy Phase.
+	Tribute purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Copper Treasure Map Embargo Copper Embargo]
+		Deck: [ Copper Silver Estate Steward Estate Steward Copper Estate Estate Copper Embargo Copper Village Copper Village Steward Estate]
+		Discard: [ Copper Embargo Copper Embargo Estate Estate Copper Gardens Embargo Copper Steward Estate Steward Copper Estate Copper]
+
+	Player 2 Hand: []
+		Deck: [ Estate Estate Copper Copper Embargo Copper Baron Copper Baron Silver Baron Copper Gardens Treasure Map Treasure Map Copper Gold Estate Silver Copper Steward Province Copper]
+		Discard: [ Copper Estate Baron Steward Embargo Copper Cutpurse Silver Steward Silver Steward Estate Tribute Embargo Embargo Gold Copper Copper]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Error: playCard(Treasure Map) returned -1.
+End Player 1 Actions
+Player 1 has 2 money.
+Entering player 1 Buy Phase.
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Copper Silver Estate Steward Estate Steward Copper Estate Estate Copper Embargo Copper Village Copper Village Steward Estate]
+		Discard: [ Copper Embargo Copper Embargo Estate Estate Copper Gardens Embargo Copper Steward Estate Steward Copper Estate Copper Copper Treasure Map Embargo Copper Embargo]
+
+	Player 2 Hand: [ Copper Province Steward Copper Silver]
+		Deck: [ Estate Estate Copper Copper Embargo Copper Baron Copper Baron Silver Baron Copper Gardens Treasure Map Treasure Map Copper Gold Estate]
+		Discard: [ Copper Estate Baron Steward Embargo Copper Cutpurse Silver Steward Silver Steward Estate Tribute Embargo Embargo Gold Copper Copper]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Player 2 No Action taken this turn.
+End Player 2 Actions
+Player 2 has 4 money.
+Entering player 2 Buy Phase.
+	Treasure Map purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Estate Steward Village Copper Village]
+		Deck: [ Copper Silver Estate Steward Estate Steward Copper Estate Estate Copper Embargo Copper]
+		Discard: [ Copper Embargo Copper Embargo Estate Estate Copper Gardens Embargo Copper Steward Estate Steward Copper Estate Copper Copper Treasure Map Embargo Copper Embargo]
+
+	Player 2 Hand: []
+		Deck: [ Estate Estate Copper Copper Embargo Copper Baron Copper Baron Silver Baron Copper Gardens Treasure Map Treasure Map Copper Gold Estate]
+		Discard: [ Copper Estate Baron Steward Embargo Copper Cutpurse Silver Steward Silver Steward Estate Tribute Embargo Embargo Gold Copper Copper Treasure Map Copper Province Steward Copper Silver]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Village Played
+	Village Played
+Player[1] No More Action Cards to play this turn.
+End Player 1 Actions
+Player 1 has 2 money.
+Entering player 1 Buy Phase.
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Copper Silver Estate Steward Estate Steward Copper Estate Estate Copper]
+		Discard: [ Copper Embargo Copper Embargo Estate Estate Copper Gardens Embargo Copper Steward Estate Steward Copper Estate Copper Copper Treasure Map Embargo Copper Embargo Estate Steward Embargo Copper Copper]
+
+	Player 2 Hand: [ Estate Gold Copper Treasure Map Treasure Map]
+		Deck: [ Estate Estate Copper Copper Embargo Copper Baron Copper Baron Silver Baron Copper Gardens]
+		Discard: [ Copper Estate Baron Steward Embargo Copper Cutpurse Silver Steward Silver Steward Estate Tribute Embargo Embargo Gold Copper Copper Treasure Map Copper Province Steward Copper Silver]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Treasure Map Played
+End Player 2 Actions
+Player 2 has 4 money.
+Entering player 2 Buy Phase.
+	Cutpurse purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Copper Estate Estate Copper Steward]
+		Deck: [ Copper Silver Estate Steward Estate]
+		Discard: [ Copper Embargo Copper Embargo Estate Estate Copper Gardens Embargo Copper Steward Estate Steward Copper Estate Copper Copper Treasure Map Embargo Copper Embargo Estate Steward Embargo Copper Copper]
+
+	Player 2 Hand: []
+		Deck: [ Estate Estate Copper Copper Embargo Copper Baron Copper Baron Silver Baron Copper Gardens Gold Gold Gold Gold]
+		Discard: [ Copper Estate Baron Steward Embargo Copper Cutpurse Silver Steward Silver Steward Estate Tribute Embargo Embargo Gold Copper Copper Treasure Map Copper Province Steward Copper Silver Cutpurse Estate Gold Copper]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Player 1 No Action taken this turn.
+End Player 1 Actions
+Player 1 has 2 money.
+Entering player 1 Buy Phase.
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Copper Silver Estate Steward Estate]
+		Discard: [ Copper Embargo Copper Embargo Estate Estate Copper Gardens Embargo Copper Steward Estate Steward Copper Estate Copper Copper Treasure Map Embargo Copper Embargo Estate Steward Embargo Copper Copper Copper Estate Estate Copper Steward]
+
+	Player 2 Hand: [ Gold Gold Gold Gold Gardens]
+		Deck: [ Estate Estate Copper Copper Embargo Copper Baron Copper Baron Silver Baron Copper]
+		Discard: [ Copper Estate Baron Steward Embargo Copper Cutpurse Silver Steward Silver Steward Estate Tribute Embargo Embargo Gold Copper Copper Treasure Map Copper Province Steward Copper Silver Cutpurse Estate Gold Copper]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Player 2 No Action taken this turn.
+End Player 2 Actions
+Player 2 has 12 money.
+Entering player 2 Buy Phase.
+	Purchased province. Money after purchase: [4]End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Estate Steward Estate Silver Copper]
+		Deck: []
+		Discard: [ Copper Embargo Copper Embargo Estate Estate Copper Gardens Embargo Copper Steward Estate Steward Copper Estate Copper Copper Treasure Map Embargo Copper Embargo Estate Steward Embargo Copper Copper Copper Estate Estate Copper Steward]
+
+	Player 2 Hand: []
+		Deck: [ Estate Estate Copper Copper Embargo Copper Baron Copper Baron Silver Baron Copper]
+		Discard: [ Copper Estate Baron Steward Embargo Copper Cutpurse Silver Steward Silver Steward Estate Tribute Embargo Embargo Gold Copper Copper Treasure Map Copper Province Steward Copper Silver Cutpurse Estate Gold Copper Province Gold Gold Gold Gold Gardens]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Player 1 No Action taken this turn.
+End Player 1 Actions
+Player 1 has 3 money.
+Entering player 1 Buy Phase.
+	Steward purchased. Money after purchase: [0]
+End Player 1 Buys.
+End Player 1 turn.
+
+Player [1]: Score [16]
+Player [2]: Score [25]
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: []
+		Discard: [ Copper Embargo Copper Embargo Estate Estate Copper Gardens Embargo Copper Steward Estate Steward Copper Estate Copper Copper Treasure Map Embargo Copper Embargo Estate Steward Embargo Copper Copper Copper Estate Estate Copper Steward Steward Estate Steward Estate Silver Copper]
+
+	Player 2 Hand: [ Copper Baron Silver Baron Copper]
+		Deck: [ Estate Estate Copper Copper Embargo Copper Baron]
+		Discard: [ Copper Estate Baron Steward Embargo Copper Cutpurse Silver Steward Silver Steward Estate Tribute Embargo Embargo Gold Copper Copper Treasure Map Copper Province Steward Copper Silver Cutpurse Estate Gold Copper Province Gold Gold Gold Gold Gardens]
+
+	***************************
+
+
+
+
+
+Game 1 has 3 players.
+Using Cards: Smithy Minion Council Room Adventurer Sea Hag Treasure Map Outpost Salvager Baron Mine Begin game 1
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Copper Estate Copper Estate Copper]
+		Deck: [ Estate Copper Copper Copper Copper]
+		Discard: []
+
+	Player 2 Hand: []
+		Deck: [ Copper Estate Copper Estate Copper Estate Copper Copper Copper Copper]
+		Discard: []
+
+	Player 3 Hand: []
+		Deck: [ Estate Copper Copper Copper Copper Copper Copper Estate Copper Estate]
+		Discard: []
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Player 1 No Action taken this turn.
+End Player 1 Actions
+Player 1 has 3 money.
+Entering player 1 Buy Phase.
+	Silver purchased. Money after purchase: [0]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Estate Copper Copper Copper Copper]
+		Discard: [ Silver Copper Estate Copper Estate Copper]
+
+	Player 2 Hand: [ Copper Copper Copper Copper Estate]
+		Deck: [ Copper Estate Copper Estate Copper]
+		Discard: []
+
+	Player 3 Hand: []
+		Deck: [ Estate Copper Copper Copper Copper Copper Copper Estate Copper Estate]
+		Discard: []
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Player 2 No Action taken this turn.
+End Player 2 Actions
+Player 2 has 4 money.
+Entering player 2 Buy Phase.
+	Sea Hag purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Estate Copper Copper Copper Copper]
+		Discard: [ Silver Copper Estate Copper Estate Copper]
+
+	Player 2 Hand: []
+		Deck: [ Copper Estate Copper Estate Copper]
+		Discard: [ Sea Hag Copper Copper Copper Copper Estate]
+
+	Player 3 Hand: [ Estate Copper Estate Copper Copper]
+		Deck: [ Estate Copper Copper Copper Copper]
+		Discard: []
+
+	***************************
+
+Player 3 turn.
+Beginning Player 3 Action Phase
+	Player 3 No Action taken this turn.
+End Player 3 Actions
+Player 3 has 3 money.
+Entering player 3 Buy Phase.
+	Silver purchased. Money after purchase: [0]
+End Player 3 Buys.
+End Player 3 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Copper Copper Copper Copper Estate]
+		Deck: []
+		Discard: [ Silver Copper Estate Copper Estate Copper]
+
+	Player 2 Hand: []
+		Deck: [ Copper Estate Copper Estate Copper]
+		Discard: [ Sea Hag Copper Copper Copper Copper Estate]
+
+	Player 3 Hand: []
+		Deck: [ Estate Copper Copper Copper Copper]
+		Discard: [ Silver Estate Copper Estate Copper Copper]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Player 1 No Action taken this turn.
+End Player 1 Actions
+Player 1 has 4 money.
+Entering player 1 Buy Phase.
+	Baron purchased. Money after purchase: [0]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: []
+		Discard: [ Silver Copper Estate Copper Estate Copper Baron Copper Copper Copper Copper Estate]
+
+	Player 2 Hand: [ Copper Estate Copper Estate Copper]
+		Deck: []
+		Discard: [ Sea Hag Copper Copper Copper Copper Estate]
+
+	Player 3 Hand: []
+		Deck: [ Estate Copper Copper Copper Copper]
+		Discard: [ Silver Estate Copper Estate Copper Copper]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Player 2 No Action taken this turn.
+End Player 2 Actions
+Player 2 has 3 money.
+Entering player 2 Buy Phase.
+	Silver purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: []
+		Discard: [ Silver Copper Estate Copper Estate Copper Baron Copper Copper Copper Copper Estate]
+
+	Player 2 Hand: []
+		Deck: []
+		Discard: [ Sea Hag Copper Copper Copper Copper Estate Silver Copper Estate Copper Estate Copper]
+
+	Player 3 Hand: [ Copper Copper Copper Copper Estate]
+		Deck: []
+		Discard: [ Silver Estate Copper Estate Copper Copper]
+
+	***************************
+
+Player 3 turn.
+Beginning Player 3 Action Phase
+	Player 3 No Action taken this turn.
+End Player 3 Actions
+Player 3 has 4 money.
+Entering player 3 Buy Phase.
+	Smithy purchased. Money after purchase: [0]
+End Player 3 Buys.
+End Player 3 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Baron Copper Copper Copper Estate]
+		Deck: [ Copper Copper Estate Estate Copper Copper Silver]
+		Discard: []
+
+	Player 2 Hand: []
+		Deck: []
+		Discard: [ Sea Hag Copper Copper Copper Copper Estate Silver Copper Estate Copper Estate Copper]
+
+	Player 3 Hand: []
+		Deck: []
+		Discard: [ Silver Estate Copper Estate Copper Copper Smithy Copper Copper Copper Copper Estate]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Player 1 No Action taken this turn.
+End Player 1 Actions
+Player 1 has 3 money.
+Entering player 1 Buy Phase.
+	Silver purchased. Money after purchase: [0]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Copper Copper Estate Estate Copper Copper Silver]
+		Discard: [ Silver Baron Copper Copper Copper Estate]
+
+	Player 2 Hand: [ Copper Estate Copper Copper Estate]
+		Deck: [ Copper Copper Sea Hag Estate Copper Copper Silver]
+		Discard: []
+
+	Player 3 Hand: []
+		Deck: []
+		Discard: [ Silver Estate Copper Estate Copper Copper Smithy Copper Copper Copper Copper Estate]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Player 2 No Action taken this turn.
+End Player 2 Actions
+Player 2 has 3 money.
+Entering player 2 Buy Phase.
+	Silver purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Copper Copper Estate Estate Copper Copper Silver]
+		Discard: [ Silver Baron Copper Copper Copper Estate]
+
+	Player 2 Hand: []
+		Deck: [ Copper Copper Sea Hag Estate Copper Copper Silver]
+		Discard: [ Silver Copper Estate Copper Copper Estate]
+
+	Player 3 Hand: [ Estate Copper Copper Copper Copper]
+		Deck: [ Smithy Estate Copper Copper Copper Silver Estate]
+		Discard: []
+
+	***************************
+
+Player 3 turn.
+Beginning Player 3 Action Phase
+	Player 3 No Action taken this turn.
+End Player 3 Actions
+Player 3 has 4 money.
+Entering player 3 Buy Phase.
+	Salvager purchased. Money after purchase: [0]
+End Player 3 Buys.
+End Player 3 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Silver Copper Copper Estate Estate]
+		Deck: [ Copper Copper]
+		Discard: [ Silver Baron Copper Copper Copper Estate]
+
+	Player 2 Hand: []
+		Deck: [ Copper Copper Sea Hag Estate Copper Copper Silver]
+		Discard: [ Silver Copper Estate Copper Copper Estate]
+
+	Player 3 Hand: []
+		Deck: [ Smithy Estate Copper Copper Copper Silver Estate]
+		Discard: [ Salvager Estate Copper Copper Copper Copper]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Player 1 No Action taken this turn.
+End Player 1 Actions
+Player 1 has 4 money.
+Entering player 1 Buy Phase.
+	Smithy purchased. Money after purchase: [0]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Copper Copper]
+		Discard: [ Silver Baron Copper Copper Copper Estate Smithy Silver Copper Copper Estate Estate]
+
+	Player 2 Hand: [ Silver Copper Copper Estate Sea Hag]
+		Deck: [ Copper Copper]
+		Discard: [ Silver Copper Estate Copper Copper Estate]
+
+	Player 3 Hand: []
+		Deck: [ Smithy Estate Copper Copper Copper Silver Estate]
+		Discard: [ Salvager Estate Copper Copper Copper Copper]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Sea Hag Played
+End Player 2 Actions
+Player 2 has 4 money.
+Entering player 2 Buy Phase.
+	Sea Hag purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: []
+		Discard: [ Silver Baron Copper Copper Copper Estate Smithy Silver Copper Copper Estate Estate Estate]
+
+	Player 2 Hand: []
+		Deck: [ Copper Copper]
+		Discard: [ Silver Copper Estate Copper Copper Estate Sea Hag Silver Copper Copper Estate Sea Hag]
+
+	Player 3 Hand: [ Copper Copper Estate Smithy Copper]
+		Deck: [ Copper Copper Copper Estate Copper Salvager]
+		Discard: []
+
+	***************************
+
+Player 3 turn.
+Beginning Player 3 Action Phase
+	Smithy Played
+End Player 3 Actions
+Player 3 has 4 money.
+Entering player 3 Buy Phase.
+	Smithy purchased. Money after purchase: [0]
+End Player 3 Buys.
+End Player 3 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Copper Estate Estate Estate Silver]
+		Deck: [ Silver Copper Estate Copper Copper Smithy Copper Baron]
+		Discard: []
+
+	Player 2 Hand: []
+		Deck: [ Copper Copper]
+		Discard: [ Silver Copper Estate Copper Copper Estate Sea Hag Silver Copper Copper Estate Sea Hag]
+
+	Player 3 Hand: []
+		Deck: [ Copper Copper Copper]
+		Discard: [ Smithy Copper Copper Estate Estate Copper Salvager Copper]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Player 1 No Action taken this turn.
+End Player 1 Actions
+Player 1 has 3 money.
+Entering player 1 Buy Phase.
+	Silver purchased. Money after purchase: [0]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Silver Copper Estate Copper Copper Smithy Copper Baron]
+		Discard: [ Silver Copper Estate Estate Estate Silver]
+
+	Player 2 Hand: [ Copper Copper Copper Sea Hag Copper]
+		Deck: [ Copper Copper Silver Estate Estate Copper Silver Estate Sea Hag]
+		Discard: []
+
+	Player 3 Hand: []
+		Deck: [ Copper Copper Copper]
+		Discard: [ Smithy Copper Copper Estate Estate Copper Salvager Copper]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Sea Hag Played
+End Player 2 Actions
+Player 2 has 4 money.
+Entering player 2 Buy Phase.
+	Smithy purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Silver Copper Estate Copper Copper]
+		Discard: [ Silver Copper Estate Estate Estate Silver Silver]
+
+	Player 2 Hand: []
+		Deck: [ Copper Copper Silver Estate Estate Copper Silver Estate Sea Hag]
+		Discard: [ Smithy Copper Copper Copper Sea Hag Copper]
+
+	Player 3 Hand: [ Smithy Estate Estate Salvager Estate]
+		Deck: [ Copper Copper Copper Copper]
+		Discard: []
+
+	***************************
+
+Player 3 turn.
+Beginning Player 3 Action Phase
+	Smithy Played
+End Player 3 Actions
+Player 3 has 3 money.
+Entering player 3 Buy Phase.
+	Silver purchased. Money after purchase: [0]
+End Player 3 Buys.
+End Player 3 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Copper Copper Estate Copper Silver]
+		Deck: []
+		Discard: [ Silver Copper Estate Estate Estate Silver Silver]
+
+	Player 2 Hand: []
+		Deck: [ Copper Copper Silver Estate Estate Copper Silver Estate Sea Hag]
+		Discard: [ Smithy Copper Copper Copper Sea Hag Copper]
+
+	Player 3 Hand: []
+		Deck: [ Copper]
+		Discard: [ Silver Copper Estate Estate Salvager Estate Copper Copper]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Player 1 No Action taken this turn.
+End Player 1 Actions
+Player 1 has 5 money.
+Entering player 1 Buy Phase.
+	Mine purchased. Money after purchase: [0]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: []
+		Discard: [ Silver Copper Estate Estate Estate Silver Silver Mine Copper Copper Estate Copper Silver]
+
+	Player 2 Hand: [ Sea Hag Estate Silver Copper Estate]
+		Deck: [ Copper Copper Silver Estate]
+		Discard: [ Smithy Copper Copper Copper Sea Hag Copper]
+
+	Player 3 Hand: []
+		Deck: [ Copper]
+		Discard: [ Silver Copper Estate Estate Salvager Estate Copper Copper]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Sea Hag Played
+End Player 2 Actions
+Player 2 has 3 money.
+Entering player 2 Buy Phase.
+	Silver purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: []
+		Discard: [ Silver Copper Estate Estate Estate Silver Silver Mine Copper Copper Estate Copper Silver Silver]
+
+	Player 2 Hand: []
+		Deck: [ Copper Copper Silver Estate]
+		Discard: [ Smithy Copper Copper Copper Sea Hag Copper Silver Sea Hag Estate Silver Copper Estate]
+
+	Player 3 Hand: [ Copper Estate Estate Copper Copper]
+		Deck: [ Salvager Silver Copper Estate]
+		Discard: []
+
+	***************************
+
+Player 3 turn.
+Beginning Player 3 Action Phase
+	Player 3 No Action taken this turn.
+End Player 3 Actions
+Player 3 has 3 money.
+Entering player 3 Buy Phase.
+	Silver purchased. Money after purchase: [0]
+End Player 3 Buys.
+End Player 3 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Silver Silver Estate Copper Estate]
+		Deck: [ Silver Silver Mine Copper Estate Silver Copper Estate Copper]
+		Discard: []
+
+	Player 2 Hand: []
+		Deck: [ Copper Copper Silver Estate]
+		Discard: [ Smithy Copper Copper Copper Sea Hag Copper Silver Sea Hag Estate Silver Copper Estate]
+
+	Player 3 Hand: []
+		Deck: [ Salvager Silver Copper Estate]
+		Discard: [ Silver Copper Estate Estate Copper Copper]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Player 1 No Action taken this turn.
+End Player 1 Actions
+Player 1 has 5 money.
+Entering player 1 Buy Phase.
+	Outpost purchased. Money after purchase: [0]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Silver Silver Mine Copper Estate Silver Copper Estate Copper]
+		Discard: [ Outpost Silver Silver Estate Copper Estate]
+
+	Player 2 Hand: [ Estate Silver Copper Copper Sea Hag]
+		Deck: [ Copper Estate Copper Silver Copper Copper Sea Hag Smithy Estate Copper Silver]
+		Discard: []
+
+	Player 3 Hand: []
+		Deck: [ Salvager Silver Copper Estate]
+		Discard: [ Silver Copper Estate Estate Copper Copper]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Sea Hag Played
+End Player 2 Actions
+Player 2 has 4 money.
+Entering player 2 Buy Phase.
+	Sea Hag purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Silver Silver Mine Copper Estate Silver]
+		Discard: [ Outpost Silver Silver Estate Copper Estate Estate]
+
+	Player 2 Hand: []
+		Deck: [ Copper Estate Copper Silver Copper Copper Sea Hag Smithy Estate Copper Silver]
+		Discard: [ Sea Hag Estate Silver Copper Copper Sea Hag]
+
+	Player 3 Hand: [ Salvager Silver Copper Copper Copper]
+		Deck: [ Copper Estate Estate]
+		Discard: []
+
+	***************************
+
+Player 3 turn.
+Beginning Player 3 Action Phase
+	Player 3 No Action taken this turn.
+End Player 3 Actions
+Player 3 has 5 money.
+Entering player 3 Buy Phase.
+	Council Room purchased. Money after purchase: [0]
+End Player 3 Buys.
+End Player 3 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Silver Estate Copper Mine Silver]
+		Deck: [ Silver]
+		Discard: [ Outpost Silver Silver Estate Copper Estate Estate]
+
+	Player 2 Hand: []
+		Deck: [ Copper Estate Copper Silver Copper Copper Sea Hag Smithy Estate Copper Silver]
+		Discard: [ Sea Hag Estate Silver Copper Copper Sea Hag]
+
+	Player 3 Hand: []
+		Deck: [ Copper Estate Estate]
+		Discard: [ Council Room Salvager Silver Copper Copper Copper]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Player 1 No Action taken this turn.
+End Player 1 Actions
+Player 1 has 5 money.
+Entering player 1 Buy Phase.
+	Minion purchased. Money after purchase: [0]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Silver]
+		Discard: [ Outpost Silver Silver Estate Copper Estate Estate Minion Silver Estate Copper Mine Silver]
+
+	Player 2 Hand: [ Silver Copper Estate Smithy Sea Hag]
+		Deck: [ Copper Estate Copper Silver Copper Copper]
+		Discard: [ Sea Hag Estate Silver Copper Copper Sea Hag]
+
+	Player 3 Hand: []
+		Deck: [ Copper Estate Estate]
+		Discard: [ Council Room Salvager Silver Copper Copper Copper]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Smithy Played
+	Error: playCard(Sea Hag) returned -1.
+End Player 2 Actions
+Player 2 has 7 money.
+Entering player 2 Buy Phase.
+	Gold Card purchased. Money after purchase: [1]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Silver]
+		Discard: [ Outpost Silver Silver Estate Copper Estate Estate Minion Silver Estate Copper Mine Silver]
+
+	Player 2 Hand: []
+		Deck: [ Copper Estate Copper]
+		Discard: [ Sea Hag Estate Silver Copper Copper Sea Hag Gold Silver Copper Estate Silver Sea Hag Copper Copper]
+
+	Player 3 Hand: [ Estate Estate Copper Silver Salvager]
+		Deck: [ Copper Council Room Copper Copper]
+		Discard: []
+
+	***************************
+
+Player 3 turn.
+Beginning Player 3 Action Phase
+	Player 3 No Action taken this turn.
+End Player 3 Actions
+Player 3 has 3 money.
+Entering player 3 Buy Phase.
+	Silver purchased. Money after purchase: [0]
+End Player 3 Buys.
+End Player 3 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Silver Copper Estate Silver Silver]
+		Deck: [ Minion Mine Silver Copper Estate Silver Estate Outpost Estate]
+		Discard: []
+
+	Player 2 Hand: []
+		Deck: [ Copper Estate Copper]
+		Discard: [ Sea Hag Estate Silver Copper Copper Sea Hag Gold Silver Copper Estate Silver Sea Hag Copper Copper]
+
+	Player 3 Hand: []
+		Deck: [ Copper Council Room Copper Copper]
+		Discard: [ Silver Estate Estate Copper Silver Salvager]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Player 1 No Action taken this turn.
+End Player 1 Actions
+Player 1 has 7 money.
+Entering player 1 Buy Phase.
+	Adventurer purchased. Money after purchase: [1]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Minion Mine Silver Copper Estate Silver Estate Outpost Estate]
+		Discard: [ Adventurer Silver Copper Estate Silver Silver]
+
+	Player 2 Hand: [ Copper Estate Copper Silver Sea Hag]
+		Deck: [ Copper Sea Hag Copper Copper Gold Estate Silver Estate Silver Copper Sea Hag Copper]
+		Discard: []
+
+	Player 3 Hand: []
+		Deck: [ Copper Council Room Copper Copper]
+		Discard: [ Silver Estate Estate Copper Silver Salvager]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Sea Hag Played
+End Player 2 Actions
+Player 2 has 4 money.
+Entering player 2 Buy Phase.
+	Sea Hag purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Minion Mine Silver Copper Estate Silver]
+		Discard: [ Adventurer Silver Copper Estate Silver Silver Silver]
+
+	Player 2 Hand: []
+		Deck: [ Copper Sea Hag Copper Copper Gold Estate Silver Estate Silver Copper Sea Hag Copper]
+		Discard: [ Sea Hag Copper Estate Copper Silver Sea Hag]
+
+	Player 3 Hand: [ Copper Silver Estate Estate Silver]
+		Deck: [ Salvager Salvager Copper]
+		Discard: []
+
+	***************************
+
+Player 3 turn.
+Beginning Player 3 Action Phase
+	Player 3 No Action taken this turn.
+End Player 3 Actions
+Player 3 has 5 money.
+Entering player 3 Buy Phase.
+	Council Room purchased. Money after purchase: [0]
+End Player 3 Buys.
+End Player 3 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Silver Estate Copper Silver Mine]
+		Deck: [ Minion]
+		Discard: [ Adventurer Silver Copper Estate Silver Silver Silver]
+
+	Player 2 Hand: []
+		Deck: [ Copper Sea Hag Copper Copper Gold Estate Silver Estate Silver Copper Sea Hag Copper]
+		Discard: [ Sea Hag Copper Estate Copper Silver Sea Hag]
+
+	Player 3 Hand: []
+		Deck: [ Salvager Salvager Copper]
+		Discard: [ Council Room Copper Silver Estate Estate Silver]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Player 1 No Action taken this turn.
+End Player 1 Actions
+Player 1 has 5 money.
+Entering player 1 Buy Phase.
+	Outpost purchased. Money after purchase: [0]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Minion]
+		Discard: [ Adventurer Silver Copper Estate Silver Silver Silver Outpost Silver Estate Copper Silver Mine]
+
+	Player 2 Hand: [ Copper Sea Hag Copper Silver Estate]
+		Deck: [ Copper Sea Hag Copper Copper Gold Estate Silver]
+		Discard: [ Sea Hag Copper Estate Copper Silver Sea Hag]
+
+	Player 3 Hand: []
+		Deck: [ Salvager Salvager Copper]
+		Discard: [ Council Room Copper Silver Estate Estate Silver]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Sea Hag Played
+End Player 2 Actions
+Player 2 has 4 money.
+Entering player 2 Buy Phase.
+	Sea Hag purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: []
+		Discard: [ Adventurer Silver Copper Estate Silver Silver Silver Outpost Silver Estate Copper Silver Mine Mine]
+
+	Player 2 Hand: []
+		Deck: [ Copper Sea Hag Copper Copper Gold Estate Silver]
+		Discard: [ Sea Hag Copper Estate Copper Silver Sea Hag Sea Hag Copper Sea Hag Copper Silver Estate]
+
+	Player 3 Hand: [ Silver Silver Estate Silver Estate]
+		Deck: [ Copper Council Room]
+		Discard: []
+
+	***************************
+
+Player 3 turn.
+Beginning Player 3 Action Phase
+	Player 3 No Action taken this turn.
+End Player 3 Actions
+Player 3 has 6 money.
+Entering player 3 Buy Phase.
+	Adventurer purchased. Money after purchase: [0]
+End Player 3 Buys.
+End Player 3 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Mine Copper Estate Silver Silver]
+		Deck: [ Copper Mine Silver Silver Silver Silver Outpost Estate Adventurer]
+		Discard: []
+
+	Player 2 Hand: []
+		Deck: [ Copper Sea Hag Copper Copper Gold Estate Silver]
+		Discard: [ Sea Hag Copper Estate Copper Silver Sea Hag Sea Hag Copper Sea Hag Copper Silver Estate]
+
+	Player 3 Hand: []
+		Deck: [ Copper Council Room]
+		Discard: [ Adventurer Silver Silver Estate Silver Estate]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Player 1 No Action taken this turn.
+End Player 1 Actions
+Player 1 has 5 money.
+Entering player 1 Buy Phase.
+	Outpost purchased. Money after purchase: [0]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Copper Mine Silver Silver Silver Silver Outpost Estate Adventurer]
+		Discard: [ Outpost Mine Copper Estate Silver Silver]
+
+	Player 2 Hand: [ Silver Estate Gold Copper Copper]
+		Deck: [ Copper Sea Hag]
+		Discard: [ Sea Hag Copper Estate Copper Silver Sea Hag Sea Hag Copper Sea Hag Copper Silver Estate]
+
+	Player 3 Hand: []
+		Deck: [ Copper Council Room]
+		Discard: [ Adventurer Silver Silver Estate Silver Estate]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Player 2 No Action taken this turn.
+End Player 2 Actions
+Player 2 has 7 money.
+Entering player 2 Buy Phase.
+	Adventurer purchased. Money after purchase: [1]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Copper Mine Silver Silver Silver Silver Outpost Estate Adventurer]
+		Discard: [ Outpost Mine Copper Estate Silver Silver]
+
+	Player 2 Hand: []
+		Deck: [ Copper Sea Hag]
+		Discard: [ Sea Hag Copper Estate Copper Silver Sea Hag Sea Hag Copper Sea Hag Copper Silver Estate Adventurer Silver Estate Gold Copper Copper]
+
+	Player 3 Hand: [ Council Room Copper Estate Estate Silver]
+		Deck: [ Adventurer Silver Silver]
+		Discard: []
+
+	***************************
+
+Player 3 turn.
+Beginning Player 3 Action Phase
+	Error: playCard(Council Room) returned -1.
+End Player 3 Actions
+Player 3 has 3 money.
+Entering player 3 Buy Phase.
+	Silver purchased. Money after purchase: [0]
+End Player 3 Buys.
+End Player 3 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Adventurer Estate Outpost Silver Silver]
+		Deck: [ Copper Mine Silver Silver]
+		Discard: [ Outpost Mine Copper Estate Silver Silver]
+
+	Player 2 Hand: []
+		Deck: [ Copper Sea Hag]
+		Discard: [ Sea Hag Copper Estate Copper Silver Sea Hag Sea Hag Copper Sea Hag Copper Silver Estate Adventurer Silver Estate Gold Copper Copper]
+
+	Player 3 Hand: []
+		Deck: [ Adventurer Silver Silver]
+		Discard: [ Silver Council Room Copper Estate Estate Silver]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Adventurer Played
+	Error: playCard(Outpost) returned -1.
+End Player 1 Actions
+Player 1 has 6 money.
+Entering player 1 Buy Phase.
+	Gold Card purchased. Money after purchase: [0]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Copper Mine Silver]
+		Discard: [ Outpost Mine Copper Estate Silver Silver Gold Adventurer Estate Outpost Silver Silver Silver]
+
+	Player 2 Hand: [ Sea Hag Copper Sea Hag Copper Copper]
+		Deck: [ Gold Copper Silver Silver Estate Sea Hag Copper Sea Hag Estate Estate Copper Silver Copper Sea Hag Adventurer]
+		Discard: []
+
+	Player 3 Hand: []
+		Deck: [ Adventurer Silver Silver]
+		Discard: [ Silver Council Room Copper Estate Estate Silver]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Sea Hag Played
+End Player 2 Actions
+Player 2 has 3 money.
+Entering player 2 Buy Phase.
+	Silver purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: []
+		Discard: [ Outpost Mine Copper Estate Silver Silver Gold Adventurer Estate Outpost Silver Silver Silver Silver]
+
+	Player 2 Hand: []
+		Deck: [ Gold Copper Silver Silver Estate Sea Hag Copper Sea Hag Estate Estate Copper Silver Copper Sea Hag Adventurer]
+		Discard: [ Silver Sea Hag Copper Sea Hag Copper Copper]
+
+	Player 3 Hand: [ Estate Silver Council Room Silver Copper]
+		Deck: [ Silver Estate]
+		Discard: []
+
+	***************************
+
+Player 3 turn.
+Beginning Player 3 Action Phase
+	Error: playCard(Council Room) returned -1.
+End Player 3 Actions
+Player 3 has 5 money.
+Entering player 3 Buy Phase.
+	Outpost purchased. Money after purchase: [0]
+End Player 3 Buys.
+End Player 3 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Silver Copper Gold Mine Silver]
+		Deck: [ Estate Estate Outpost Silver Adventurer Silver Silver Outpost Silver]
+		Discard: []
+
+	Player 2 Hand: []
+		Deck: [ Gold Copper Silver Silver Estate Sea Hag Copper Sea Hag Estate Estate Copper Silver Copper Sea Hag Adventurer]
+		Discard: [ Silver Sea Hag Copper Sea Hag Copper Copper]
+
+	Player 3 Hand: []
+		Deck: [ Silver Estate]
+		Discard: [ Outpost Estate Silver Council Room Silver Copper]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Player 1 No Action taken this turn.
+End Player 1 Actions
+Player 1 has 8 money.
+Entering player 1 Buy Phase.
+	Purchased province. Money after purchase: [0]End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Estate Estate Outpost Silver Adventurer Silver Silver Outpost Silver]
+		Discard: [ Province Silver Copper Gold Mine Silver]
+
+	Player 2 Hand: [ Adventurer Sea Hag Copper Silver Copper]
+		Deck: [ Gold Copper Silver Silver Estate Sea Hag Copper Sea Hag Estate Estate]
+		Discard: [ Silver Sea Hag Copper Sea Hag Copper Copper]
+
+	Player 3 Hand: []
+		Deck: [ Silver Estate]
+		Discard: [ Outpost Estate Silver Council Room Silver Copper]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Adventurer Played
+	Error: playCard(Sea Hag) returned -1.
+End Player 2 Actions
+Player 2 has 9 money.
+Entering player 2 Buy Phase.
+	Purchased province. Money after purchase: [1]End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Estate Estate Outpost Silver Adventurer Silver Silver Outpost Silver]
+		Discard: [ Province Silver Copper Gold Mine Silver]
+
+	Player 2 Hand: []
+		Deck: [ Gold Copper]
+		Discard: [ Silver Sea Hag Copper Sea Hag Copper Copper Estate Sea Hag Sea Hag Estate Estate Province Adventurer Sea Hag Copper Silver Copper Copper Silver Silver]
+
+	Player 3 Hand: [ Estate Silver Copper Silver Estate]
+		Deck: [ Council Room Outpost Silver]
+		Discard: []
+
+	***************************
+
+Player 3 turn.
+Beginning Player 3 Action Phase
+	Player 3 No Action taken this turn.
+End Player 3 Actions
+Player 3 has 5 money.
+Entering player 3 Buy Phase.
+	Mine purchased. Money after purchase: [0]
+End Player 3 Buys.
+End Player 3 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Silver Outpost Silver Silver Adventurer]
+		Deck: [ Estate Estate Outpost Silver]
+		Discard: [ Province Silver Copper Gold Mine Silver]
+
+	Player 2 Hand: []
+		Deck: [ Gold Copper]
+		Discard: [ Silver Sea Hag Copper Sea Hag Copper Copper Estate Sea Hag Sea Hag Estate Estate Province Adventurer Sea Hag Copper Silver Copper Copper Silver Silver]
+
+	Player 3 Hand: []
+		Deck: [ Council Room Outpost Silver]
+		Discard: [ Mine Estate Silver Copper Silver Estate]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Adventurer Played
+	Error: playCard(Outpost) returned -1.
+End Player 1 Actions
+Player 1 has 8 money.
+Entering player 1 Buy Phase.
+	Purchased province. Money after purchase: [0]End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Estate Estate Outpost]
+		Discard: [ Province Silver Copper Gold Mine Silver Province Silver Outpost Silver Silver Adventurer Silver]
+
+	Player 2 Hand: [ Copper Gold Estate Estate Province]
+		Deck: [ Sea Hag Silver Sea Hag Copper Adventurer Silver Sea Hag Silver Copper Sea Hag Copper Sea Hag Copper Estate Silver Copper Copper]
+		Discard: []
+
+	Player 3 Hand: []
+		Deck: [ Council Room Outpost Silver]
+		Discard: [ Mine Estate Silver Copper Silver Estate]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Player 2 No Action taken this turn.
+End Player 2 Actions
+Player 2 has 4 money.
+Entering player 2 Buy Phase.
+	Sea Hag purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Estate Estate Outpost]
+		Discard: [ Province Silver Copper Gold Mine Silver Province Silver Outpost Silver Silver Adventurer Silver]
+
+	Player 2 Hand: []
+		Deck: [ Sea Hag Silver Sea Hag Copper Adventurer Silver Sea Hag Silver Copper Sea Hag Copper Sea Hag Copper Estate Silver Copper Copper]
+		Discard: [ Sea Hag Copper Gold Estate Estate Province]
+
+	Player 3 Hand: [ Silver Outpost Council Room Estate Silver]
+		Deck: [ Estate Mine Silver Copper]
+		Discard: []
+
+	***************************
+
+Player 3 turn.
+Beginning Player 3 Action Phase
+	Error: playCard(Council Room) returned -1.
+End Player 3 Actions
+Player 3 has 4 money.
+Entering player 3 Buy Phase.
+	Salvager purchased. Money after purchase: [0]
+End Player 3 Buys.
+End Player 3 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Outpost Estate Estate Adventurer Mine]
+		Deck: [ Silver Outpost Gold Silver Silver Silver Silver Copper Province Silver Province]
+		Discard: []
+
+	Player 2 Hand: []
+		Deck: [ Sea Hag Silver Sea Hag Copper Adventurer Silver Sea Hag Silver Copper Sea Hag Copper Sea Hag Copper Estate Silver Copper Copper]
+		Discard: [ Sea Hag Copper Gold Estate Estate Province]
+
+	Player 3 Hand: []
+		Deck: [ Estate Mine Silver Copper]
+		Discard: [ Salvager Silver Outpost Council Room Estate Silver]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Adventurer Played
+	Error: playCard(Outpost) returned -1.
+End Player 1 Actions
+Player 1 has 2 money.
+Entering player 1 Buy Phase.
+	Estate purchased. Money after purchase: [0]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Silver Outpost Gold Silver Silver Silver Silver Copper Province]
+		Discard: [ Province Estate Outpost Estate Estate Adventurer Mine Silver]
+
+	Player 2 Hand: [ Copper Copper Silver Estate Copper]
+		Deck: [ Sea Hag Silver Sea Hag Copper Adventurer Silver Sea Hag Silver Copper Sea Hag Copper Sea Hag]
+		Discard: [ Sea Hag Copper Gold Estate Estate Province]
+
+	Player 3 Hand: []
+		Deck: [ Estate Mine Silver Copper]
+		Discard: [ Salvager Silver Outpost Council Room Estate Silver]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Player 2 No Action taken this turn.
+End Player 2 Actions
+Player 2 has 5 money.
+Entering player 2 Buy Phase.
+	Outpost purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Silver Outpost Gold Silver Silver Silver Silver Copper Province]
+		Discard: [ Province Estate Outpost Estate Estate Adventurer Mine Silver]
+
+	Player 2 Hand: []
+		Deck: [ Sea Hag Silver Sea Hag Copper Adventurer Silver Sea Hag Silver Copper Sea Hag Copper Sea Hag]
+		Discard: [ Sea Hag Copper Gold Estate Estate Province Outpost Copper Copper Silver Estate Copper]
+
+	Player 3 Hand: [ Copper Silver Mine Estate Silver]
+		Deck: [ Council Room Outpost Estate Silver Salvager]
+		Discard: []
+
+	***************************
+
+Player 3 turn.
+Beginning Player 3 Action Phase
+	Player 3 No Action taken this turn.
+End Player 3 Actions
+Player 3 has 5 money.
+Entering player 3 Buy Phase.
+	Mine purchased. Money after purchase: [0]
+End Player 3 Buys.
+End Player 3 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Province Copper Silver Silver Silver]
+		Deck: [ Silver Outpost Gold Silver]
+		Discard: [ Province Estate Outpost Estate Estate Adventurer Mine Silver]
+
+	Player 2 Hand: []
+		Deck: [ Sea Hag Silver Sea Hag Copper Adventurer Silver Sea Hag Silver Copper Sea Hag Copper Sea Hag]
+		Discard: [ Sea Hag Copper Gold Estate Estate Province Outpost Copper Copper Silver Estate Copper]
+
+	Player 3 Hand: []
+		Deck: [ Council Room Outpost Estate Silver Salvager]
+		Discard: [ Mine Copper Silver Mine Estate Silver]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Player 1 No Action taken this turn.
+End Player 1 Actions
+Player 1 has 7 money.
+Entering player 1 Buy Phase.
+	Gold Card purchased. Money after purchase: [1]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Silver Outpost Gold Silver]
+		Discard: [ Province Estate Outpost Estate Estate Adventurer Mine Silver Gold Province Copper Silver Silver Silver]
+
+	Player 2 Hand: [ Sea Hag Copper Sea Hag Copper Silver]
+		Deck: [ Sea Hag Silver Sea Hag Copper Adventurer Silver Sea Hag]
+		Discard: [ Sea Hag Copper Gold Estate Estate Province Outpost Copper Copper Silver Estate Copper]
+
+	Player 3 Hand: []
+		Deck: [ Council Room Outpost Estate Silver Salvager]
+		Discard: [ Mine Copper Silver Mine Estate Silver]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Sea Hag Played
+End Player 2 Actions
+Player 2 has 4 money.
+Entering player 2 Buy Phase.
+	Sea Hag purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Silver]
+		Discard: [ Province Estate Outpost Estate Estate Adventurer Mine Silver Gold Province Copper Silver Silver Silver Silver]
+
+	Player 2 Hand: []
+		Deck: [ Sea Hag Silver Sea Hag Copper Adventurer Silver Sea Hag]
+		Discard: [ Sea Hag Copper Gold Estate Estate Province Outpost Copper Copper Silver Estate Copper Sea Hag Sea Hag Copper Sea Hag Copper Silver]
+
+	Player 3 Hand: [ Outpost Council Room Silver Silver Silver]
+		Deck: [ Mine Mine Estate Copper]
+		Discard: []
+
+	***************************
+
+Player 3 turn.
+Beginning Player 3 Action Phase
+	Error: playCard(Council Room) returned -1.
+End Player 3 Actions
+Player 3 has 6 money.
+Entering player 3 Buy Phase.
+	Adventurer purchased. Money after purchase: [0]
+End Player 3 Buys.
+End Player 3 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Silver Mine Silver Estate Silver]
+		Deck: [ Estate Gold Estate Province Adventurer Silver Silver Copper Outpost Province Silver]
+		Discard: []
+
+	Player 2 Hand: []
+		Deck: [ Sea Hag Silver Sea Hag Copper Adventurer Silver Sea Hag]
+		Discard: [ Sea Hag Copper Gold Estate Estate Province Outpost Copper Copper Silver Estate Copper Sea Hag Sea Hag Copper Sea Hag Copper Silver]
+
+	Player 3 Hand: []
+		Deck: [ Mine Mine Estate Copper]
+		Discard: [ Adventurer Outpost Council Room Silver Silver Silver]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Player 1 No Action taken this turn.
+End Player 1 Actions
+Player 1 has 6 money.
+Entering player 1 Buy Phase.
+	Gold Card purchased. Money after purchase: [0]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Estate Gold Estate Province Adventurer Silver Silver Copper Outpost Province Silver]
+		Discard: [ Gold Silver Mine Silver Estate Silver]
+
+	Player 2 Hand: [ Sea Hag Silver Adventurer Copper Sea Hag]
+		Deck: [ Sea Hag Silver]
+		Discard: [ Sea Hag Copper Gold Estate Estate Province Outpost Copper Copper Silver Estate Copper Sea Hag Sea Hag Copper Sea Hag Copper Silver]
+
+	Player 3 Hand: []
+		Deck: [ Mine Mine Estate Copper]
+		Discard: [ Adventurer Outpost Council Room Silver Silver Silver]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Adventurer Played
+	Error: playCard(Sea Hag) returned -1.
+End Player 2 Actions
+Player 2 has 5 money.
+Entering player 2 Buy Phase.
+	Outpost purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Estate Gold Estate Province Adventurer Silver Silver Copper Outpost Province Silver]
+		Discard: [ Gold Silver Mine Silver Estate Silver]
+
+	Player 2 Hand: []
+		Deck: [ Sea Hag]
+		Discard: [ Sea Hag Copper Gold Estate Estate Province Outpost Copper Copper Silver Estate Copper Sea Hag Sea Hag Copper Sea Hag Copper Silver Outpost Sea Hag Silver Adventurer Copper Sea Hag Silver]
+
+	Player 3 Hand: [ Copper Estate Mine Mine Silver]
+		Deck: [ Adventurer Outpost Council Room Silver Silver]
+		Discard: []
+
+	***************************
+
+Player 3 turn.
+Beginning Player 3 Action Phase
+	Player 3 No Action taken this turn.
+End Player 3 Actions
+Player 3 has 3 money.
+Entering player 3 Buy Phase.
+	Silver purchased. Money after purchase: [0]
+End Player 3 Buys.
+End Player 3 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Silver Province Outpost Copper Silver]
+		Deck: [ Estate Gold Estate Province Adventurer Silver]
+		Discard: [ Gold Silver Mine Silver Estate Silver]
+
+	Player 2 Hand: []
+		Deck: [ Sea Hag]
+		Discard: [ Sea Hag Copper Gold Estate Estate Province Outpost Copper Copper Silver Estate Copper Sea Hag Sea Hag Copper Sea Hag Copper Silver Outpost Sea Hag Silver Adventurer Copper Sea Hag Silver]
+
+	Player 3 Hand: []
+		Deck: [ Adventurer Outpost Council Room Silver Silver]
+		Discard: [ Silver Copper Estate Mine Mine Silver]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Outpost Played
+End Player 1 Actions
+Player 1 has 5 money.
+Entering player 1 Buy Phase.
+	Mine purchased. Money after purchase: [0]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Estate Gold Estate Province Adventurer Silver]
+		Discard: [ Gold Silver Mine Silver Estate Silver Mine Silver Province Silver Copper]
+
+	Player 2 Hand: [ Sea Hag Sea Hag Estate Silver Sea Hag]
+		Deck: [ Sea Hag Sea Hag Copper Sea Hag Sea Hag Outpost Copper Copper Silver Estate Gold Province Adventurer Silver Outpost Copper Silver Copper Copper Estate Copper]
+		Discard: []
+
+	Player 3 Hand: []
+		Deck: [ Adventurer Outpost Council Room Silver Silver]
+		Discard: [ Silver Copper Estate Mine Mine Silver]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Sea Hag Played
+End Player 2 Actions
+Player 2 has 2 money.
+Entering player 2 Buy Phase.
+	Estate purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Estate Gold Estate]
+		Discard: [ Gold Silver Mine Silver Estate Silver Mine Silver Province Silver Copper Silver]
+
+	Player 2 Hand: []
+		Deck: [ Sea Hag Sea Hag Copper Sea Hag Sea Hag Outpost Copper Copper Silver Estate Gold Province Adventurer Silver Outpost Copper Silver Copper Copper Estate Copper]
+		Discard: [ Estate Sea Hag Sea Hag Estate Silver Sea Hag]
+
+	Player 3 Hand: [ Outpost Adventurer Silver Silver Mine]
+		Deck: [ Estate Mine Copper Silver]
+		Discard: []
+
+	***************************
+
+Player 3 turn.
+Beginning Player 3 Action Phase
+	Adventurer Played
+	Error: playCard(Outpost) returned -1.
+End Player 3 Actions
+Player 3 has 6 money.
+Entering player 3 Buy Phase.
+	Gold Card purchased. Money after purchase: [0]
+End Player 3 Buys.
+End Player 3 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Estate Gold Estate Silver Province]
+		Deck: [ Silver Silver Copper Mine Silver Gold Silver Silver Mine Estate]
+		Discard: []
+
+	Player 2 Hand: []
+		Deck: [ Sea Hag Sea Hag Copper Sea Hag Sea Hag Outpost Copper Copper Silver Estate Gold Province Adventurer Silver Outpost Copper Silver Copper Copper Estate Copper]
+		Discard: [ Estate Sea Hag Sea Hag Estate Silver Sea Hag]
+
+	Player 3 Hand: []
+		Deck: [ Estate Mine Copper]
+		Discard: [ Gold Outpost Adventurer Silver Silver Mine Silver]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Player 1 No Action taken this turn.
+End Player 1 Actions
+Player 1 has 5 money.
+Entering player 1 Buy Phase.
+	Mine purchased. Money after purchase: [0]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Silver Silver Copper Mine Silver Gold Silver Silver Mine Estate]
+		Discard: [ Mine Estate Gold Estate Silver Province]
+
+	Player 2 Hand: [ Copper Estate Copper Copper Silver]
+		Deck: [ Sea Hag Sea Hag Copper Sea Hag Sea Hag Outpost Copper Copper Silver Estate Gold Province Adventurer Silver Outpost Copper]
+		Discard: [ Estate Sea Hag Sea Hag Estate Silver Sea Hag]
+
+	Player 3 Hand: []
+		Deck: [ Estate Mine Copper]
+		Discard: [ Gold Outpost Adventurer Silver Silver Mine Silver]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Player 2 No Action taken this turn.
+End Player 2 Actions
+Player 2 has 5 money.
+Entering player 2 Buy Phase.
+	Minion purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Silver Silver Copper Mine Silver Gold Silver Silver Mine Estate]
+		Discard: [ Mine Estate Gold Estate Silver Province]
+
+	Player 2 Hand: []
+		Deck: [ Sea Hag Sea Hag Copper Sea Hag Sea Hag Outpost Copper Copper Silver Estate Gold Province Adventurer Silver Outpost Copper]
+		Discard: [ Estate Sea Hag Sea Hag Estate Silver Sea Hag Minion Copper Estate Copper Copper Silver]
+
+	Player 3 Hand: [ Copper Mine Estate Silver Silver]
+		Deck: [ Gold Silver Adventurer Mine Outpost]
+		Discard: []
+
+	***************************
+
+Player 3 turn.
+Beginning Player 3 Action Phase
+	Player 3 No Action taken this turn.
+End Player 3 Actions
+Player 3 has 5 money.
+Entering player 3 Buy Phase.
+	Council Room purchased. Money after purchase: [0]
+End Player 3 Buys.
+End Player 3 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Estate Mine Silver Silver Gold]
+		Deck: [ Silver Silver Copper Mine Silver]
+		Discard: [ Mine Estate Gold Estate Silver Province]
+
+	Player 2 Hand: []
+		Deck: [ Sea Hag Sea Hag Copper Sea Hag Sea Hag Outpost Copper Copper Silver Estate Gold Province Adventurer Silver Outpost Copper]
+		Discard: [ Estate Sea Hag Sea Hag Estate Silver Sea Hag Minion Copper Estate Copper Copper Silver]
+
+	Player 3 Hand: []
+		Deck: [ Gold Silver Adventurer Mine Outpost]
+		Discard: [ Council Room Copper Mine Estate Silver Silver]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Player 1 No Action taken this turn.
+End Player 1 Actions
+Player 1 has 7 money.
+Entering player 1 Buy Phase.
+	Adventurer purchased. Money after purchase: [1]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Silver Silver Copper Mine Silver]
+		Discard: [ Mine Estate Gold Estate Silver Province Adventurer Estate Mine Silver Silver Gold]
+
+	Player 2 Hand: [ Copper Outpost Silver Adventurer Province]
+		Deck: [ Sea Hag Sea Hag Copper Sea Hag Sea Hag Outpost Copper Copper Silver Estate Gold]
+		Discard: [ Estate Sea Hag Sea Hag Estate Silver Sea Hag Minion Copper Estate Copper Copper Silver]
+
+	Player 3 Hand: []
+		Deck: [ Gold Silver Adventurer Mine Outpost]
+		Discard: [ Council Room Copper Mine Estate Silver Silver]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Adventurer Played
+	Error: playCard(Outpost) returned -1.
+End Player 2 Actions
+Player 2 has 6 money.
+Entering player 2 Buy Phase.
+	Gold Card purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Silver Silver Copper Mine Silver]
+		Discard: [ Mine Estate Gold Estate Silver Province Adventurer Estate Mine Silver Silver Gold]
+
+	Player 2 Hand: []
+		Deck: [ Sea Hag Sea Hag Copper Sea Hag Sea Hag Outpost Copper Copper Silver Estate]
+		Discard: [ Estate Sea Hag Sea Hag Estate Silver Sea Hag Minion Copper Estate Copper Copper Silver Gold Copper Outpost Silver Adventurer Province Gold]
+
+	Player 3 Hand: [ Outpost Mine Adventurer Silver Gold]
+		Deck: []
+		Discard: [ Council Room Copper Mine Estate Silver Silver]
+
+	***************************
+
+Player 3 turn.
+Beginning Player 3 Action Phase
+	Adventurer Played
+	Error: playCard(Outpost) returned -1.
+End Player 3 Actions
+Player 3 has 8 money.
+Entering player 3 Buy Phase.
+	Purchased province. Money after purchase: [0]End Player 3 Buys.
+End Player 3 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Silver Mine Copper Silver Silver]
+		Deck: []
+		Discard: [ Mine Estate Gold Estate Silver Province Adventurer Estate Mine Silver Silver Gold]
+
+	Player 2 Hand: []
+		Deck: [ Sea Hag Sea Hag Copper Sea Hag Sea Hag Outpost Copper Copper Silver Estate]
+		Discard: [ Estate Sea Hag Sea Hag Estate Silver Sea Hag Minion Copper Estate Copper Copper Silver Gold Copper Outpost Silver Adventurer Province Gold]
+
+	Player 3 Hand: []
+		Deck: [ Silver]
+		Discard: [ Mine Council Room Estate Province Outpost Mine Adventurer Silver Gold Silver Copper]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Player 1 No Action taken this turn.
+End Player 1 Actions
+Player 1 has 7 money.
+Entering player 1 Buy Phase.
+	Gold Card purchased. Money after purchase: [1]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: []
+		Discard: [ Mine Estate Gold Estate Silver Province Adventurer Estate Mine Silver Silver Gold Gold Silver Mine Copper Silver Silver]
+
+	Player 2 Hand: [ Estate Silver Copper Copper Outpost]
+		Deck: [ Sea Hag Sea Hag Copper Sea Hag Sea Hag]
+		Discard: [ Estate Sea Hag Sea Hag Estate Silver Sea Hag Minion Copper Estate Copper Copper Silver Gold Copper Outpost Silver Adventurer Province Gold]
+
+	Player 3 Hand: []
+		Deck: [ Silver]
+		Discard: [ Mine Council Room Estate Province Outpost Mine Adventurer Silver Gold Silver Copper]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Outpost Played
+End Player 2 Actions
+Player 2 has 4 money.
+Entering player 2 Buy Phase.
+	Baron purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: []
+		Discard: [ Mine Estate Gold Estate Silver Province Adventurer Estate Mine Silver Silver Gold Gold Silver Mine Copper Silver Silver]
+
+	Player 2 Hand: []
+		Deck: [ Sea Hag Sea Hag Copper Sea Hag Sea Hag]
+		Discard: [ Estate Sea Hag Sea Hag Estate Silver Sea Hag Minion Copper Estate Copper Copper Silver Gold Copper Outpost Silver Adventurer Province Gold Baron Estate Silver Copper Copper]
+
+	Player 3 Hand: [ Silver Estate Outpost Copper Council Room]
+		Deck: [ Gold Province Mine Silver Adventurer Silver Mine]
+		Discard: []
+
+	***************************
+
+Player 3 turn.
+Beginning Player 3 Action Phase
+	Error: playCard(Council Room) returned -1.
+End Player 3 Actions
+Player 3 has 3 money.
+Entering player 3 Buy Phase.
+	Silver purchased. Money after purchase: [0]
+End Player 3 Buys.
+End Player 3 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Mine Silver Mine Silver Copper]
+		Deck: [ Gold Silver Mine Adventurer Gold Province Silver Estate Silver Silver Gold Estate Estate]
+		Discard: []
+
+	Player 2 Hand: []
+		Deck: [ Sea Hag Sea Hag Copper Sea Hag Sea Hag]
+		Discard: [ Estate Sea Hag Sea Hag Estate Silver Sea Hag Minion Copper Estate Copper Copper Silver Gold Copper Outpost Silver Adventurer Province Gold Baron Estate Silver Copper Copper]
+
+	Player 3 Hand: []
+		Deck: [ Gold Province Mine Silver Adventurer Silver Mine]
+		Discard: [ Silver Silver Estate Outpost Copper Council Room]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Player 1 No Action taken this turn.
+End Player 1 Actions
+Player 1 has 5 money.
+Entering player 1 Buy Phase.
+	Council Room purchased. Money after purchase: [0]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Gold Silver Mine Adventurer Gold Province Silver Estate Silver Silver Gold Estate Estate]
+		Discard: [ Council Room Mine Silver Mine Silver Copper]
+
+	Player 2 Hand: [ Sea Hag Sea Hag Copper Sea Hag Sea Hag]
+		Deck: []
+		Discard: [ Estate Sea Hag Sea Hag Estate Silver Sea Hag Minion Copper Estate Copper Copper Silver Gold Copper Outpost Silver Adventurer Province Gold Baron Estate Silver Copper Copper]
+
+	Player 3 Hand: []
+		Deck: [ Gold Province Mine Silver Adventurer Silver Mine]
+		Discard: [ Silver Silver Estate Outpost Copper Council Room]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Sea Hag Played
+End Player 2 Actions
+Player 2 has 1 money.
+Entering player 2 Buy Phase.
+	Copper purchased. Money after purchase: [1]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Gold Silver Mine Adventurer Gold Province Silver Estate Silver Silver]
+		Discard: [ Council Room Mine Silver Mine Silver Copper Copper]
+
+	Player 2 Hand: []
+		Deck: []
+		Discard: [ Estate Sea Hag Sea Hag Estate Silver Sea Hag Minion Copper Estate Copper Copper Silver Gold Copper Outpost Silver Adventurer Province Gold Baron Estate Silver Copper Copper Copper Sea Hag Sea Hag Copper Sea Hag Sea Hag]
+
+	Player 3 Hand: [ Silver Mine Province Gold Copper]
+		Deck: [ Silver Estate Silver Council Room Outpost Council Room]
+		Discard: []
+
+	***************************
+
+Player 3 turn.
+Beginning Player 3 Action Phase
+	Player 3 No Action taken this turn.
+End Player 3 Actions
+Player 3 has 6 money.
+Entering player 3 Buy Phase.
+	Gold Card purchased. Money after purchase: [0]
+End Player 3 Buys.
+End Player 3 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Silver Silver Estate Silver Province]
+		Deck: [ Gold Silver Mine Adventurer Gold]
+		Discard: [ Council Room Mine Silver Mine Silver Copper Copper]
+
+	Player 2 Hand: []
+		Deck: []
+		Discard: [ Estate Sea Hag Sea Hag Estate Silver Sea Hag Minion Copper Estate Copper Copper Silver Gold Copper Outpost Silver Adventurer Province Gold Baron Estate Silver Copper Copper Copper Sea Hag Sea Hag Copper Sea Hag Sea Hag]
+
+	Player 3 Hand: []
+		Deck: [ Silver Estate Silver Council Room Outpost Council Room]
+		Discard: [ Gold Silver Mine Province Gold Copper]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Player 1 No Action taken this turn.
+End Player 1 Actions
+Player 1 has 6 money.
+Entering player 1 Buy Phase.
+	Adventurer purchased. Money after purchase: [0]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Gold Silver Mine Adventurer Gold]
+		Discard: [ Council Room Mine Silver Mine Silver Copper Copper Adventurer Silver Silver Estate Silver Province]
+
+	Player 2 Hand: [ Sea Hag Copper Copper Estate Copper]
+		Deck: [ Sea Hag Province Copper Copper Sea Hag Estate Silver Copper Silver Estate Gold Baron Minion Gold Copper Estate Sea Hag Copper Sea Hag Silver Adventurer Sea Hag Sea Hag Outpost Silver]
+		Discard: []
+
+	Player 3 Hand: []
+		Deck: [ Silver Estate Silver Council Room Outpost Council Room]
+		Discard: [ Gold Silver Mine Province Gold Copper]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Sea Hag Played
+End Player 2 Actions
+Player 2 has 3 money.
+Entering player 2 Buy Phase.
+	Silver purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Gold Silver]
+		Discard: [ Council Room Mine Silver Mine Silver Copper Copper Adventurer Silver Silver Estate Silver Province Province]
+
+	Player 2 Hand: []
+		Deck: [ Sea Hag Province Copper Copper Sea Hag Estate Silver Copper Silver Estate Gold Baron Minion Gold Copper Estate Sea Hag Copper Sea Hag Silver Adventurer Sea Hag Sea Hag Outpost Silver]
+		Discard: [ Silver Sea Hag Copper Copper Estate Copper]
+
+	Player 3 Hand: [ Silver Estate Silver Province Gold]
+		Deck: [ Copper Gold Silver Mine Copper]
+		Discard: []
+
+	***************************
+
+Player 3 turn.
+Beginning Player 3 Action Phase
+	Player 3 No Action taken this turn.
+End Player 3 Actions
+Player 3 has 7 money.
+Entering player 3 Buy Phase.
+	Gold Card purchased. Money after purchase: [1]
+End Player 3 Buys.
+End Player 3 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Silver Gold Estate Copper Mine]
+		Deck: [ Province Province Silver Silver Council Room Copper Adventurer Silver Mine Silver Silver]
+		Discard: []
+
+	Player 2 Hand: []
+		Deck: [ Sea Hag Province Copper Copper Sea Hag Estate Silver Copper Silver Estate Gold Baron Minion Gold Copper Estate Sea Hag Copper Sea Hag Silver Adventurer Sea Hag Sea Hag Outpost Silver]
+		Discard: [ Silver Sea Hag Copper Copper Estate Copper]
+
+	Player 3 Hand: []
+		Deck: [ Copper Gold Silver Mine Copper]
+		Discard: [ Gold Silver Estate Silver Province Gold]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Player 1 No Action taken this turn.
+End Player 1 Actions
+Player 1 has 6 money.
+Entering player 1 Buy Phase.
+	Adventurer purchased. Money after purchase: [0]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Province Province Silver Silver Council Room Copper Adventurer Silver Mine Silver Silver]
+		Discard: [ Adventurer Silver Gold Estate Copper Mine]
+
+	Player 2 Hand: [ Silver Outpost Sea Hag Sea Hag Adventurer]
+		Deck: [ Sea Hag Province Copper Copper Sea Hag Estate Silver Copper Silver Estate Gold Baron Minion Gold Copper Estate Sea Hag Copper Sea Hag Silver]
+		Discard: [ Silver Sea Hag Copper Copper Estate Copper]
+
+	Player 3 Hand: []
+		Deck: [ Copper Gold Silver Mine Copper]
+		Discard: [ Gold Silver Estate Silver Province Gold]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Adventurer Played
+	Error: playCard(Outpost) returned -1.
+End Player 2 Actions
+Player 2 has 4 money.
+Entering player 2 Buy Phase.
+	Salvager purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Province Province Silver Silver Council Room Copper Adventurer Silver Mine Silver Silver]
+		Discard: [ Adventurer Silver Gold Estate Copper Mine]
+
+	Player 2 Hand: []
+		Deck: [ Sea Hag Province Copper Copper Sea Hag Estate Silver Copper Silver Estate Gold Baron Minion Gold Copper Estate Sea Hag Copper Sea Hag]
+		Discard: [ Silver Sea Hag Copper Copper Estate Copper Salvager Silver Outpost Sea Hag Sea Hag Adventurer Silver]
+
+	Player 3 Hand: [ Copper Mine Silver Gold Copper]
+		Deck: []
+		Discard: [ Gold Silver Estate Silver Province Gold]
+
+	***************************
+
+Player 3 turn.
+Beginning Player 3 Action Phase
+	Player 3 No Action taken this turn.
+End Player 3 Actions
+Player 3 has 7 money.
+Entering player 3 Buy Phase.
+	Gold Card purchased. Money after purchase: [1]
+End Player 3 Buys.
+End Player 3 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Silver Silver Mine Silver Adventurer]
+		Deck: [ Province Province Silver Silver Council Room Copper]
+		Discard: [ Adventurer Silver Gold Estate Copper Mine]
+
+	Player 2 Hand: []
+		Deck: [ Sea Hag Province Copper Copper Sea Hag Estate Silver Copper Silver Estate Gold Baron Minion Gold Copper Estate Sea Hag Copper Sea Hag]
+		Discard: [ Silver Sea Hag Copper Copper Estate Copper Salvager Silver Outpost Sea Hag Sea Hag Adventurer Silver]
+
+	Player 3 Hand: []
+		Deck: []
+		Discard: [ Gold Silver Estate Silver Province Gold Gold Copper Mine Silver Gold Copper]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Adventurer Played
+End Player 1 Actions
+Player 1 has 7 money.
+Entering player 1 Buy Phase.
+	Adventurer purchased. Money after purchase: [1]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Province Province Silver Silver Council Room]
+		Discard: [ Adventurer Silver Gold Estate Copper Mine Adventurer Silver Silver Mine Silver Adventurer Copper]
+
+	Player 2 Hand: [ Sea Hag Copper Sea Hag Estate Copper]
+		Deck: [ Sea Hag Province Copper Copper Sea Hag Estate Silver Copper Silver Estate Gold Baron Minion Gold]
+		Discard: [ Silver Sea Hag Copper Copper Estate Copper Salvager Silver Outpost Sea Hag Sea Hag Adventurer Silver]
+
+	Player 3 Hand: []
+		Deck: []
+		Discard: [ Gold Silver Estate Silver Province Gold Gold Copper Mine Silver Gold Copper]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Sea Hag Played
+End Player 2 Actions
+Player 2 has 2 money.
+Entering player 2 Buy Phase.
+	Estate purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Province Province]
+		Discard: [ Adventurer Silver Gold Estate Copper Mine Adventurer Silver Silver Mine Silver Adventurer Copper Copper]
+
+	Player 2 Hand: []
+		Deck: [ Sea Hag Province Copper Copper Sea Hag Estate Silver Copper Silver Estate Gold Baron Minion Gold]
+		Discard: [ Silver Sea Hag Copper Copper Estate Copper Salvager Silver Outpost Sea Hag Sea Hag Adventurer Silver Estate Sea Hag Copper Sea Hag Estate Copper]
+
+	Player 3 Hand: [ Province Silver Silver Gold Estate]
+		Deck: [ Silver Gold Gold Copper Copper Mine Copper Gold]
+		Discard: []
+
+	***************************
+
+Player 3 turn.
+Beginning Player 3 Action Phase
+	Player 3 No Action taken this turn.
+End Player 3 Actions
+Player 3 has 7 money.
+Entering player 3 Buy Phase.
+	Adventurer purchased. Money after purchase: [1]
+End Player 3 Buys.
+End Player 3 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Province Province Copper Adventurer Copper]
+		Deck: [ Mine Silver Gold Adventurer Silver Estate Copper Silver Silver Mine Adventurer]
+		Discard: []
+
+	Player 2 Hand: []
+		Deck: [ Sea Hag Province Copper Copper Sea Hag Estate Silver Copper Silver Estate Gold Baron Minion Gold]
+		Discard: [ Silver Sea Hag Copper Copper Estate Copper Salvager Silver Outpost Sea Hag Sea Hag Adventurer Silver Estate Sea Hag Copper Sea Hag Estate Copper]
+
+	Player 3 Hand: []
+		Deck: [ Silver Gold Gold Copper Copper Mine Copper Gold]
+		Discard: [ Adventurer Province Silver Silver Gold Estate]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Adventurer Played
+End Player 1 Actions
+Player 1 has 4 money.
+Entering player 1 Buy Phase.
+	Baron purchased. Money after purchase: [0]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Mine Silver Gold Adventurer Silver Estate Copper Silver]
+		Discard: [ Mine Adventurer Baron Province Province Copper Adventurer Copper Silver]
+
+	Player 2 Hand: [ Gold Minion Baron Gold Estate]
+		Deck: [ Sea Hag Province Copper Copper Sea Hag Estate Silver Copper Silver]
+		Discard: [ Silver Sea Hag Copper Copper Estate Copper Salvager Silver Outpost Sea Hag Sea Hag Adventurer Silver Estate Sea Hag Copper Sea Hag Estate Copper]
+
+	Player 3 Hand: []
+		Deck: [ Silver Gold Gold Copper Copper Mine Copper Gold]
+		Discard: [ Adventurer Province Silver Silver Gold Estate]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Player 2 No Action taken this turn.
+End Player 2 Actions
+Player 2 has 6 money.
+Entering player 2 Buy Phase.
+	Adventurer purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Mine Silver Gold Adventurer Silver Estate Copper Silver]
+		Discard: [ Mine Adventurer Baron Province Province Copper Adventurer Copper Silver]
+
+	Player 2 Hand: []
+		Deck: [ Sea Hag Province Copper Copper Sea Hag Estate Silver Copper Silver]
+		Discard: [ Silver Sea Hag Copper Copper Estate Copper Salvager Silver Outpost Sea Hag Sea Hag Adventurer Silver Estate Sea Hag Copper Sea Hag Estate Copper Adventurer Gold Minion Baron Gold Estate]
+
+	Player 3 Hand: [ Gold Copper Mine Copper Copper]
+		Deck: [ Silver Gold Gold]
+		Discard: [ Adventurer Province Silver Silver Gold Estate]
+
+	***************************
+
+Player 3 turn.
+Beginning Player 3 Action Phase
+	Player 3 No Action taken this turn.
+End Player 3 Actions
+Player 3 has 6 money.
+Entering player 3 Buy Phase.
+	Gold Card purchased. Money after purchase: [0]
+End Player 3 Buys.
+End Player 3 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Silver Copper Estate Silver Adventurer]
+		Deck: [ Mine Silver Gold]
+		Discard: [ Mine Adventurer Baron Province Province Copper Adventurer Copper Silver]
+
+	Player 2 Hand: []
+		Deck: [ Sea Hag Province Copper Copper Sea Hag Estate Silver Copper Silver]
+		Discard: [ Silver Sea Hag Copper Copper Estate Copper Salvager Silver Outpost Sea Hag Sea Hag Adventurer Silver Estate Sea Hag Copper Sea Hag Estate Copper Adventurer Gold Minion Baron Gold Estate]
+
+	Player 3 Hand: []
+		Deck: [ Silver Gold Gold]
+		Discard: [ Adventurer Province Silver Silver Gold Estate Gold Gold Copper Mine Copper Copper]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Adventurer Played
+End Player 1 Actions
+Player 1 has 8 money.
+Entering player 1 Buy Phase.
+	Purchased province. Money after purchase: [0]End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Mine Silver]
+		Discard: [ Mine Adventurer Baron Province Province Copper Adventurer Copper Silver Province Silver Copper Estate Silver Adventurer Gold]
+
+	Player 2 Hand: [ Silver Copper Silver Estate Sea Hag]
+		Deck: [ Sea Hag Province Copper Copper]
+		Discard: [ Silver Sea Hag Copper Copper Estate Copper Salvager Silver Outpost Sea Hag Sea Hag Adventurer Silver Estate Sea Hag Copper Sea Hag Estate Copper Adventurer Gold Minion Baron Gold Estate]
+
+	Player 3 Hand: []
+		Deck: [ Silver Gold Gold]
+		Discard: [ Adventurer Province Silver Silver Gold Estate Gold Gold Copper Mine Copper Copper]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Sea Hag Played
+End Player 2 Actions
+Player 2 has 5 money.
+Entering player 2 Buy Phase.
+	Minion purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: []
+		Discard: [ Mine Adventurer Baron Province Province Copper Adventurer Copper Silver Province Silver Copper Estate Silver Adventurer Gold Gold]
+
+	Player 2 Hand: []
+		Deck: [ Sea Hag Province Copper Copper]
+		Discard: [ Silver Sea Hag Copper Copper Estate Copper Salvager Silver Outpost Sea Hag Sea Hag Adventurer Silver Estate Sea Hag Copper Sea Hag Estate Copper Adventurer Gold Minion Baron Gold Estate Minion Silver Copper Silver Estate Sea Hag]
+
+	Player 3 Hand: [ Copper Mine Gold Gold Silver]
+		Deck: [ Province Copper Adventurer Silver Estate Copper Gold Copper]
+		Discard: []
+
+	***************************
+
+Player 3 turn.
+Beginning Player 3 Action Phase
+	Player 3 No Action taken this turn.
+End Player 3 Actions
+Player 3 has 9 money.
+Entering player 3 Buy Phase.
+	Purchased province. Money after purchase: [1]End Player 3 Buys.
+End Player 3 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Province Silver Estate Copper Adventurer]
+		Deck: [ Adventurer Province Province Baron Gold Gold Mine Copper Silver Copper Silver Adventurer]
+		Discard: []
+
+	Player 2 Hand: []
+		Deck: [ Sea Hag Province Copper Copper]
+		Discard: [ Silver Sea Hag Copper Copper Estate Copper Salvager Silver Outpost Sea Hag Sea Hag Adventurer Silver Estate Sea Hag Copper Sea Hag Estate Copper Adventurer Gold Minion Baron Gold Estate Minion Silver Copper Silver Estate Sea Hag]
+
+	Player 3 Hand: []
+		Deck: [ Province Copper Adventurer Silver Estate Copper Gold Copper]
+		Discard: [ Province Copper Mine Gold Gold Silver]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Adventurer Played
+End Player 1 Actions
+Player 1 has 5 money.
+Entering player 1 Buy Phase.
+	Council Room purchased. Money after purchase: [0]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Adventurer Province Province Baron Gold Gold Mine Copper Silver Copper]
+		Discard: [ Adventurer Council Room Province Silver Estate Copper Adventurer Silver]
+
+	Player 2 Hand: [ Copper Copper Province Sea Hag Copper]
+		Deck: [ Gold Sea Hag Salvager Estate Copper Silver Silver Silver Minion Adventurer Minion Estate Estate Copper Copper Copper Outpost Sea Hag Sea Hag Sea Hag Copper Silver Sea Hag Estate Gold Estate Baron Adventurer Silver Sea Hag]
+		Discard: []
+
+	Player 3 Hand: []
+		Deck: [ Province Copper Adventurer Silver Estate Copper Gold Copper]
+		Discard: [ Province Copper Mine Gold Gold Silver]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Sea Hag Played
+End Player 2 Actions
+Player 2 has 3 money.
+Entering player 2 Buy Phase.
+	Silver purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Adventurer Province Province Baron Gold Gold Mine]
+		Discard: [ Adventurer Council Room Province Silver Estate Copper Adventurer Silver Silver]
+
+	Player 2 Hand: []
+		Deck: [ Gold Sea Hag Salvager Estate Copper Silver Silver Silver Minion Adventurer Minion Estate Estate Copper Copper Copper Outpost Sea Hag Sea Hag Sea Hag Copper Silver Sea Hag Estate Gold Estate Baron Adventurer Silver Sea Hag]
+		Discard: [ Silver Copper Copper Province Sea Hag Copper]
+
+	Player 3 Hand: [ Estate Silver Adventurer Copper Province]
+		Deck: []
+		Discard: [ Province Copper Mine Gold Gold Silver Silver]
+
+	***************************
+
+Player 3 turn.
+Beginning Player 3 Action Phase
+	Adventurer Played
+End Player 3 Actions
+Player 3 has 8 money.
+Entering player 3 Buy Phase.
+	Purchased province. Money after purchase: [0]End Player 3 Buys.
+End Player 3 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Mine Gold Gold Baron Province]
+		Deck: [ Adventurer Province]
+		Discard: [ Adventurer Council Room Province Silver Estate Copper Adventurer Silver Silver]
+
+	Player 2 Hand: []
+		Deck: [ Gold Sea Hag Salvager Estate Copper Silver Silver Silver Minion Adventurer Minion Estate Estate Copper Copper Copper Outpost Sea Hag Sea Hag Sea Hag Copper Silver Sea Hag Estate Gold Estate Baron Adventurer Silver Sea Hag]
+		Discard: [ Silver Copper Copper Province Sea Hag Copper]
+
+	Player 3 Hand: []
+		Deck: [ Province Mine Gold Silver Copper]
+		Discard: [ Province Estate Silver Adventurer Copper Province Silver Gold]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Player 1 No Action taken this turn.
+End Player 1 Actions
+Player 1 has 6 money.
+Entering player 1 Buy Phase.
+	Gold Card purchased. Money after purchase: [0]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Adventurer Province]
+		Discard: [ Adventurer Council Room Province Silver Estate Copper Adventurer Silver Silver Gold Mine Gold Gold Baron Province]
+
+	Player 2 Hand: [ Sea Hag Silver Adventurer Baron Estate]
+		Deck: [ Gold Sea Hag Salvager Estate Copper Silver Silver Silver Minion Adventurer Minion Estate Estate Copper Copper Copper Outpost Sea Hag Sea Hag Sea Hag Copper Silver Sea Hag Estate Gold]
+		Discard: [ Silver Copper Copper Province Sea Hag Copper]
+
+	Player 3 Hand: []
+		Deck: [ Province Mine Gold Silver Copper]
+		Discard: [ Province Estate Silver Adventurer Copper Province Silver Gold]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Adventurer Played
+	Error: playCard(Sea Hag) returned -1.
+End Player 2 Actions
+Player 2 has 7 money.
+Entering player 2 Buy Phase.
+	Gold Card purchased. Money after purchase: [1]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Adventurer Province]
+		Discard: [ Adventurer Council Room Province Silver Estate Copper Adventurer Silver Silver Gold Mine Gold Gold Baron Province]
+
+	Player 2 Hand: []
+		Deck: [ Gold Sea Hag Salvager Estate Copper Silver Silver Silver Minion Adventurer Minion Estate Estate Copper Copper Copper Outpost Sea Hag Sea Hag Sea Hag Copper]
+		Discard: [ Silver Copper Copper Province Sea Hag Copper Sea Hag Estate Gold Sea Hag Silver Adventurer Baron Estate Gold Silver]
+
+	Player 3 Hand: [ Copper Silver Gold Mine Province]
+		Deck: []
+		Discard: [ Province Estate Silver Adventurer Copper Province Silver Gold]
+
+	***************************
+
+Player 3 turn.
+Beginning Player 3 Action Phase
+	Player 3 No Action taken this turn.
+End Player 3 Actions
+Player 3 has 6 money.
+Entering player 3 Buy Phase.
+	Gold Card purchased. Money after purchase: [0]
+End Player 3 Buys.
+End Player 3 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Province Adventurer Gold Estate Gold]
+		Deck: [ Gold Adventurer Mine Council Room Copper Silver Province Silver Adventurer Silver Baron Province]
+		Discard: []
+
+	Player 2 Hand: []
+		Deck: [ Gold Sea Hag Salvager Estate Copper Silver Silver Silver Minion Adventurer Minion Estate Estate Copper Copper Copper Outpost Sea Hag Sea Hag Sea Hag Copper]
+		Discard: [ Silver Copper Copper Province Sea Hag Copper Sea Hag Estate Gold Sea Hag Silver Adventurer Baron Estate Gold Silver]
+
+	Player 3 Hand: []
+		Deck: []
+		Discard: [ Province Estate Silver Adventurer Copper Province Silver Gold Gold Copper Silver Gold Mine Province]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Adventurer Played
+End Player 1 Actions
+Player 1 has 8 money.
+Entering player 1 Buy Phase.
+	Purchased province. Money after purchase: [0]End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Gold Adventurer Mine Council Room Copper Silver Province Silver Adventurer]
+		Discard: [ Baron Province Province Province Adventurer Gold Estate Gold Silver]
+
+	Player 2 Hand: [ Copper Sea Hag Sea Hag Sea Hag Outpost]
+		Deck: [ Gold Sea Hag Salvager Estate Copper Silver Silver Silver Minion Adventurer Minion Estate Estate Copper Copper Copper]
+		Discard: [ Silver Copper Copper Province Sea Hag Copper Sea Hag Estate Gold Sea Hag Silver Adventurer Baron Estate Gold Silver]
+
+	Player 3 Hand: []
+		Deck: []
+		Discard: [ Province Estate Silver Adventurer Copper Province Silver Gold Gold Copper Silver Gold Mine Province]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Outpost Played
+	Error: playCard(Sea Hag) returned -1.
+End Player 2 Actions
+Player 2 has 1 money.
+Entering player 2 Buy Phase.
+	Copper purchased. Money after purchase: [1]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Gold Adventurer Mine Council Room Copper Silver Province Silver Adventurer]
+		Discard: [ Baron Province Province Province Adventurer Gold Estate Gold Silver]
+
+	Player 2 Hand: []
+		Deck: [ Gold Sea Hag Salvager Estate Copper Silver Silver Silver Minion Adventurer Minion Estate Estate Copper Copper Copper]
+		Discard: [ Silver Copper Copper Province Sea Hag Copper Sea Hag Estate Gold Sea Hag Silver Adventurer Baron Estate Gold Silver Copper Copper Sea Hag Sea Hag Sea Hag]
+
+	Player 3 Hand: [ Silver Province Adventurer Copper Province]
+		Deck: [ Silver Gold Silver Gold Mine Copper Gold Estate Province]
+		Discard: []
+
+	***************************
+
+Player 3 turn.
+Beginning Player 3 Action Phase
+	Adventurer Played
+End Player 3 Actions
+Player 3 has 6 money.
+Entering player 3 Buy Phase.
+	Gold Card purchased. Money after purchase: [0]
+End Player 3 Buys.
+End Player 3 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Adventurer Silver Province Silver Copper]
+		Deck: [ Gold Adventurer Mine Council Room]
+		Discard: [ Baron Province Province Province Adventurer Gold Estate Gold Silver]
+
+	Player 2 Hand: []
+		Deck: [ Gold Sea Hag Salvager Estate Copper Silver Silver Silver Minion Adventurer Minion Estate Estate Copper Copper Copper]
+		Discard: [ Silver Copper Copper Province Sea Hag Copper Sea Hag Estate Gold Sea Hag Silver Adventurer Baron Estate Gold Silver Copper Copper Sea Hag Sea Hag Sea Hag]
+
+	Player 3 Hand: []
+		Deck: [ Silver Gold Silver Gold Mine Copper]
+		Discard: [ Estate Province Gold Silver Province Adventurer Copper Province Gold]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Adventurer Played
+End Player 1 Actions
+Player 1 has 8 money.
+Entering player 1 Buy Phase.
+	Purchased province. Money after purchase: [0]End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: []
+		Discard: [ Baron Province Province Province Adventurer Gold Estate Gold Silver Adventurer Mine Council Room Province Adventurer Silver Province Silver Copper Gold]
+
+	Player 2 Hand: [ Copper Copper Copper Estate Estate]
+		Deck: [ Gold Sea Hag Salvager Estate Copper Silver Silver Silver Minion Adventurer Minion]
+		Discard: [ Silver Copper Copper Province Sea Hag Copper Sea Hag Estate Gold Sea Hag Silver Adventurer Baron Estate Gold Silver Copper Copper Sea Hag Sea Hag Sea Hag]
+
+	Player 3 Hand: []
+		Deck: [ Silver Gold Silver Gold Mine Copper]
+		Discard: [ Estate Province Gold Silver Province Adventurer Copper Province Gold]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Player 2 No Action taken this turn.
+End Player 2 Actions
+Player 2 has 3 money.
+Entering player 2 Buy Phase.
+	Silver purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: []
+		Discard: [ Baron Province Province Province Adventurer Gold Estate Gold Silver Adventurer Mine Council Room Province Adventurer Silver Province Silver Copper Gold]
+
+	Player 2 Hand: []
+		Deck: [ Gold Sea Hag Salvager Estate Copper Silver Silver Silver Minion Adventurer Minion]
+		Discard: [ Silver Copper Copper Province Sea Hag Copper Sea Hag Estate Gold Sea Hag Silver Adventurer Baron Estate Gold Silver Copper Copper Sea Hag Sea Hag Sea Hag Silver Copper Copper Copper Estate Estate]
+
+	Player 3 Hand: [ Copper Mine Gold Silver Gold]
+		Deck: [ Silver]
+		Discard: [ Estate Province Gold Silver Province Adventurer Copper Province Gold]
+
+	***************************
+
+Player 3 turn.
+Beginning Player 3 Action Phase
+	Player 3 No Action taken this turn.
+End Player 3 Actions
+Player 3 has 9 money.
+Entering player 3 Buy Phase.
+	Purchased province. Money after purchase: [1]End Player 3 Buys.
+End Player 3 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Gold Province Silver Province Adventurer]
+		Deck: [ Gold Council Room Adventurer Adventurer Silver Province Copper Province Estate Gold Province Mine Silver Baron]
+		Discard: []
+
+	Player 2 Hand: []
+		Deck: [ Gold Sea Hag Salvager Estate Copper Silver Silver Silver Minion Adventurer Minion]
+		Discard: [ Silver Copper Copper Province Sea Hag Copper Sea Hag Estate Gold Sea Hag Silver Adventurer Baron Estate Gold Silver Copper Copper Sea Hag Sea Hag Sea Hag Silver Copper Copper Copper Estate Estate]
+
+	Player 3 Hand: []
+		Deck: [ Silver]
+		Discard: [ Estate Province Gold Silver Province Adventurer Copper Province Gold Province Copper Mine Gold Silver Gold]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Adventurer Played
+End Player 1 Actions
+Player 1 has 7 money.
+Entering player 1 Buy Phase.
+	Gold Card purchased. Money after purchase: [1]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Gold Council Room Adventurer Adventurer Silver Province Copper Province Estate Gold Province Mine]
+		Discard: [ Baron Gold Gold Province Silver Province Adventurer Silver]
+
+	Player 2 Hand: [ Minion Adventurer Minion Silver Silver]
+		Deck: [ Gold Sea Hag Salvager Estate Copper Silver]
+		Discard: [ Silver Copper Copper Province Sea Hag Copper Sea Hag Estate Gold Sea Hag Silver Adventurer Baron Estate Gold Silver Copper Copper Sea Hag Sea Hag Sea Hag Silver Copper Copper Copper Estate Estate]
+
+	Player 3 Hand: []
+		Deck: [ Silver]
+		Discard: [ Estate Province Gold Silver Province Adventurer Copper Province Gold Province Copper Mine Gold Silver Gold]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Adventurer Played
+End Player 2 Actions
+Player 2 has 6 money.
+Entering player 2 Buy Phase.
+	Gold Card purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Gold Council Room Adventurer Adventurer Silver Province Copper Province Estate Gold Province Mine]
+		Discard: [ Baron Gold Gold Province Silver Province Adventurer Silver]
+
+	Player 2 Hand: []
+		Deck: [ Gold Sea Hag Salvager Estate Copper]
+		Discard: [ Silver Copper Copper Province Sea Hag Copper Sea Hag Estate Gold Sea Hag Silver Adventurer Baron Estate Gold Silver Copper Copper Sea Hag Sea Hag Sea Hag Silver Copper Copper Copper Estate Estate Gold Minion Adventurer Minion Silver Silver Silver]
+
+	Player 3 Hand: [ Silver Gold Copper Silver Silver]
+		Deck: [ Province Copper Gold Province Gold Province Adventurer Province Estate Mine Gold]
+		Discard: []
+
+	***************************
+
+Player 3 turn.
+Beginning Player 3 Action Phase
+	Player 3 No Action taken this turn.
+End Player 3 Actions
+Player 3 has 10 money.
+Entering player 3 Buy Phase.
+	Purchased province. Money after purchase: [2]End Player 3 Buys.
+End Player 3 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Mine Province Gold Estate Province]
+		Deck: [ Gold Council Room Adventurer Adventurer Silver Province Copper]
+		Discard: [ Baron Gold Gold Province Silver Province Adventurer Silver]
+
+	Player 2 Hand: []
+		Deck: [ Gold Sea Hag Salvager Estate Copper]
+		Discard: [ Silver Copper Copper Province Sea Hag Copper Sea Hag Estate Gold Sea Hag Silver Adventurer Baron Estate Gold Silver Copper Copper Sea Hag Sea Hag Sea Hag Silver Copper Copper Copper Estate Estate Gold Minion Adventurer Minion Silver Silver Silver]
+
+	Player 3 Hand: []
+		Deck: [ Province Copper Gold Province Gold Province Adventurer Province Estate Mine Gold]
+		Discard: [ Province Silver Gold Copper Silver Silver]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Player 1 No Action taken this turn.
+End Player 1 Actions
+Player 1 has 3 money.
+Entering player 1 Buy Phase.
+	Silver purchased. Money after purchase: [0]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Gold Council Room Adventurer Adventurer Silver Province Copper]
+		Discard: [ Baron Gold Gold Province Silver Province Adventurer Silver Silver Mine Province Gold Estate Province]
+
+	Player 2 Hand: [ Copper Estate Salvager Sea Hag Gold]
+		Deck: []
+		Discard: [ Silver Copper Copper Province Sea Hag Copper Sea Hag Estate Gold Sea Hag Silver Adventurer Baron Estate Gold Silver Copper Copper Sea Hag Sea Hag Sea Hag Silver Copper Copper Copper Estate Estate Gold Minion Adventurer Minion Silver Silver Silver]
+
+	Player 3 Hand: []
+		Deck: [ Province Copper Gold Province Gold Province Adventurer Province Estate Mine Gold]
+		Discard: [ Province Silver Gold Copper Silver Silver]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Sea Hag Played
+End Player 2 Actions
+Player 2 has 4 money.
+Entering player 2 Buy Phase.
+	Baron purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Gold Council Room Adventurer Adventurer]
+		Discard: [ Baron Gold Gold Province Silver Province Adventurer Silver Silver Mine Province Gold Estate Province Province]
+
+	Player 2 Hand: []
+		Deck: []
+		Discard: [ Silver Copper Copper Province Sea Hag Copper Sea Hag Estate Gold Sea Hag Silver Adventurer Baron Estate Gold Silver Copper Copper Sea Hag Sea Hag Sea Hag Silver Copper Copper Copper Estate Estate Gold Minion Adventurer Minion Silver Silver Silver Baron Copper Estate Salvager Sea Hag Gold]
+
+	Player 3 Hand: [ Province Adventurer Province Gold Province]
+		Deck: [ Province Copper Gold]
+		Discard: [ Province Silver Gold Copper Silver Silver Silver]
+
+	***************************
+
+Player 3 turn.
+Beginning Player 3 Action Phase
+	Adventurer Played
+End Player 3 Actions
+Player 3 has 7 money.
+Entering player 3 Buy Phase.
+	Gold Card purchased. Money after purchase: [1]
+End Player 3 Buys.
+End Player 3 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Adventurer Adventurer Council Room Gold Estate]
+		Deck: [ Mine Silver Province Gold Silver Gold Province Gold Province Baron Province Province Adventurer Silver]
+		Discard: []
+
+	Player 2 Hand: []
+		Deck: []
+		Discard: [ Silver Copper Copper Province Sea Hag Copper Sea Hag Estate Gold Sea Hag Silver Adventurer Baron Estate Gold Silver Copper Copper Sea Hag Sea Hag Sea Hag Silver Copper Copper Copper Estate Estate Gold Minion Adventurer Minion Silver Silver Silver Baron Copper Estate Salvager Sea Hag Gold]
+
+	Player 3 Hand: []
+		Deck: [ Province]
+		Discard: [ Province Silver Gold Copper Silver Silver Silver Gold Province Adventurer Province Gold Province Gold Copper]
+
+	***************************
+
+Player 1 turn.
+Beginning Player 1 Action Phase
+	Adventurer Played
+	Error: playCard(Council Room) returned -1.
+End Player 1 Actions
+Player 1 has 5 money.
+Entering player 1 Buy Phase.
+	Minion purchased. Money after purchase: [0]
+End Player 1 Buys.
+End Player 1 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Mine Silver Province Gold Silver Gold Province Gold Province Baron Province Province]
+		Discard: [ Adventurer Minion Adventurer Adventurer Council Room Gold Estate Silver]
+
+	Player 2 Hand: [ Silver Sea Hag Gold Adventurer Estate]
+		Deck: [ Sea Hag Copper Gold Copper Silver Silver Province Copper Estate Adventurer Copper Baron Estate Sea Hag Sea Hag Silver Baron Minion Gold Gold Silver Sea Hag Copper Copper Copper Copper Minion Estate Sea Hag Salvager Silver Silver Sea Hag Estate Copper]
+		Discard: []
+
+	Player 3 Hand: []
+		Deck: [ Province]
+		Discard: [ Province Silver Gold Copper Silver Silver Silver Gold Province Adventurer Province Gold Province Gold Copper]
+
+	***************************
+
+Player 2 turn.
+Beginning Player 2 Action Phase
+	Adventurer Played
+	Error: playCard(Sea Hag) returned -1.
+End Player 2 Actions
+Player 2 has 6 money.
+Entering player 2 Buy Phase.
+	Gold Card purchased. Money after purchase: [0]
+End Player 2 Buys.
+End Player 2 turn.
+
+
+
+	****Printing Game State****
+	Player 1 Hand: []
+		Deck: [ Mine Silver Province Gold Silver Gold Province Gold Province Baron Province Province]
+		Discard: [ Adventurer Minion Adventurer Adventurer Council Room Gold Estate Silver]
+
+	Player 2 Hand: []
+		Deck: [ Sea Hag Copper Gold Copper Silver Silver Province Copper Estate Adventurer Copper Baron Estate Sea Hag Sea Hag Silver Baron Minion Gold Gold Silver Sea Hag Copper Copper Copper Copper Minion Estate Sea Hag Salvager Silver Silver Sea Hag Estate]
+		Discard: [ Gold Silver Sea Hag Gold Adventurer Estate Copper]
+
+	Player 3 Hand: [ Province Copper Silver Gold Gold]
+		Deck: [ Province Silver Silver Adventurer Gold Silver Gold Copper Province Province Province]
+		Discard: []
+
+	***************************
+
+Player 3 turn.
+Beginning Player 3 Action Phase
+	Player 3 No Action taken this turn.
+End Player 3 Actions
+Player 3 has 9 money.
+Entering player 3 Buy Phase.
+	Purchased province. Money after purchase: [1]End Player 3 Buys.
+End Player 3 turn.
+
+Player [1]: Score [31]
+Player [2]: Score [7]
+Player [3]: Score [18]
+
+
+	****Printing Game State****
+	Player 1 Hand: [ Province Province Baron Province Gold]
+		Deck: [ Mine Silver Province Gold Silver Gold Province]
+		Discard: [ Adventurer Minion Adventurer Adventurer Council Room Gold Estate Silver]
+
+	Player 2 Hand: []
+		Deck: [ Sea Hag Copper Gold Copper Silver Silver Province Copper Estate Adventurer Copper Baron Estate Sea Hag Sea Hag Silver Baron Minion Gold Gold Silver Sea Hag Copper Copper Copper Copper Minion Estate Sea Hag Salvager Silver Silver Sea Hag Estate]
+		Discard: [ Gold Silver Sea Hag Gold Adventurer Estate Copper]
+
+	Player 3 Hand: []
+		Deck: [ Province Silver Silver Adventurer Gold Silver Gold Copper Province Province Province]
+		Discard: [ Province Province Copper Silver Gold Gold]
+
+	***************************
+
+
+
+
+

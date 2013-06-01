@@ -20,17 +20,18 @@ struct gameState* newGame() {
 
 int* kingdomCards(int k1, int k2, int k3, int k4, int k5, int k6, int k7,
 		  int k8, int k9, int k10) {
-  int* k = malloc(10 * sizeof(int));
-  k[0] = k1;
-  k[1] = k2;
-  k[2] = k3;  k[3] = k4;
-  k[4] = k5;
-  k[5] = k6;
-  k[6] = k7;
-  k[7] = k8;
-  k[8] = k9;
-  k[9] = k10;
-  return k;
+    int* k = malloc(10 * sizeof(int));
+    k[0] = k1;
+    k[1] = k2;
+    k[2] = k3;  
+    k[3] = k4;
+    k[4] = k5;
+    k[5] = k6;
+    k[6] = k7;
+    k[7] = k8;
+    k[8] = k9;
+    k[9] = k10;
+    return k;
 }
 
 int initializeGame(int numPlayers, int kingdomCards[10], int randomSeed,
@@ -211,7 +212,7 @@ int shuffle(int player, struct gameState *state) {
   /* SORT CARDS IN DECK TO ENSURE DETERMINISM! */
 
   while (state->deckCount[player] > 0) {
-    card = floor(Random() * state->deckCount[player]);
+    card = (int) floor(Random() * state->deckCount[player]);
     newDeck[newDeckPos] = state->deck[player][card];
     newDeckPos++;
     for (i = card; i < state->deckCount[player]-1; i++) {
@@ -521,9 +522,10 @@ int getWinners(int players[MAX_PLAYERS], struct gameState *state) {
 }
 
 int drawCard(int player, struct gameState *state)
-{	int count;
-  int deckCounter;
-  if (state->deckCount[player] <= 0){//Deck is empty
+{	
+	int count;
+	int deckCounter;
+	if (state->deckCount[player] <= 0){//Deck is empty
     
     //Step 1 Shuffle the discard pile back into a deck
     int i;
@@ -563,8 +565,8 @@ int drawCard(int player, struct gameState *state)
   }
 
   else{
-    int count = state->handCount[player];//Get current hand count for player
-    int deckCounter;
+    count = state->handCount[player];//Get current hand count for player
+    // Duplicate Declaration. int deckCounter;
     if (DEBUG){//Debug statements
       printf("Current hand count: %d\n", count);
     }
@@ -656,7 +658,8 @@ int adventurerCard(int *drawntreasure, struct gameState *state, int *cardDrawn, 
       else{
         temphand[*z]=*cardDrawn;
         state->handCount[*currentPlayer]--; //this should just remove the top card (the most recently drawn one).
-        *z++;
+        *z = *z + 1;
+		
       }
     }
     
@@ -806,7 +809,7 @@ int baronCard(struct gameState *state, int *currentPlayer, int *choice1){
   if (choice1_baron > 0){//Boolean true or going to discard an estate
     int p;//Iterator for hand!
     int card_not_discarded = 1;//Flag for discard set!
-
+	p = 0;
     while(card_not_discarded){
       if (state->hand[*currentPlayer][p] == estate){//Found an estate card!
         state->coins += 4;//Add 4 coins to the amount of coins
@@ -931,7 +934,7 @@ int stewardCard(struct gameState *state, int *currentPlayer, int *handPos, int *
   return 0;
 }
 
-int tributeCard(struct gameState *state, int *currentPlayer, int *nextPlayer, int *tributeRevealedCards){
+int tributeCard(struct gameState *state, int *currentPlayer, int* handPos, int *nextPlayer, int *tributeRevealedCards){
 
   int i;
 
@@ -974,6 +977,9 @@ int tributeCard(struct gameState *state, int *currentPlayer, int *nextPlayer, in
     state->playedCardCount++;
     tributeRevealedCards[1] = -1;
   }
+
+  //discard played card from hand
+  discardCard(*handPos, *currentPlayer, state, 0);      
 
   for (i = 0; i <= 2; i ++){
   
@@ -1192,9 +1198,9 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
   else if ( card == minion)
     return minionCard(state, &currentPlayer, &handPos, &choice1, &choice2);
   else if ( card == steward)
-    return stewardCard(state, &currentPlayer, &handPos, &choice1, &choice2, &choice3);
+    return stewardCard(state, &currentPlayer, &handPos,  &choice1, &choice2, &choice3);
   else if (card == tribute)
-    return tributeCard(state, &currentPlayer, &nextPlayer, tributeRevealedCards); 
+    return tributeCard(state, &currentPlayer, &handPos, &nextPlayer, tributeRevealedCards); 
   else if (card == ambassador)
     return ambassadorCard(state, &currentPlayer, &handPos, &choice1, &choice2);
   else if (card == cutpurse)
